@@ -1,0 +1,159 @@
+@use '../abstracts' as *;
+
+.header {
+	width: 100%;
+	padding: 0.8rem 0;
+
+	@include devices(tablet) {
+		padding: 2rem 0;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&--heading {
+		font-size: 1.3rem;
+		font-weight: 600;
+	}
+
+	&__image {
+		overflow: hidden;
+
+		&--img {
+			height: 40px;
+			width: auto;
+		}
+	}
+
+	&__group {
+		display: flex;
+		align-items: center;
+		transition: 0.3s ease-out;
+
+		@include devices(uptotablet) {
+			top: 0;
+			right: 0;
+			z-index: 1;
+			width: 50vw;
+			padding: 2rem;
+			display: flex;
+			height: 100dvh;
+			position: fixed;
+			align-items: center;
+			flex-direction: column;
+			justify-content: center;
+			// background-color: #21216f;
+			background-color: rgb(24, 1, 46);
+		}
+
+		@include devices(tablet) {
+			transition: 0s;
+		}
+	}
+
+	&__links {
+		display: flex;
+		align-items: center;
+
+		@include devices(uptotablet) {
+			flex-direction: column;
+		}
+	}
+
+	&__group,
+	&__links {
+		gap: 3rem;
+	}
+
+	&--svg-img {
+		@include devices(uptotablet) {
+			-webkit-filter: invert(100%);
+			filter: invert(100%);
+		}
+	}
+
+	&--link {
+		font-weight: 500;
+		font-size: 0.95rem;
+		color: white;
+		transition: 0.3s ease;
+		font-family: 'Fira Code', monospace;
+
+		@include devices(tablet) {
+			&:hover {
+				color: #01e0c8;
+			}
+		}
+	}
+
+	&__group {
+		&__togglers {
+			position: fixed;
+			top: 1rem;
+			right: 0.7rem;
+		}
+	}
+
+	&--svg {
+		font-size: 2rem;
+		cursor: pointer;
+		user-select: none;
+		color: white;
+	}
+
+	&__togglers {
+		@include devices(tablet) {
+			display: none;
+		}
+	}
+
+	&__themetogglerMobile {
+		display: flex;
+		font-size: 2rem;
+
+		@include devices(tablet) {
+			display: none;
+		}
+	}
+
+	&__themetogglerDesktop {
+		display: none;
+
+		@include devices(tablet) {
+			display: flex;
+			font-size: 2rem;
+		}
+	}
+
+	&--theme {
+		&:hover {
+			scale: 1.05;
+		}
+	}
+}
+
+.show {
+	right: 0;
+	overflow: hidden;
+}
+
+.dontshow {
+	right: -100vw;
+}
+
+.white {
+	color: white;
+}
+
+.svgshow {
+	display: fixed;
+	top: 1rem;
+	right: 1rem;
+}
+
+.svghidden {
+	display: none;
+}

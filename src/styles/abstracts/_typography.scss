@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Fira+Code:wght@400;500&family=Satisfy&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-size: 1rem;
+}
+
+@font-face {
+	font-family: 'Tomato Grotesk regular';
+	src: url('/Tomato_Grotesk/TomatoGrotesk-Regular.otf');
+	font-style: medium;
+	font-weight: bold;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Tomato Grotesk SemiBoldSlanted';
+	src: url('/Tomato_Grotesk/TomatoGrotesk-SemiBoldSlanted.otf');
+	font-style: medium;
+	font-weight: bold;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Tomato Grotesk semibold';
+	src: url('/Tomato_Grotesk/TomatoGrotesk-SemiBold.otf');
+	font-style: medium;
+	font-weight: bold;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Tomato Grotesk bold';
+	src: url('/Tomato_Grotesk/TomatoGrotesk-Bold.otf');
+	font-style: medium;
+	font-weight: bold;
+	font-display: swap;
+}

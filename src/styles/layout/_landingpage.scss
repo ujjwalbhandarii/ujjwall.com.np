@@ -1,0 +1,107 @@
+@use '../abstracts/' as *;
+
+.herosection {
+	min-height: 85dvh;
+	padding-top: 8vh;
+
+	@include devices(tablet) {
+		padding-top: 13vh;
+	}
+
+	&__wrapper {
+		display: flex;
+		padding-bottom: 3rem;
+		justify-content: center;
+		gap: 2rem;
+		flex-direction: column;
+
+		@include devices(tablet) {
+			gap: 3rem;
+		}
+	}
+
+	&__info {
+		text-align: left;
+	}
+
+	&--h3 {
+		font-size: clamp(0.95rem, 0.5rem + 2.2vw, 1.15rem);
+		font-family: 'Fira Code', monospace;
+		color: $secondary;
+	}
+
+	&--h1 {
+		font-size: clamp(2rem, 1rem + 2.2vw, 7rem);
+		font-family: 'Tomato Grotesk bold';
+		letter-spacing: 2px;
+	}
+
+	&--h5 {
+		font-size: clamp(1.4rem, 0.8rem + 2.2vw, 5rem);
+		letter-spacing: 2px;
+		font-family: 'Tomato Grotesk bold';
+		color: $light-gray;
+		display: inline-block;
+
+		@include devices(headerbreakpoint) {
+			letter-spacing: 4px;
+			line-height: 60px;
+		}
+
+		&:hover {
+			text-decoration: underline;
+			text-underline-offset: 8px;
+		}
+	}
+
+	&__more {
+		display: flex;
+		gap: 0.3rem;
+		flex-direction: column;
+
+		p {
+			font-size: clamp(0.9rem, 0.2rem + 2.2vw, 1.05rem);
+			font-weight: 400;
+			letter-spacing: 1px;
+			color: $light-gray;
+
+			span {
+				margin-left: 0.3rem;
+				font-family: 'Fira Code', monospace;
+				color: $secondary;
+				letter-spacing: 0;
+			}
+		}
+	}
+
+	&__social {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&--h6 {
+		font-size: clamp(0.95rem, 0.2rem + 2.2vw, 1.2rem);
+		margin-bottom: 1.5rem;
+		font-weight: 400;
+	}
+
+	&__sociallinks {
+		display: flex;
+		align-items: center;
+		gap: 1.8rem;
+
+		svg {
+			font-size: 1.3rem;
+			transition: 0.3s ease;
+
+			@include devices(tablet) {
+				font-size: 1.7rem;
+			}
+
+			&:hover {
+				// scale: 1.05;
+				color: $secondary;
+			}
+		}
+	}
+}

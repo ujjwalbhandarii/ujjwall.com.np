@@ -1,0 +1,36 @@
+.container {
+	width: 90% !important;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 !important;
+}
+
+@media (min-width: 512px) {
+	.container {
+		max-width: 512px !important;
+	}
+}
+
+@media (min-width: 756px) {
+	.container {
+		max-width: 756px !important;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		max-width: 1024px !important;
+	}
+}
+
+@media (min-width: 1280px) {
+	.container {
+		max-width: 1280px !important;
+	}
+}
+
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1400px !important;
+	}
+}
