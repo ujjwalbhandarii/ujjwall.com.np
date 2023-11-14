@@ -1,16 +1,23 @@
 @use '../abstracts/' as *;
 
+.cursordiv {
+	height: 5rem;
+	width: 5rem;
+	z-index: 1;
+	position: absolute;
+	background-color: blue;
+}
+
 .herosection {
-	min-height: 85dvh;
-	padding-top: 8vh;
+	padding: 1rem 0;
 
 	@include devices(tablet) {
-		padding-top: 13vh;
+		padding: 3rem 0;
 	}
 
 	&__wrapper {
 		display: flex;
-		padding-bottom: 3rem;
+		padding: 3rem 0;
 		justify-content: center;
 		gap: 2rem;
 		flex-direction: column;
@@ -21,13 +28,13 @@
 	}
 
 	&__info {
-		text-align: left;
+		text-align: center;
 	}
 
 	&--h3 {
 		font-size: clamp(0.95rem, 0.5rem + 2.2vw, 1.15rem);
 		font-family: 'Fira Code', monospace;
-		color: $secondary;
+		// color: $secondary;
 	}
 
 	&--h1 {
@@ -40,7 +47,7 @@
 		font-size: clamp(1.4rem, 0.8rem + 2.2vw, 5rem);
 		letter-spacing: 2px;
 		font-family: 'Tomato Grotesk bold';
-		color: $light-gray;
+
 		display: inline-block;
 
 		@include devices(headerbreakpoint) {
@@ -58,18 +65,30 @@
 		display: flex;
 		gap: 0.3rem;
 		flex-direction: column;
+		align-items: center;
 
 		p {
-			font-size: clamp(0.9rem, 0.2rem + 2.2vw, 1.05rem);
+			font-size: clamp(0.85rem, 0.2rem + 2.2vw, 1.05rem);
 			font-weight: 400;
 			letter-spacing: 1px;
-			color: $light-gray;
+
+			@include devices(uptotablet) {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
 
 			span {
 				margin-left: 0.3rem;
 				font-family: 'Fira Code', monospace;
-				color: $secondary;
 				letter-spacing: 0;
+			}
+		}
+
+		&--workingat {
+			@include devices(uptotablet) {
+				display: flex;
+				flex-direction: column;
 			}
 		}
 	}
@@ -77,6 +96,8 @@
 	&__social {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		text-align: center;
 	}
 
 	&--h6 {
@@ -90,6 +111,10 @@
 		align-items: center;
 		gap: 1.8rem;
 
+		@include devices(tablet) {
+			gap: 2rem;
+		}
+
 		svg {
 			font-size: 1.3rem;
 			transition: 0.3s ease;
@@ -99,9 +124,64 @@
 			}
 
 			&:hover {
-				// scale: 1.05;
 				color: $secondary;
 			}
 		}
+	}
+
+	&__arrow {
+		position: relative;
+		padding: 1rem 0;
+
+		@include devices(tablet) {
+			padding: 5rem 0;
+		}
+
+		svg {
+			position: absolute;
+			font-size: 2rem;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			animation: arrowupdown 4s ease infinite;
+		}
+	}
+}
+
+@keyframes arrowupdown {
+	0% {
+		transform: translateY(0rem);
+		scale: 1;
+	}
+	50% {
+		transform: translateY(3rem);
+		scale: 1.2;
+	}
+	to {
+		transform: translate(0rem);
+		scale: 1;
+	}
+}
+
+.bottomaside {
+	position: absolute;
+	bottom: 10rem;
+	right: -7.8rem;
+	transform: rotate(90deg);
+	transition: 0.3s ease all;
+
+	@include devices(uptotablet) {
+		display: none;
+	}
+
+	& > span {
+		cursor: pointer;
+		letter-spacing: 1px;
+		transition: 0.3s ease all;
+		font-size: 0.9rem;
+	}
+
+	&:hover {
+		scale: 1.05;
 	}
 }

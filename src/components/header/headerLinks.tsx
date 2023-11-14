@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { RxCross2 } from 'react-icons/rx';
 
 import { HEADER_LINKS } from '@/data/header';
-import ThemeToggler from './themeToggler';
 
 type TheaderLink = (typeof HEADER_LINKS)[0];
 
@@ -21,7 +20,7 @@ export default function HeaderLinks({ show, setShow }: HeaderPropsT) {
 						<li key={id}>
 							<Link
 								href={href}
-								className='header--link'
+								className='header--link text-slate-900 dark:text-slate-100 hover:text-lightBlue hover:dark:text-lightGreenBlue'
 								onClick={() => setShow(!show)}
 							>
 								{name}

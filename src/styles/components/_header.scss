@@ -24,7 +24,8 @@
 
 		&--img {
 			height: 40px;
-			width: auto;
+			width: 40px;
+			border-radius: 50%;
 		}
 	}
 
@@ -37,7 +38,7 @@
 			top: 0;
 			right: 0;
 			z-index: 1;
-			width: 50vw;
+			width: 100vw;
 			padding: 2rem;
 			display: flex;
 			height: 100dvh;
@@ -45,7 +46,6 @@
 			align-items: center;
 			flex-direction: column;
 			justify-content: center;
-			// background-color: #21216f;
 			background-color: rgb(24, 1, 46);
 		}
 
@@ -78,15 +78,14 @@
 	&--link {
 		font-weight: 500;
 		font-size: 0.95rem;
-		color: white;
 		transition: 0.3s ease;
 		font-family: 'Fira Code', monospace;
 
-		@include devices(tablet) {
-			&:hover {
-				color: #01e0c8;
-			}
-		}
+		// @include devices(tablet) {
+		// 	&:hover {
+		// 		color: #01e0c8;
+		// 	}
+		// }
 	}
 
 	&__group {
@@ -101,10 +100,14 @@
 		font-size: 2rem;
 		cursor: pointer;
 		user-select: none;
-		color: white;
 	}
 
 	&__togglers {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+
 		@include devices(tablet) {
 			display: none;
 		}

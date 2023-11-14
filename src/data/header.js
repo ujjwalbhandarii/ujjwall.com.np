@@ -2,12 +2,12 @@ export const HEADER_LINKS = [
 	{
 		id: Math.random() * 100,
 		name: 'Home',
-		href: '#',
+		href: '/',
 	},
 	{
 		id: Math.random() * 100,
 		name: 'About me',
-		href: '#',
+		href: '/aboutme',
 	},
 	{
 		id: Math.random() * 100,
@@ -21,7 +21,7 @@ export const HEADER_LINKS = [
 	},
 	{
 		id: Math.random() * 100,
-		name: 'blog',
+		name: 'Blog',
 		href: '#',
 	},
 ];

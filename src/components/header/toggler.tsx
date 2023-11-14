@@ -1,11 +1,12 @@
+import { ModeToggle } from '@/shadcn/ui/darkMode';
 import { HiOutlineBars3BottomRight } from 'react-icons/hi2';
-import ThemeToggler from './themeToggler';
 
 export default function Toggler({ show, setShow }: HeaderPropsT) {
 	return (
 		<div className='header__togglers'>
+			<ModeToggle />
 			<HiOutlineBars3BottomRight
-				className='header--svg'
+				className='header--svg text-slate-950 dark:text-slate-100'
 				onClick={() => setShow(!show)}
 			/>
 		</div>

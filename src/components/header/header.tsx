@@ -6,6 +6,7 @@ import Toggler from './toggler';
 import HeaderLogo from './headerLogo';
 import HeaderLinks from './headerLinks';
 import Container from '@/utils/container';
+import { ModeToggle } from '@/shadcn/ui/darkMode';
 
 export default function Header() {
 	const [show, setShow] = useState<Boolean>(false);
@@ -17,9 +18,9 @@ export default function Header() {
 					<HeaderLogo />
 					<HeaderLinks show={show} setShow={setShow} />
 					<Toggler show={show} setShow={setShow} />
-					{/* <div className='header__themetogglerDesktop'>
-						<ThemeToggler />
-					</div> */}
+					<div className='header__themetogglerDesktop'>
+						<ModeToggle />
+					</div>
 				</div>
 			</Container>
 		</header>
