@@ -8,13 +8,13 @@ export const NeedAWebDev = () => {
 			<section className='contact' id='contact'>
 				<Container>
 					<div className='contact__content'>
-						<h3>
+						<h6>
 							{CONTACT.first}
 							<br />
 							{CONTACT.second}
 							<br />
 							{CONTACT.third}
-						</h3>
+						</h6>
 					</div>
 					<div className='contact__button'>
 						<Link href='#' className='text-slate-100'>

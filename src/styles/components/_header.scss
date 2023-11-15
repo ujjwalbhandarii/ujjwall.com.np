@@ -79,13 +79,7 @@
 		font-weight: 500;
 		font-size: 0.95rem;
 		transition: 0.3s ease;
-		font-family: 'Fira Code', monospace;
-
-		// @include devices(tablet) {
-		// 	&:hover {
-		// 		color: #01e0c8;
-		// 	}
-		// }
+		font-family: 'Fira Code regular', monospace;
 	}
 
 	&__group {

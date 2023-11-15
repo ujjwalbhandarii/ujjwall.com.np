@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Fira+Code:wght@400;500&family=Satisfy&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Fira+Code:wght@400;500&family=Satisfy&display=swap');
 
 h1,
 h2,
@@ -39,3 +39,27 @@ h5 {
 	font-weight: bold;
 	font-display: swap;
 }
+
+@font-face {
+	font-family: 'Fira Code bold';
+	src: url('/FiraCode/FiraCode-VariableFont_wght.ttf');
+	font-style: medium;
+	font-weight: bold;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Fira Code regular';
+	src: url('/FiraCode/static/FiraCode-Regular.ttf');
+	font-style: medium;
+	font-weight: bold;
+	font-display: swap;
+}
+
+// @font-face {
+// 	font-family: 'Fira Code regular';
+// 	src: url('/public/FiraCode/static/FiraCode-Regular.ttf');
+// 	font-style: medium;
+// 	font-weight: bold;
+// 	font-display: swap;
+// }
