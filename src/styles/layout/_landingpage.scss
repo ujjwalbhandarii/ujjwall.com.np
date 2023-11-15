@@ -1,15 +1,25 @@
 @use '../abstracts/' as *;
 
+$fira-code: 'Fira Code', monospace;
+$tomatoBold: 'Tomato Grotesk bold';
+
 .cursordiv {
-	height: 5rem;
-	width: 5rem;
+	height: 20rem;
+	width: 20rem;
+	border-radius: 50%;
 	z-index: 1;
-	position: absolute;
-	background-color: blue;
+	position: fixed;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	z-index: 999;
+	opacity: 0.2;
+	filter: blur(5rem);
 }
 
 .herosection {
-	padding: 1rem 0;
+	padding: 2rem 0;
+	min-height: 90dvh;
 
 	@include devices(tablet) {
 		padding: 3rem 0;
@@ -33,7 +43,7 @@
 
 	&--h3 {
 		font-size: clamp(0.95rem, 0.5rem + 2.2vw, 1.15rem);
-		font-family: 'Fira Code', monospace;
+		font-family: $fira-code;
 		// color: $secondary;
 	}
 
@@ -183,5 +193,218 @@
 
 	&:hover {
 		scale: 1.05;
+	}
+}
+
+.about {
+	padding: 6rem 0;
+
+	@include devices(tablet) {
+		padding: 6rem 0;
+	}
+
+	&__wrapper {
+		text-align: center;
+
+		@include devices(tablet) {
+			// padding: 0 1rem;
+			text-align: left;
+		}
+
+		@include devices(headerbreakpoint) {
+			padding: 0 3rem;
+		}
+
+		@include devices(smalldisplay) {
+			padding: 0 5rem;
+		}
+
+		@include devices(largedisplay) {
+			padding: 0 8rem;
+		}
+	}
+
+	&--heading {
+		font-size: 2rem;
+		font-weight: 600;
+		font-family: $tomatoBold;
+		margin-bottom: 1rem;
+	}
+
+	&__main {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		gap: 1rem;
+
+		@include devices(tablet) {
+			grid-template-columns: 1fr 1fr;
+			gap: 2rem;
+		}
+	}
+
+	&__content {
+		padding: 2rem 0;
+
+		&__group {
+			p {
+				margin-bottom: 1rem;
+				font-size: 0.9rem;
+				font-family: $fira-code;
+				font-weight: 400;
+				letter-spacing: 1px;
+				line-height: 2rem;
+
+				@include devices(tablet) {
+					font-size: 1rem;
+					line-height: 2.4rem;
+				}
+
+				@include devices(smalldisplay) {
+					margin-bottom: 1.8rem;
+				}
+			}
+
+			strong {
+				color: #01e0c8;
+			}
+		}
+	}
+
+	&--figure {
+		position: relative;
+	}
+
+	&__image {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: sticky;
+		top: 0;
+
+		@include devices(tablet) {
+			justify-content: flex-end;
+		}
+
+		&-outlinefilled {
+			width: 15rem;
+			height: 19rem;
+			position: absolute;
+			top: 5%;
+			left: 8%;
+			z-index: 1;
+
+			@include devices(tablet) {
+				width: 20rem;
+				height: 25rem;
+				top: 8%;
+				left: 8%;
+			}
+		}
+
+		&-outlineshade {
+			border: 2px solid;
+			width: 15rem;
+			height: 20rem;
+			position: absolute;
+			top: -5%;
+			left: -5%;
+			z-index: 1;
+
+			@include devices(tablet) {
+				width: 20rem;
+				height: 25rem;
+				top: -8%;
+				left: -8%;
+			}
+		}
+
+		&:hover {
+			.hover1 {
+				top: 8%;
+				left: 8%;
+			}
+			.hover2 {
+				top: -8%;
+				left: -8%;
+			}
+		}
+	}
+
+	&--image {
+		max-height: 20rem;
+		max-width: 15rem;
+		object-fit: cover;
+		z-index: 2;
+		position: relative;
+
+		@include devices(tablet) {
+			max-height: 25rem;
+			max-width: 20rem;
+		}
+	}
+}
+
+$fira_code: 'Fira Code', monospace;
+$open_sans: 'Open Sans', sans-serif;
+$main_background-color: #0a0b1f;
+$secandary_background-color: #07081c;
+$white_text_color: #ffff;
+$dim_white_text_color: #8893b1;
+$secondary_text_color: #01e0c8;
+
+.contact {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	text-align: center;
+	padding: 5rem 0;
+
+	@media screen and (min-width: 1080px) {
+		margin: 5rem auto;
+	}
+
+	&__content {
+		max-width: 50rem;
+		margin: 0 auto;
+
+		h3 {
+			font-family: $fira_code;
+			font-weight: 700;
+			font-size: 1.2rem;
+			line-height: 2rem;
+			color: $dim_white_text_color;
+			margin-bottom: 1rem;
+
+			@include devices(tablet) {
+				font-size: 1.8rem;
+				line-height: 2.8rem;
+			}
+		}
+	}
+
+	&__button {
+		a {
+			font-size: 1rem;
+			padding: 0.5rem 2rem;
+			background-color: $main_background-color;
+			border: 2px solid $secondary_text_color;
+			cursor: pointer;
+			border-radius: 0.2rem;
+			transition: 0.3s ease-in-out;
+			font-weight: 500;
+			width: fit-content;
+			margin: 0 auto;
+
+			&:hover {
+				background-color: $secondary_text_color;
+				color: $main_background-color;
+			}
+
+			&:focus {
+				border: none;
+			}
+		}
 	}
 }

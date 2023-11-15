@@ -8,6 +8,7 @@ import '@/styles/main.scss';
 
 import Header from '@/components/header/header';
 import { ThemeProvider } from '@/providers/themeProvider';
+import Cursor from '@/components/cursor';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -32,6 +33,7 @@ export default function RootLayout({
 				/>
 				<ThemeProvider>
 					<Header />
+					<Cursor />
 					{children}
 				</ThemeProvider>
 			</body>

@@ -7,7 +7,7 @@ export const HEADER_LINKS = [
 	{
 		id: Math.random() * 100,
 		name: 'About me',
-		href: '/aboutme',
+		href: '#about',
 	},
 	{
 		id: Math.random() * 100,
