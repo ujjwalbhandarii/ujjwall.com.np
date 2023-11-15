@@ -19,7 +19,7 @@ $tomatoBold: 'Tomato Grotesk bold';
 
 .herosection {
 	padding: 2rem 0;
-	min-height: 90dvh;
+	min-height: 90vh;
 
 	@include devices(tablet) {
 		padding: 3rem 0;
@@ -373,13 +373,13 @@ $secondary_text_color: #01e0c8;
 			font-family: $fira_code;
 			font-weight: 700;
 			font-size: 1.2rem;
-			line-height: 2rem;
+			line-height: 1.8rem;
 			color: $dim_white_text_color;
 			margin-bottom: 1rem;
 
 			@include devices(tablet) {
-				font-size: 1.8rem;
-				line-height: 2.8rem;
+				font-size: 2rem;
+				line-height: 2.7rem;
 			}
 		}
 	}

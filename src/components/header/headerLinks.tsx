@@ -20,7 +20,7 @@ export default function HeaderLinks({ show, setShow }: HeaderPropsT) {
 						<li key={id}>
 							<Link
 								href={href}
-								className='header--link text-slate-900 dark:text-slate-100 hover:text-lightBlue hover:dark:text-lightGreenBlue'
+								className='header--link text-slate-100 dark:text-slate-100 hover:text-lightBlue hover:dark:text-lightGreenBlue'
 								onClick={() => setShow(!show)}
 							>
 								{name}

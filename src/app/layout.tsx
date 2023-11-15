@@ -24,7 +24,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={`${inter.className} dark:bg-backgroundColorDark`}>
+			<body
+				className={`${inter.className}  bg-backgroundColorDark dark:bg-backgroundColorDark`}
+			>
 				<NextTopLoader
 					easing='ease'
 					color='#01e0c8'

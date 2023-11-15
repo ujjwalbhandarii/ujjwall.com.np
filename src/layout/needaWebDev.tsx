@@ -17,7 +17,9 @@ export const NeedAWebDev = () => {
 						</h3>
 					</div>
 					<div className='contact__button'>
-						<Link href='#'>Get In Touch</Link>
+						<Link href='#' className='text-slate-100'>
+							Get In Touch
+						</Link>
 					</div>
 				</Container>
 			</section>
