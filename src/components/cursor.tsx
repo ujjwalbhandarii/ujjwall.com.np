@@ -1,48 +1,44 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-
-type MouseMoveProps = {
-	x: number;
-	y: number;
-};
+import { useEffect } from 'react';
+import { motion, useMotionValue, useSpring } from 'framer-motion';
 
 export default function Cursor() {
-	const [mousePosition, setMousePosition] = useState<MouseMoveProps>({
-		x: 0,
-		y: 0,
-	});
+	const cursorSize = 320;
+
+	const mouse = {
+		x: useMotionValue(0),
+		y: useMotionValue(0),
+	};
+
+	const smoothOptions = { damping: 20, stiffness: 300, mass: 0.5 };
+
+	const smoothMouse = {
+		x: useSpring(mouse.x, smoothOptions),
+		y: useSpring(mouse.y, smoothOptions),
+	};
 
 	useEffect(() => {
-		const mouseMoveEvent = (event: MouseEvent) => {
+		const manageMouseMove = (event: MouseEvent) => {
 			const { clientX, clientY } = event;
-
-			setMousePosition({
-				x: clientX,
-				y: clientY,
-			});
+			mouse.x.set(clientX - cursorSize / 2);
+			mouse.y.set(clientY - cursorSize / 2);
 		};
 
-		window.addEventListener('mousemove', mouseMoveEvent);
+		window.addEventListener('mousemove', manageMouseMove);
 
 		return () => {
-			window.removeEventListener('mousemove', mouseMoveEvent);
+			window.removeEventListener('mousemove', manageMouseMove);
 		};
 	}, []);
-
-	const varients = {
-		default: {
-			x: mousePosition.x - 160,
-			y: mousePosition.y - 160,
-		},
-	};
 
 	return (
 		<motion.div
 			className='cursordiv bg-blue-400 dark:bg-blue-900'
-			variants={varients}
-			animate='default'
+			style={{
+				top: smoothMouse.y,
+				left: smoothMouse.x,
+			}}
 		/>
 	);
 }
