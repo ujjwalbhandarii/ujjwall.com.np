@@ -506,20 +506,22 @@ $secondary_text_color: #01e0c8;
 		}
 	}
 
-	&__buttons {
+	&__infos {
 		display: flex;
 		align-items: center;
 		gap: 1rem;
+	}
 
-		span {
-			background-color: transparent;
-			border: 2px solid $secondary;
-			padding: 0.3rem 1rem;
-		}
+	&__stackgroup {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
 
 		p {
 			font-weight: 400;
 			font-size: 1rem;
+			color: rgba($color: $secondary, $alpha: 0.7);
+			font-weight: 500;
 		}
 	}
 
@@ -529,8 +531,9 @@ $secondary_text_color: #01e0c8;
 	}
 
 	hr {
-		background-color: rgba($color: $secondary, $alpha: 0.8);
 		height: 2px;
+		background-color: rgba($color: $secondary, $alpha: 0.8);
+		border: none;
 		margin-top: 2rem;
 		width: 80%;
 		margin-inline: auto;

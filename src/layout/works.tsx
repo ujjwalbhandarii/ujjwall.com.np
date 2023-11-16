@@ -18,8 +18,8 @@ export function Works() {
 								image,
 								alt,
 								description,
-								projectType,
-								releaseYear,
+								stackUsed,
+
 								websiteName,
 							}) => {
 								return (
@@ -29,8 +29,7 @@ export function Works() {
 										image={image}
 										alt={alt}
 										description={description}
-										projectType={projectType}
-										releaseYear={releaseYear}
+										stackUsed={stackUsed}
 										websiteName={websiteName}
 									/>
 								);
@@ -38,7 +37,7 @@ export function Works() {
 						)}
 					</div>
 
-					<Link href='#' className='works--link'>
+					<Link href='/projects' className='works--link'>
 						More Project 🚀
 					</Link>
 				</div>
@@ -52,8 +51,7 @@ const WorkCard = ({
 	image,
 	alt,
 	description,
-	projectType,
-	releaseYear,
+	stackUsed,
 	websiteName,
 }: any) => {
 	return (
@@ -72,9 +70,13 @@ const WorkCard = ({
 				</div>
 				<main className='workcard__main'>
 					<h5>{websiteName}</h5>
-					<div className='workcard__buttons'>
-						<span>{releaseYear}</span>
-						<p>{projectType}</p>
+					<div className='workcard__infos'>
+						<span>Tech Stack</span>
+						<div className='workcard__stackgroup'>
+							{stackUsed.map((item: any) => {
+								return <p key={item}>{item}</p>;
+							})}
+						</div>
 					</div>
 					<p className='workcard--description'>{description}</p>
 				</main>
