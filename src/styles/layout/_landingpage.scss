@@ -472,12 +472,22 @@ $secondary_text_color: #01e0c8;
 		}
 	}
 
+	&__imagediv {
+		figure {
+			height: 100%;
+			width: 100%;
+
+			display: flex;
+		}
+	}
+
 	&--img {
 		width: 100%;
 		max-height: 16rem;
 		object-fit: cover;
 		object-position: top;
 		aspect-ratio: 16/9;
+		margin: auto auto;
 	}
 
 	&__main {

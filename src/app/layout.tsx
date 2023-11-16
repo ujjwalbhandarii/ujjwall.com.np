@@ -24,6 +24,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
+			<head>
+				<meta name='theme-color' content='#0a0b1f' />
+			</head>
 			<body
 				className={`${inter.className}  bg-backgroundColorDark dark:bg-backgroundColorDark`}
 			>
