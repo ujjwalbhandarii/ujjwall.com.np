@@ -1,0 +1,12 @@
+@use '../abstracts/' as *;
+
+.footer {
+	text-align: center;
+	padding: 1.5rem 0;
+	background-color: #040516;
+
+	span {
+		font-size: 0.95rem;
+		font-family: $fira-code;
+	}
+}

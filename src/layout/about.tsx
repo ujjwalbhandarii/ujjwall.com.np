@@ -4,10 +4,12 @@ import Image from 'next/image';
 
 export function About() {
 	return (
-		<section className='about bg-[#07081c] dark:bg-[#07081c]' id='about'>
+		<section className='about bg-[#040516] dark:bg-[#040516]' id='about'>
 			<Container>
 				<div className='about__wrapper'>
-					<h5 className='about--heading text-slate-100'>About me</h5>
+					<h5 className='about--heading section--heading text-slate-100'>
+						About me
+					</h5>
 					<main className='about__main'>
 						<div className='about__content'>
 							<div
