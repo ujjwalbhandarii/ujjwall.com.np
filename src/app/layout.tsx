@@ -13,6 +13,7 @@ import { ThemeProvider } from '@/providers/themeProvider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+	metadataBase: new URL('http://ujjwall.com.np'),
 	title: 'Ujjwal Bhandari - Full Stack Web Developer',
 	description:
 		'A passionate Full Stack Web Developer hailing from Butwal, Nepal. Specializing in Next.js, Nest.js, Node.js, and leveraging technologies like Docker, Prisma, MongoDB, and Firebase to create robust and innovative web solutions. Dive into a showcase of skills and projects that define my commitment to excellence in web development.',
@@ -24,6 +25,15 @@ export const metadata: Metadata = {
 		siteName: 'Ujjwal Bhandari - Full Stack Web developer',
 		type: 'website',
 	},
+	twitter: {
+		site: '@ujjwalbhandarii',
+		creator: 'ujjwal bhandari',
+		title:
+			'Ujjwal Bhandari  Full Stack Web Developer  Next.js NestJs  Butwal Nepal',
+		description:
+			'A passionate Full Stack Web Developer hailing from Butwal, Nepal. Specializing in Next.js, Nest.js, Node.js, and leveraging technologies like Docker, Prisma, MongoDB, and Firebase to create robust and innovative web solutions. Dive into a showcase of skills and projects that define my commitment to excellence in web development.',
+	},
+
 	keywords: [
 		'ujjwal bhandari',
 		'ujjwall',

@@ -19,9 +19,9 @@ export function Herosection() {
 			<Container>
 				<div className='herosection__wrapper text-slate-100'>
 					<main className='herosection__info'>
-						<h3 className='herosection--h3 text-lightGreenBlue dark:text-lightGreenBlue '>
+						<span className='herosection--h3 text-lightGreenBlue dark:text-lightGreenBlue '>
 							Hi, my name is
-						</h3>
+						</span>
 						<strong>
 							<h1 className='herosection--h1'>Ujjwal Bhandari.</h1>
 						</strong>
@@ -48,26 +48,43 @@ export function Herosection() {
 					<div className='herosection__social'>
 						<h6 className='herosection--h6 '>Connect with me</h6>
 						<div className='herosection__sociallinks'>
-							<Link href='https://github.com/ujjwalbhandarii' target='_blank'>
+							<Link
+								aria-label='ujjwalbhandari github account'
+								href='https://github.com/ujjwalbhandarii'
+								target='_blank'
+							>
 								<BsGithub />
 							</Link>
 
-							<Link href='https://www.twitch.tv/ujjwalbhandari' target='_blank'>
+							<Link
+								aria-label='ujjwalbhandari twitch account'
+								href='https://www.twitch.tv/ujjwalbhandari'
+								target='_blank'
+							>
 								<BsTwitch />
 							</Link>
 
 							<Link
+								aria-label='ujjwalbhandari linkedin'
 								href='https://www.linkedin.com/in/ujjwalbhandarii/'
 								target='_blank'
 							>
 								<BsLinkedin />
 							</Link>
 
-							<Link href='https://www.facebook.com/ujjwalbhandariiii' target='_blank'>
+							<Link
+								aria-label='ujjwal facebook account'
+								href='https://www.facebook.com/ujjwalbhandariiii'
+								target='_blank'
+							>
 								<GrFacebook />
 							</Link>
 
-							<Link href='https://www.instagram.com/ujjwalbhandarri/' target='_blank'>
+							<Link
+								aria-label='ujjwal bhandari instagram account'
+								href='https://www.instagram.com/ujjwalbhandarri/'
+								target='_blank'
+							>
 								<GrInstagram />
 							</Link>
 						</div>
