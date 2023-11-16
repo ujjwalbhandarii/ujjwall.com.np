@@ -28,7 +28,7 @@ export function Works() {
 
 const WorkCard = () => {
 	return (
-		<div className='workcard'>
+		<Link href='#' className='workcard'>
 			<div className='workcard__wrapper'>
 				<div className='workcard__imagediv'>
 					<figure>
@@ -55,6 +55,6 @@ const WorkCard = () => {
 				</main>
 			</div>
 			<hr />
-		</div>
+		</Link>
 	);
 };

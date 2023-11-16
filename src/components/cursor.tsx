@@ -30,11 +30,11 @@ export default function Cursor() {
 		return () => {
 			window.removeEventListener('mousemove', manageMouseMove);
 		};
-	}, []);
+	}, [mouse.x, mouse.y]);
 
 	return (
 		<motion.div
-			className='cursordiv bg-blue-400 dark:bg-blue-900'
+			className='cursordiv bg-blue-900'
 			style={{
 				top: smoothMouse.y,
 				left: smoothMouse.x,
