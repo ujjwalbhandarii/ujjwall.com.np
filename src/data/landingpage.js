@@ -10,7 +10,7 @@ export const WORKS = [
 	{
 		id: 'lumbini-sandesh',
 		image: lumbiniSandesh,
-		alt: 'lumbinisandesh website created by ujjwal',
+		alt: 'lumbinisandesh website created by ujjwal bhandari',
 		websiteName: 'Lumbini Sandesh News Portal',
 		stackUsed: ['Next.js', 'scss'],
 		description:
@@ -19,16 +19,16 @@ export const WORKS = [
 	{
 		id: 'ujjwall-protfolio',
 		image: ujjwall,
-		alt: 'ujjwall protfolio website',
+		alt: 'ujjwal bhandari protfolio website',
 		websiteName: 'My Protfolio Website',
-		stackUsed: ['Next.js', 'scss', 'tailwind', 'shadcnui', 'framer-motion'],
+		stackUsed: ['Next.js', 'scss', 'tailwind', 'shadcn-ui', 'framer-motion'],
 		description:
 			'Step into the digital showcase of my skills and creativity. My portfolio website, meticulously crafted with cutting-edge technologies, is a testament to my passion for web development and design',
 	},
 	{
 		id: 'cpn-uml',
 		image: cpmUml,
-		alt: 'cpnuml website created by ujjwal',
+		alt: 'cpnuml website created by ujjwal bhandari',
 		websiteName: 'CPN UML Lumbini Offical Site',
 		stackUsed: ['Next.js', 'scss', 'bootstrap'],
 		description:

@@ -22,7 +22,9 @@ export function Herosection() {
 						<h3 className='herosection--h3 text-lightGreenBlue dark:text-lightGreenBlue '>
 							Hi, my name is
 						</h3>
-						<h1 className='herosection--h1'>Ujjwal Bhandari.</h1>
+						<strong>
+							<h1 className='herosection--h1'>Ujjwal Bhandari.</h1>
+						</strong>
 						<h5 className='herosection--h5 text-lightGray dark:text-lightGray'>
 							{exploring}
 						</h5>

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ujjwall.com.np
+
+# Sitemaps
+Sitemap: https://ujjwall.com.np/sitemap.xml
