@@ -1,9 +1,9 @@
-import Container from '@/utils/container';
-import Image from 'next/image';
 import Link from 'next/link';
-import { WORKS } from '@/data/landingpage';
+import Container from '@/utils/container';
+import { WORKS__PAGINATED } from '@/data/landingpage';
+import ProjectsCard from '@/components/projectsCard';
 
-export function Works() {
+export async function Works() {
 	return (
 		<section id='works' className='works'>
 			<Container>
@@ -12,25 +12,25 @@ export function Works() {
 						Featured Works
 					</h2>
 					<div className='works__main'>
-						{WORKS.map(
+						{WORKS__PAGINATED.map(
 							({
 								id,
-								image,
+								imageUrl,
 								alt,
 								description,
 								stackUsed,
-
 								websiteName,
+								liveLink,
 							}) => {
 								return (
-									<WorkCard
+									<ProjectsCard
 										key={id}
-										id={id}
-										image={image}
+										imageUrl={imageUrl}
 										alt={alt}
 										description={description}
 										stackUsed={stackUsed}
 										websiteName={websiteName}
+										liveLink={liveLink}
 									/>
 								);
 							},
@@ -38,50 +38,10 @@ export function Works() {
 					</div>
 
 					<Link href='/projects' className='works--link'>
-						More Project 🚀
+						All Project 🚀
 					</Link>
 				</div>
 			</Container>
 		</section>
 	);
 }
-
-const WorkCard = ({
-	id,
-	image,
-	alt,
-	description,
-	stackUsed,
-	websiteName,
-}: any) => {
-	return (
-		<Link href={`/projects/${id}`} className='workcard'>
-			<div className='workcard__wrapper'>
-				<div className='workcard__imagediv'>
-					<figure>
-						<Image
-							src={image}
-							alt={alt}
-							height={300}
-							width={300}
-							className='workcard--img'
-						/>
-					</figure>
-				</div>
-				<main className='workcard__main'>
-					<p>{websiteName}</p>
-					<div className='workcard__infos'>
-						<span>Tech Stack</span>
-						<div className='workcard__stackgroup'>
-							{stackUsed.map((item: any) => {
-								return <p key={item}>{item}</p>;
-							})}
-						</div>
-					</div>
-					<p className='workcard--description'>{description}</p>
-				</main>
-			</div>
-			<hr />
-		</Link>
-	);
-};

@@ -3,12 +3,17 @@
 body {
 	overflow-x: hidden;
 
-	cursor: url('bestCursor.png'), auto;
+	cursor: url('/bestCursor.png'), auto;
 
 	::selection {
 		color: #ffffff;
 		background-color: #760276;
 	}
+}
+
+a:hover,
+button:hover {
+	cursor: url('/hover-white.png'), auto;
 }
 
 html {

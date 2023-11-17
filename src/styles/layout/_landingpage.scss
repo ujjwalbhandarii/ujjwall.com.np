@@ -457,7 +457,7 @@ $secondary_text_color: #01e0c8;
 	transition: 0.3s ease;
 
 	&:hover {
-		background-color: rgba($color: #040516, $alpha: 0.4);
+		background-color: rgba($color: #040516, $alpha: 1);
 	}
 
 	&__wrapper {
@@ -528,6 +528,20 @@ $secondary_text_color: #01e0c8;
 	&--description {
 		font-size: 0.95rem;
 		color: #8893b1;
+	}
+
+	&--a {
+		background-color: transparent;
+		border: 1px solid $secondary;
+		width: fit-content;
+		padding: 0.3rem 1rem;
+		font-size: 0.9rem;
+		transition: 0.3s ease;
+
+		&:hover {
+			background-color: $secondary;
+			color: $secandary_background-color;
+		}
 	}
 
 	hr {

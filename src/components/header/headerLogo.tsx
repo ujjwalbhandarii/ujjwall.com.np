@@ -7,10 +7,10 @@ export default function HeaderLogo() {
 			<figure className='header__image'>
 				<Image
 					className='header__image--img'
-					src='/navlogo.webp'
+					src='/navlogo.png'
 					alt='logo'
-					height={40}
-					width={40}
+					height={25}
+					width={25}
 					priority
 				/>
 			</figure>

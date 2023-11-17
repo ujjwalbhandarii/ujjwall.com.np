@@ -7,7 +7,6 @@ export default function Home() {
 			<About />
 			<Works />
 			<NeedAWebDev />
-			<Footer />
 		</>
 	);
 }

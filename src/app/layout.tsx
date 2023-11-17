@@ -9,6 +9,7 @@ import '@/styles/global.css';
 import Cursor from '@/components/cursor';
 import Header from '@/components/header/header';
 import { ThemeProvider } from '@/providers/themeProvider';
+import { Footer } from '@/layout';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -75,6 +76,7 @@ export default function RootLayout({
 					<Header />
 					<Cursor />
 					{children}
+					<Footer />
 				</ThemeProvider>
 			</body>
 		</html>

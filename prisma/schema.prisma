@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Project {
+  id          String      @id @default(auto()) @map("_id") @db.ObjectId
+  imageUrl    String
+  altText     String
+  projectName String
+  description String
+  liveLink    String?
+  stackItems  StackItem[]
+
+  @@map("project")
+}
+
+model StackItem {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  stackItem String
+  Project   Project? @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  projectId String?  @db.ObjectId
+
+  @@map("stackItem")
+}
