@@ -8,9 +8,9 @@ export function Works() {
 		<section id='works' className='works'>
 			<Container>
 				<div className='works__wrapper'>
-					<h5 className='works--heading section--heading text-slate-100'>
+					<h2 className='works--heading section--heading text-slate-100'>
 						Featured Works
-					</h5>
+					</h2>
 					<div className='works__main'>
 						{WORKS.map(
 							({
@@ -69,7 +69,7 @@ const WorkCard = ({
 					</figure>
 				</div>
 				<main className='workcard__main'>
-					<h5>{websiteName}</h5>
+					<p>{websiteName}</p>
 					<div className='workcard__infos'>
 						<span>Tech Stack</span>
 						<div className='workcard__stackgroup'>

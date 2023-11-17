@@ -14,24 +14,24 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	metadataBase: new URL('http://ujjwall.com.np'),
-	title: 'Ujjwal Bhandari - Full Stack Web Developer',
+	title:
+		'Ujjwal Bhandari - Full Stack Web Developer | Next.js | NestJs | Butwal, Nepal',
 	description:
-		'A passionate Full Stack Web Developer hailing from Butwal, Nepal. Specializing in Next.js, Nest.js, Node.js, and leveraging technologies like Docker, Prisma, MongoDB, and Firebase to create robust and innovative web solutions. Dive into a showcase of skills and projects that define my commitment to excellence in web development.',
+		'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. Specializing in Next.js, Nest.js, Node.js, and leveraging technologies like Docker, Prisma, MongoDB, and Firebase to create robust and innovative web solutions. Dive into a showcase of skills and projects that define my commitment to excellence in web development.',
 	openGraph: {
 		title:
 			'Ujjwal Bhandari - Full Stack Web Developer | Next.js | NestJs | Butwal, Nepal',
 		description:
-			'A passionate Full Stack Web Developer hailing from Butwal, Nepal. Specializing in Next.js, Nest.js, Node.js, and leveraging technologies like Docker, Prisma, MongoDB, and Firebase to create robust and innovative web solutions. Dive into a showcase of skills and projects that define my commitment to excellence in web development.',
-		siteName: 'Ujjwal Bhandari - Full Stack Web developer',
+			'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. Specializing in Next.js, Nest.js, Node.js, and leveraging technologies like Docker, Prisma, MongoDB, and Firebase to create robust and innovative web solutions. Dive into a showcase of skills and projects that define my commitment to excellence in web development.',
 		type: 'website',
 	},
 	twitter: {
 		site: '@ujjwalbhandarii',
 		creator: 'ujjwal bhandari',
 		title:
-			'Ujjwal Bhandari  Full Stack Web Developer  Next.js NestJs  Butwal Nepal',
+			'Ujjwal Bhandari - Full Stack Web Developer | Next.js | NestJs | Butwal, Nepal',
 		description:
-			'A passionate Full Stack Web Developer hailing from Butwal, Nepal. Specializing in Next.js, Nest.js, Node.js, and leveraging technologies like Docker, Prisma, MongoDB, and Firebase to create robust and innovative web solutions. Dive into a showcase of skills and projects that define my commitment to excellence in web development.',
+			'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. Specializing in Next.js, Nest.js, Node.js, and leveraging technologies like Docker, Prisma, MongoDB, and Firebase to create robust and innovative web solutions. Dive into a showcase of skills and projects that define my commitment to excellence in web development.',
 	},
 
 	keywords: [
@@ -50,7 +50,8 @@ export const metadata: Metadata = {
 	viewport: {
 		width: 'device-width',
 		initialScale: 1,
-		maximumScale: 1,
+		maximumScale: 6,
+		userScalable: true,
 	},
 };
 

@@ -25,9 +25,9 @@ export function Herosection() {
 						<strong>
 							<h1 className='herosection--h1'>Ujjwal Bhandari.</h1>
 						</strong>
-						<h5 className='herosection--h5 text-lightGray dark:text-lightGray'>
+						<span className='herosection--h5 text-lightGray dark:text-lightGray'>
 							{exploring}
-						</h5>
+						</span>
 					</main>
 
 					<main className='herosection__more'>
@@ -46,7 +46,7 @@ export function Herosection() {
 					</main>
 
 					<div className='herosection__social'>
-						<h6 className='herosection--h6 '>Connect with me</h6>
+						<span className='herosection--h6 '>Connect with me</span>
 						<div className='herosection__sociallinks'>
 							<Link
 								aria-label='ujjwalbhandari github account'

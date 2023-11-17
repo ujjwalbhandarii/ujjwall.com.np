@@ -8,13 +8,13 @@ export const NeedAWebDev = () => {
 			<section className='contact' id='contact'>
 				<Container>
 					<div className='contact__content'>
-						<h6>
+						<p>
 							{CONTACT.first}
 							<br />
 							{CONTACT.second}
 							<br />
 							{CONTACT.third}
-						</h6>
+						</p>
 					</div>
 					<div className='contact__button'>
 						<Link href='/contact' className='text-slate-100'>
@@ -29,10 +29,6 @@ export const NeedAWebDev = () => {
 
 const CONTACT = {
 	first: 'NEED A',
-
 	second: 'WEB DEVELOPER?',
-
 	third: "LET'S BUILD SOMETHING.",
-
-	button: 'Get in Touch',
 };

@@ -7,9 +7,9 @@ export function About() {
 		<section className='about bg-[#040516] dark:bg-[#040516]' id='about'>
 			<Container>
 				<div className='about__wrapper'>
-					<h5 className='about--heading section--heading text-slate-100'>
+					<h2 className='about--heading section--heading text-slate-100'>
 						About me
-					</h5>
+					</h2>
 					<main className='about__main'>
 						<div className='about__content'>
 							<div
