@@ -75,6 +75,8 @@
 			font-size: clamp(0.9rem, 0.2rem + 1.5vw, 1rem);
 			font-weight: 400;
 			text-align: center;
+			opacity: 0.9;
+
 			// color: #e3e4e7;
 			// font-family: $fira-code;
 			// letter-spacing: 1px;
@@ -89,7 +91,7 @@
 
 			a {
 				display: inline-block;
-				margin: 0 0.3rem;
+				margin: 0 0.5rem;
 				font-weight: 700;
 				color: $secondary;
 			}

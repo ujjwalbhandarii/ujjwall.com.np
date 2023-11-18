@@ -7,7 +7,7 @@ import BottomAside from '@/components/bottomAside';
 import { BsGithub } from 'react-icons/bs';
 import { BsTwitch } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
-import { GrFacebook } from 'react-icons/gr';
+import { BsFacebook } from 'react-icons/bs';
 import { GrInstagram } from 'react-icons/gr';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 
@@ -30,7 +30,7 @@ export function Herosection() {
 										height={10}
 									/>
 								</figure>
-								<span>Available for small to large sized projects.</span>
+								<span>Available for work & collaboration.</span>
 							</div>
 							<p className='herosection__more--paragraph'>
 								A Full Stack Web Developer 🚀 with over a year of hands-on experience in
@@ -82,7 +82,7 @@ export function Herosection() {
 								href='https://www.facebook.com/ujjwalbhandariiii'
 								target='_blank'
 							>
-								<GrFacebook />
+								<BsFacebook />
 							</Link>
 
 							<Link
