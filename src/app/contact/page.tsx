@@ -1,6 +1,7 @@
 import Container from '@/utils/container';
+import ContactForm from './contactForm';
 
-export default function ContactForm() {
+export default function ContactFormPage() {
 	return (
 		<section className='contactpage'>
 			<Container>
