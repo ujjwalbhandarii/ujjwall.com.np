@@ -1,3 +1,5 @@
+'use client'
+
 import { Input } from '@/shadcn/ui/input';
 import { Textarea } from '@/shadcn/ui/textarea';
 
