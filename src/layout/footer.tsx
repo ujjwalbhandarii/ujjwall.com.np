@@ -5,7 +5,10 @@ export function Footer() {
 		<footer className='footer'>
 			<Container>
 				<div className='footer__wrapper'>
-					&copy; <span>Copyright 2023 − Ujjwal</span>
+					&copy;{' '}
+					<span>
+						Copyright 2023 − <strong> Ujjwal </strong>
+					</span>
 				</div>
 			</Container>
 		</footer>

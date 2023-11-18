@@ -10,9 +10,5 @@
 	span {
 		font-size: 0.8rem;
 		font-family: $fira-code;
-
-		@include devices(tablet) {
-			font-size: 0.95rem;
-		}
 	}
 }
