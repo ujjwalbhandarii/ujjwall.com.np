@@ -41,7 +41,7 @@ export function Herosection() {
 							<p className='herosection__more--paragraph'>
 								I&apos;m Currently building
 								<a href='#' target='__blank'>
-									Nepwounders.
+									Nepwonders.
 								</a>
 							</p>
 						</div>
