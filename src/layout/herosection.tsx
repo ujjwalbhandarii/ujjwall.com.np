@@ -1,8 +1,8 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 import Container from '@/utils/container';
 import BottomAside from '@/components/bottomAside';
-import { HEROSECTION_DATA } from '@/data/landingpage';
 
 import { BsGithub } from 'react-icons/bs';
 import { BsTwitch } from 'react-icons/bs';
@@ -12,41 +12,46 @@ import { GrInstagram } from 'react-icons/gr';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 
 export function Herosection() {
-	const { exploring } = HEROSECTION_DATA;
-
 	return (
 		<section className='herosection'>
 			<Container>
 				<div className='herosection__wrapper text-slate-100'>
 					<main className='herosection__info'>
-						<span className='herosection--h3 text-lightGreenBlue dark:text-lightGreenBlue '>
-							Hi, my name is
-						</span>
 						<strong>
 							<h1 className='herosection--h1'>Ujjwal Bhandari.</h1>
 						</strong>
-						<span className='herosection--h5 text-lightGray dark:text-lightGray'>
-							{exploring}
-						</span>
-					</main>
+						<div className='herosection__more'>
+							<div className='herosection__more__inside'>
+								<figure>
+									<Image
+										src='/online.png'
+										alt='ujjwaal bhandari is online for small to medium sized projects.'
+										width={10}
+										height={10}
+									/>
+								</figure>
+								<span>Available for small to large sized projects.</span>
+							</div>
+							<p className='herosection__more--paragraph'>
+								A Full Stack Web Developer 🚀 with over a year of hands-on experience in
+								Next.js, Nest.js, React, Prisma, PostgreSQL, and MongoDB. I excel in
+								crafting dynamic applications and navigating the software development
+								life cycle.
+							</p>
+							<p className='herosection__more--paragraph'>
+								I&apos;m Currently building
+								<a href='#' target='__blank'>
+									Nepwounders.
+								</a>
+							</p>
+						</div>
 
-					<main className='herosection__more'>
-						<p className='text-lightGray dark:text-lightGray'>
-							I’m a{' '}
-							<span className='text-lightGreenBlue dark:text-lightGreenBlue'>
-								Full Stack Web Developer.
-							</span>
-						</p>
-						<p className='herosection__more--workingat text-darkGray dark:text-lightGray'>
-							Currently working at
-							<span className='text-lightGreenBlue dark:text-lightGreenBlue'>
-								Butwal Web Pvt Ltd.
-							</span>
-						</p>
+						<Link href='/contact' className='herosection--link'>
+							Say hello
+						</Link>
 					</main>
 
 					<div className='herosection__social'>
-						<span className='herosection--h6 '>Connect with me</span>
 						<div className='herosection__sociallinks'>
 							<Link
 								aria-label='ujjwalbhandari github account'

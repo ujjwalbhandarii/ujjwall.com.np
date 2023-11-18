@@ -1,5 +1,7 @@
 $fira-code: 'Fira Code regular', monospace;
 $tomatoBold: 'Tomato Grotesk bold';
+$tomatoSemiBoldSlanted: 'Tomato Grotesk SemiBoldSlanted';
+$tomatolightSlanted: 'Tomato Grotesk lightSlanted';
 
 h1,
 h2,
@@ -20,6 +22,14 @@ h5 {
 @font-face {
 	font-family: 'Tomato Grotesk SemiBoldSlanted';
 	src: url('/Tomato_Grotesk/TomatoGrotesk-SemiBoldSlanted.otf');
+	font-style: medium;
+	font-weight: bold;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Tomato Grotesk lightSlanted';
+	src: url('/Tomato_Grotesk/TomatoGrotesk-LightSlanted.otf');
 	font-style: medium;
 	font-weight: bold;
 	font-display: swap;

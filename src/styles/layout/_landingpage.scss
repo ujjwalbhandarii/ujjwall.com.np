@@ -15,11 +15,14 @@
 }
 
 .herosection {
-	padding: 2rem 0;
+	padding: 3rem 0;
 
 	@include devices(tablet) {
-		// min-height: 90vh;
-		padding: 3rem 0;
+		padding: 5rem 0;
+	}
+
+	@include devices(uptomobile) {
+		min-height: 70vh;
 	}
 
 	&__wrapper {
@@ -38,57 +41,57 @@
 		text-align: center;
 	}
 
-	&--h3 {
-		font-size: clamp(0.95rem, 0.5rem + 2.2vw, 1.15rem);
-		font-family: $fira-code;
-		// color: $secondary;
-	}
-
 	&--h1 {
 		font-size: clamp(2rem, 1rem + 2.2vw, 7rem);
-		font-family: 'Tomato Grotesk bold';
+		font-family: $tomatoBold;
 		letter-spacing: 2px;
-	}
-
-	&--h5 {
-		font-size: clamp(1.4rem, 0.8rem + 2.2vw, 5rem);
-		letter-spacing: 2px;
-		font-family: 'Tomato Grotesk bold';
-
-		display: inline-block;
-
-		@include devices(headerbreakpoint) {
-			letter-spacing: 4px;
-			line-height: 60px;
-		}
-
-		&:hover {
-			text-decoration: underline;
-			text-underline-offset: 8px;
-		}
+		margin-bottom: 1.5rem;
 	}
 
 	&__more {
 		display: flex;
-		gap: 0.3rem;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
+		margin-bottom: 2rem;
+		gap: 0.5rem;
 
-		p {
-			font-size: clamp(0.85rem, 0.2rem + 2.2vw, 1.05rem);
+		&__inside {
+			display: flex;
+			gap: 0.5rem;
+			align-items: center;
+			justify-content: center;
+		}
+
+		span {
+			font-size: clamp(0.7rem, 0.2rem + 1vw, 0.8rem);
 			font-weight: 400;
+			color: $light-gray;
 			letter-spacing: 1px;
+		}
 
-			@include devices(uptotablet) {
-				display: flex;
-				align-items: center;
-				justify-content: center;
+		&--paragraph {
+			margin-inline: auto;
+			font-size: clamp(0.9rem, 0.2rem + 1.5vw, 1rem);
+			font-weight: 400;
+			text-align: center;
+			// color: #e3e4e7;
+			// font-family: $fira-code;
+			// letter-spacing: 1px;
+
+			@include devices(tablet) {
+				max-width: 30rem;
 			}
 
-			span {
-				margin-left: 0.3rem;
-				font-family: $fira-code;
-				letter-spacing: 0;
+			@include devices(headerbreakpoint) {
+				max-width: 45rem;
+			}
+
+			a {
+				display: inline-block;
+				margin: 0 0.3rem;
+				font-weight: 700;
+				color: $secondary;
 			}
 		}
 
@@ -97,6 +100,20 @@
 				display: flex;
 				flex-direction: column;
 			}
+		}
+	}
+
+	&--link {
+		background-color: transparent;
+		border: 1px solid $secondary;
+		display: inline-block;
+		padding: 0.4rem 3rem;
+		font-size: clamp(0.9rem, 0.2rem + 1.5vw, 1rem);
+		transition: 0.3s ease;
+
+		&:hover {
+			background-color: $secondary;
+			color: black;
 		}
 	}
 
@@ -458,6 +475,10 @@ $secondary_text_color: #01e0c8;
 
 	&:hover {
 		background-color: rgba($color: #040516, $alpha: 1);
+
+		hr {
+			width: 100%;
+		}
 	}
 
 	&__wrapper {
@@ -551,5 +572,6 @@ $secondary_text_color: #01e0c8;
 		margin-top: 2rem;
 		width: 80%;
 		margin-inline: auto;
+		transition: 0.5s ease-out;
 	}
 }

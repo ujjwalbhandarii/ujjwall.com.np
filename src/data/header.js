@@ -4,16 +4,6 @@ export const HEADER_LINKS = [
 		name: 'Home',
 		href: '/',
 	},
-	// {
-	// 	id: Math.random() * 100,
-	// 	name: 'About me',
-	// 	href: '#about',
-	// },
-	// {
-	// 	id: Math.random() * 100,
-	// 	name: 'Works',
-	// 	href: '#works',
-	// },
 	{
 		id: Math.random() * 100,
 		name: 'Contact',

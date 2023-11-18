@@ -8,7 +8,7 @@ export function About() {
 			<Container>
 				<div className='about__wrapper'>
 					<h2 className='about--heading section--heading text-slate-100'>
-						About me
+						About Me
 					</h2>
 					<main className='about__main'>
 						<div className='about__content'>
