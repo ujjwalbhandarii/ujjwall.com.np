@@ -4,7 +4,7 @@ import FAQs from '@/components/faq';
 
 export default function ContactFormPage() {
 	return (
-		<section className='contactpage'>
+		<section className='contactpage text-slate-50'>
 			<Container>
 				<div className='contactpage__wrapper'>
 					<div className='contactpage__heading'>

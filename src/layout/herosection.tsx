@@ -10,13 +10,12 @@ import { BsLinkedin } from 'react-icons/bs';
 import { BsFacebook } from 'react-icons/bs';
 import { GrInstagram } from 'react-icons/gr';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
-import { Label } from '@/shadcn/ui/label';
 
 export function Herosection() {
 	return (
-		<section className='herosection'>
+		<section className='herosection text-slate-50'>
 			<Container>
-				<div className='herosection__wrapper text-slate-100'>
+				<div className='herosection__wrapper'>
 					<main className='herosection__info'>
 						<strong>
 							<h1 className='herosection--h1'>Ujjwal Bhandari.</h1>
@@ -34,10 +33,10 @@ export function Herosection() {
 								<span>Available for work & collaboration.</span>
 							</div>
 							<p className='herosection__more--paragraph'>
-								I&apos;m Full Stack Web Developer 🚀 with over a year of hands-on
-								experience in Next.js, Nest.js, React, Prisma, PostgreSQL, and MongoDB.
-								I excel in crafting dynamic applications and navigating the software
-								development life cycle.
+								I&apos;m a Full Stack Web Developer 🚀 and a freelancer with over a year
+								of hands-on experience in Next.js, Nest.js, React, Prisma, PostgreSQL,
+								and MongoDB. I excel in crafting dynamic applications and navigating the
+								software development life cycle.
 							</p>
 							<p className='herosection__more--paragraph'>
 								I&apos;m Currently building

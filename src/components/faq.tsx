@@ -10,7 +10,7 @@ export default function FAQs() {
 		{
 			id: Math.random() * 2000 + ' faq ',
 			question: 'Is <strong>ujjwal</strong> open for work or colloboration?',
-			answer: "Yes, I'm open for work.",
+			answer: "Yes, I'm open.",
 		},
 		{
 			id: Math.random() * 2000 + ' faq ',

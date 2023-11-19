@@ -77,17 +77,13 @@
 			text-align: center;
 			opacity: 0.9;
 
-			// color: #e3e4e7;
-			// font-family: $fira-code;
-			// letter-spacing: 1px;
-
 			@include devices(tablet) {
 				max-width: 30rem;
 				letter-spacing: 1px;
 			}
 
 			@include devices(headerbreakpoint) {
-				max-width: 45rem;
+				max-width: 50rem;
 			}
 
 			a {

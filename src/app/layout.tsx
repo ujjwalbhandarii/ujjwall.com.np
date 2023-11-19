@@ -8,7 +8,6 @@ import '@/styles/global.css';
 
 import Cursor from '@/components/cursor';
 import Header from '@/components/header/header';
-import { ThemeProvider } from '@/providers/themeProvider';
 import { Footer } from '@/layout';
 import { Toaster } from 'react-hot-toast';
 
@@ -64,22 +63,18 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body
-				className={`${inter.className}  bg-backgroundColorDark dark:bg-backgroundColorDark`}
-			>
+			<body className={`${inter.className} bg-backgroundColorDark`}>
 				<NextTopLoader
 					easing='ease'
 					color='#01e0c8'
 					crawl={true}
 					showSpinner={true}
 				/>
-				<ThemeProvider>
-					<Toaster />
-					<Header />
-					<Cursor />
-					{children}
-					<Footer />
-				</ThemeProvider>
+				<Toaster />
+				<Header />
+				<Cursor />
+				{children}
+				<Footer />
 			</body>
 		</html>
 	);
