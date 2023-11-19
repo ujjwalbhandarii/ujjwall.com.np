@@ -10,6 +10,7 @@ import Cursor from '@/components/cursor';
 import Header from '@/components/header/header';
 import { ThemeProvider } from '@/providers/themeProvider';
 import { Footer } from '@/layout';
+import { Toaster } from 'react-hot-toast';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -73,6 +74,7 @@ export default function RootLayout({
 					showSpinner={true}
 				/>
 				<ThemeProvider>
+					<Toaster />
 					<Header />
 					<Cursor />
 					{children}

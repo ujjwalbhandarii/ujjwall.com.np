@@ -2,7 +2,7 @@
 
 import { useForm } from 'react-hook-form';
 import { useRouter } from 'next/navigation';
-import { Toaster, toast } from 'react-hot-toast';
+import { toast } from 'react-hot-toast';
 
 import { Input } from '@/shadcn/ui/input';
 import { Textarea } from '@/shadcn/ui/textarea';
@@ -36,7 +36,8 @@ export default function ContactForm() {
 			});
 			if (response.ok) {
 				reset();
-				toast.success('your message has been sended!');
+				toast.success('The message has been submitted!');
+				await new Promise((resolve) => setTimeout(resolve, 3000));
 				router.push('/');
 			}
 		} catch (error) {
@@ -46,7 +47,6 @@ export default function ContactForm() {
 
 	return (
 		<form className='contactpage__form' onSubmit={handleSubmit(onSubmit)}>
-			<Toaster />
 			<div className='flex flex-col gap-4 md:flex-row'>
 				<div className='grid w-full  items-center gap-1.5'>
 					<Label htmlFor='name'>Your name</Label>
