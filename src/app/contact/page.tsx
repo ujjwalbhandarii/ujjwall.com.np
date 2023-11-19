@@ -1,5 +1,6 @@
 import Container from '@/utils/container';
-import ContactForm from './contactForm';
+import ContactForm from '@/components/contactForm';
+import FAQs from '@/components/faq';
 
 export default function ContactFormPage() {
 	return (
@@ -8,16 +9,19 @@ export default function ContactFormPage() {
 				<div className='contactpage__wrapper'>
 					<div className='contactpage__heading'>
 						<h2 className='contactpage--heading'>Let&apos;s have a chat🙌.</h2>
-						<h2 className='contactpage--heading'>fill the form.</h2>
+
+						<p>
+							Get in touch with me to discuss your project or any development
+							inquiries. I&apos;m here to bring your ideas to life and provide tailored
+							solutions for your website needs. Whether you have questions, want a
+							quote, or just want to say hello, I&apos;m ready to connect!
+						</p>
 					</div>
 
 					<div className='contactpage__main'>
 						<ContactForm />
 						<div className='contactpage__info'>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-								repellendus.
-							</p>
+							<FAQs />
 						</div>
 					</div>
 				</div>

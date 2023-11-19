@@ -1,3 +1,7 @@
 @forward './abstracts';
 @forward './components';
 @forward './layout';
+
+.darkmode {
+	background-color: green;
+}

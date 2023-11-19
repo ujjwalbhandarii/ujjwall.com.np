@@ -10,6 +10,7 @@ import { BsLinkedin } from 'react-icons/bs';
 import { BsFacebook } from 'react-icons/bs';
 import { GrInstagram } from 'react-icons/gr';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
+import { Label } from '@/shadcn/ui/label';
 
 export function Herosection() {
 	return (
@@ -33,10 +34,10 @@ export function Herosection() {
 								<span>Available for work & collaboration.</span>
 							</div>
 							<p className='herosection__more--paragraph'>
-								A Full Stack Web Developer 🚀 with over a year of hands-on experience in
-								Next.js, Nest.js, React, Prisma, PostgreSQL, and MongoDB. I excel in
-								crafting dynamic applications and navigating the software development
-								life cycle.
+								I&apos;m Full Stack Web Developer 🚀 with over a year of hands-on
+								experience in Next.js, Nest.js, React, Prisma, PostgreSQL, and MongoDB.
+								I excel in crafting dynamic applications and navigating the software
+								development life cycle.
 							</p>
 							<p className='herosection__more--paragraph'>
 								I&apos;m Currently building

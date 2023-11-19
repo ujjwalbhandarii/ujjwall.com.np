@@ -83,6 +83,7 @@
 
 			@include devices(tablet) {
 				max-width: 30rem;
+				letter-spacing: 1px;
 			}
 
 			@include devices(headerbreakpoint) {
