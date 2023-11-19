@@ -37,6 +37,16 @@ export const WORKS = [
 		description:
 			'The official website of the CPN UML Lumbini Provience. This platform is a testament to the commitment to transparency, communication, and engagement with the people of Lumbini. Explore the UML Party website to stay connected with the heartbeat of Lumbini Province political landscape. Engage with the party, understand our vision, and be a part of the democratic process that shapes the future of the province.',
 	},
+	{
+		id: 'anushka-blog',
+		imageUrl: '/works/anushka.png',
+		alt: 'anushka blog website created by ujjwal bhandari',
+		websiteName: 'FullStack blog website for my friend',
+		liveLink: 'https://anushkaa.vercel.app/',
+		stackUsed: ['Next.js', 'scss', 'tailwind', 'Auth.js'],
+		description:
+			'I had the pleasure of creating a dynamic and personalized blog website for my friend Anushka, leveraging the power of Next.js, SCSS, and Auth.js. The site, built with Server-Side Rendering (SSR), not only boasts a visually stunning design but also ensures a seamless and secure user experience. Through the thoughtful integration of Next.js, the website achieves optimal performance and interactivity, while SCSS adds a touch of elegance to the user interface. The implementation of Auth.js guarantees a secure authentication process, enhancing user privacy.',
+	},
 ];
 
 export const WORKS__PAGINATED = WORKS.slice(0, 3);

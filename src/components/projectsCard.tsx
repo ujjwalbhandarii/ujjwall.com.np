@@ -27,9 +27,10 @@ export default function ProjectsCard({
 						<Image
 							src={imageUrl}
 							alt={alt}
-							height={300}
-							width={300}
+							height={600}
+							width={600}
 							className='workcard--img'
+							quality={100}
 						/>
 					</figure>
 				</div>
