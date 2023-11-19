@@ -17,7 +17,7 @@ export const NeedAWebDev = () => {
 						</p>
 					</div>
 					<div className='contact__button'>
-						<Link href='/contact' className='text-slate-100'>
+						<Link href='/contact' className='text-slate-50'>
 							Get In Touch
 						</Link>
 					</div>

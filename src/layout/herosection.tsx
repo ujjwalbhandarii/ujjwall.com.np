@@ -39,7 +39,7 @@ export function Herosection() {
 								software development life cycle.
 							</p>
 							<p className='herosection__more--paragraph'>
-								I&apos;m Currently building
+								I&apos;m currently building
 								<a href='#' target='__blank'>
 									Nepwonders.
 								</a>
@@ -47,7 +47,7 @@ export function Herosection() {
 						</div>
 
 						<Link href='/contact' className='herosection--link'>
-							Say hello
+							Say Hello!
 						</Link>
 					</main>
 

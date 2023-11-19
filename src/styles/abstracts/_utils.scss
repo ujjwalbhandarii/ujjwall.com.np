@@ -47,6 +47,7 @@
 	text-decoration: underline;
 	text-underline-offset: 7px;
 	text-decoration-color: $secondary;
+	color: $white;
 
 	@include devices(tablet) {
 		font-size: 1.7rem;

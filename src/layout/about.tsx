@@ -4,16 +4,14 @@ import Image from 'next/image';
 
 export function About() {
 	return (
-		<section className='about bg-[#040516] dark:bg-[#040516]' id='about'>
+		<section className='about' id='about'>
 			<Container>
 				<div className='about__wrapper'>
-					<h2 className='about--heading section--heading text-slate-100'>
-						About Me
-					</h2>
+					<h2 className='about--heading section--heading'>About Me</h2>
 					<main className='about__main'>
 						<div className='about__content'>
 							<div
-								className='about__content__group text-lightGray dark:text-lightGray'
+								className='about__content__group'
 								dangerouslySetInnerHTML={{ __html: data }}
 							/>
 						</div>
@@ -28,8 +26,8 @@ export function About() {
 									priority
 									className='about--image'
 								/>
-								<div className='about__image-outlinefilled hover1 bg-lightGreenBlue dark:bg-lightGreenBlue'></div>
-								<div className='about__image-outlineshade hover2 border-lightGreenBlue dark:border-lightGreenBlue'></div>
+								<div className='about__image-outlinefilled hover1'></div>
+								<div className='about__image-outlineshade hover2'></div>
 							</figure>
 						</div>
 					</main>

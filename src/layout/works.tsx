@@ -8,9 +8,7 @@ export async function Works() {
 		<section id='works' className='works'>
 			<Container>
 				<div className='works__wrapper'>
-					<h2 className='works--heading section--heading text-slate-100'>
-						Featured Works
-					</h2>
+					<h2 className='works--heading section--heading'>Featured Works</h2>
 					<div className='works__main'>
 						{WORKS__PAGINATED.map(
 							({

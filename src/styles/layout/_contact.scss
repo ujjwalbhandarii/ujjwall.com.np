@@ -12,6 +12,7 @@
 	&__heading {
 		margin-bottom: 2rem;
 		text-align: center;
+		color: $white;
 
 		@include devices(tablet) {
 			margin-bottom: 5rem;
@@ -19,6 +20,7 @@
 
 		p {
 			margin: 0 auto;
+			opacity: 0.9;
 
 			@include devices(tablet) {
 				max-width: 30rem;
@@ -50,7 +52,7 @@
 
 		@include devices(tablet) {
 			gap: 3rem;
-			grid-template-columns: 2fr 1fr;
+			grid-template-columns: 2fr 1.2fr;
 		}
 	}
 
@@ -59,12 +61,17 @@
 		flex-direction: column;
 		gap: 1rem;
 
+		label {
+			color: $white;
+		}
+
 		&--btn {
 			background-color: transparent;
 			border: 2px solid $secondary;
 			padding: 0.6rem 2rem;
 			margin: 1rem 0;
 			transition: 0.3s ease;
+			color: $white;
 
 			&:hover {
 				background-color: $secondary;
@@ -72,23 +79,11 @@
 			}
 		}
 	}
-
-	&__info {
-		// display: none;
-		// justify-content: center;
-		// text-align: center;
-
-		// @include devices(tablet) {
-		// 	display: flex;
-		// }
-		// background-color: green;
-	}
 }
 
 .faqs {
-	// background-color: green;
 	width: 100%;
-	// text-align: center;
+	color: $white;
 
 	@include devices(tablet) {
 		padding: 0 2rem;
