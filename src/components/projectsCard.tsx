@@ -1,6 +1,5 @@
-import Link from 'next/link';
 import Image from 'next/image';
-import { Button } from '@/shadcn/ui/button';
+import { TbArrowUpRight } from 'react-icons/tb';
 
 type Props = {
 	imageUrl: any;
@@ -35,7 +34,7 @@ export default function ProjectsCard({
 					</figure>
 				</div>
 				<main className='workcard__main'>
-					<p>{websiteName}</p>
+					<p className='workcard__main--heading'>{websiteName}</p>
 					<div className='workcard__infos'>
 						<span>Tech Stack</span>
 						<div className='workcard__stackgroup'>
@@ -51,7 +50,8 @@ export default function ProjectsCard({
 						aria-label={alt}
 						className='workcard--a'
 					>
-						Live link
+						website
+						<TbArrowUpRight />
 					</a>
 				</main>
 			</div>

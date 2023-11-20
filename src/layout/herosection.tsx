@@ -40,7 +40,10 @@ export function Herosection() {
 							</p>
 							<p className='herosection__more--paragraph'>
 								I&apos;m currently building
-								<a href='#' target='__blank'>
+								<a
+									href='https://nepwonders.com/'
+									aria-label='my current on going project redirect'
+								>
 									Nepwonders.
 								</a>
 							</p>

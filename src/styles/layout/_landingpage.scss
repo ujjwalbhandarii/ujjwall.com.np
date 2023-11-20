@@ -521,13 +521,12 @@ $secondary_text_color: #01e0c8;
 		padding: 1rem;
 		display: flex;
 		flex-direction: column;
-		// align-items: center;
 		justify-content: center;
 
-		gap: 1.2rem;
+		gap: 1rem;
 
-		h3 {
-			font-size: 1.2rem;
+		&--heading {
+			font-size: 1rem;
 			font-weight: 600;
 		}
 	}
@@ -535,7 +534,18 @@ $secondary_text_color: #01e0c8;
 	&__infos {
 		display: flex;
 		align-items: center;
-		gap: 1rem;
+		align-items: flex-start;
+		gap: 0.5rem;
+
+		span {
+			width: fit-content;
+			min-width: 5rem;
+		}
+
+		p,
+		span {
+			font-size: 0.85rem;
+		}
 	}
 
 	&__stackgroup {
@@ -544,29 +554,39 @@ $secondary_text_color: #01e0c8;
 		gap: 0.5rem;
 
 		p {
-			font-weight: 400;
-			font-size: 1rem;
 			color: rgba($color: $secondary, $alpha: 0.7);
 			font-weight: 500;
 		}
 	}
 
 	&--description {
-		font-size: 0.95rem;
+		font-size: 0.9rem;
 		color: #8893b1;
 	}
 
 	&--a {
+		display: flex;
+		gap: 0.2rem;
+		align-items: center;
 		background-color: transparent;
 		border: 1px solid $secondary;
 		width: fit-content;
 		padding: 0.3rem 1rem;
 		font-size: 0.9rem;
 		transition: 0.3s ease;
+		font-weight: 500;
+
+		svg {
+			transition: 0.1s ease;
+		}
 
 		&:hover {
+			color: $bg-color-darker;
 			background-color: $secondary;
-			color: $secandary_background-color;
+
+			svg {
+				scale: 1.5;
+			}
 		}
 	}
 
