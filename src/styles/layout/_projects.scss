@@ -8,6 +8,19 @@
 	&__heading {
 		margin-bottom: 3rem;
 		text-align: center;
+
+		p {
+			margin: 0 auto;
+			opacity: 0.9;
+
+			@include devices(tablet) {
+				max-width: 30rem;
+			}
+
+			@include devices(headerbreakpoint) {
+				max-width: 50rem;
+			}
+		}
 	}
 
 	&--heading {

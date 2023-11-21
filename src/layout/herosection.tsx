@@ -42,6 +42,7 @@ export function Herosection() {
 								I&apos;m currently building
 								<a
 									href='https://nepwonders.com/'
+									target='_blank'
 									aria-label='my current on going project redirect'
 								>
 									Nepwonders.
