@@ -73,7 +73,7 @@ export default function RootLayout({
 				<Toaster />
 				<Header />
 				<Cursor />
-				{children}
+				<main>{children}</main>
 				<Footer />
 			</body>
 		</html>
