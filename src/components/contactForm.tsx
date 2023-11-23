@@ -53,7 +53,10 @@ export default function ContactForm() {
 					<Input
 						placeholder='John Doe..'
 						className='bg-transparent'
-						{...register('name')}
+						{...(register('name'),
+						{
+							required: true,
+						})}
 					/>
 				</div>
 
@@ -62,8 +65,11 @@ export default function ContactForm() {
 					<Input
 						placeholder='johndoe@example.com..'
 						className='bg-transparent'
-						type='email'
-						{...register('email')}
+						{...(register('email'),
+						{
+							required: true,
+							type: 'email',
+						})}
 					/>
 				</div>
 			</div>
@@ -73,7 +79,10 @@ export default function ContactForm() {
 				<Input
 					placeholder='Looking for a freelancer..'
 					className='bg-transparent'
-					{...register('subject')}
+					{...(register('subject'),
+					{
+						required: true,
+					})}
 				/>
 			</div>
 
@@ -83,7 +92,10 @@ export default function ContactForm() {
 					rows={12}
 					placeholder='I saw your profile and I think you will be a perfect candidate for my project..'
 					className='bg-transparent resize-none'
-					{...register('message')}
+					{...(register('message'),
+					{
+						required: true,
+					})}
 				/>
 			</div>
 

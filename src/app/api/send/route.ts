@@ -8,6 +8,10 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(request: Request) {
 	const { name, email, subject, message } = await request.json();
 
+	if (!name || !email || !subject || !message) {
+		return NextResponse.json({ message: 'Input field error' });
+	}
+
 	try {
 		await resend.emails.send({
 			from: `${name} sends a message! <onboarding@resend.dev>`,
