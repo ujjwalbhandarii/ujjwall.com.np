@@ -16,7 +16,7 @@ export function Herosection() {
 		<section className='herosection text-slate-50'>
 			<Container>
 				<div className='herosection__wrapper'>
-					<main className='herosection__info'>
+					<div className='herosection__info'>
 						<strong>
 							<h1 className='herosection--h1'>Ujjwal Bhandari.</h1>
 						</strong>
@@ -53,7 +53,7 @@ export function Herosection() {
 						<Link href='/contact' className='herosection--link'>
 							Say Hello!
 						</Link>
-					</main>
+					</div>
 
 					<div className='herosection__social'>
 						<div className='herosection__sociallinks'>

@@ -1,6 +1,14 @@
 import Container from '@/utils/container';
 import ContactForm from '@/components/contactForm';
 import FAQs from '@/components/faq';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+	metadataBase: new URL('http://www.ujjwall.com.np/contact'),
+	title: 'Ujjwal Bhandari - contact',
+	description:
+		'Get in touch with Ujjwal to discuss your project or any development inquiries.',
+};
 
 export default function ContactFormPage() {
 	return (
