@@ -9,12 +9,12 @@ export function About() {
 				<div className='about__wrapper'>
 					<h2 className='about--heading section--heading'>About Me</h2>
 					<main className='about__main'>
-						<div className='about__content'>
+						<article className='about__content'>
 							<div
 								className='about__content__group'
 								dangerouslySetInnerHTML={{ __html: data }}
 							/>
-						</div>
+						</article>
 						<div className='about__image'>
 							<figure className='about--figure'>
 								<Image
