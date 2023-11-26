@@ -1,4 +1,4 @@
-import { Herosection, About, NeedAWebDev, Works, Footer } from '@/layout';
+import { Herosection, About, NeedAWebDev, Works } from '@/layout';
 
 export default function Home() {
 	return (

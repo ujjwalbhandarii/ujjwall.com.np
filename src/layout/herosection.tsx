@@ -25,19 +25,21 @@ export function Herosection() {
 								<figure>
 									<Image
 										src='/online.png'
-										alt='ujjwaal bhandari is online for small to medium sized projects.'
+										alt='ujjwal bhandari is online for small to medium sized projects.'
 										width={10}
 										height={10}
 									/>
 								</figure>
 								<span>Available for work & collaboration.</span>
 							</div>
-							<p className='herosection__more--paragraph'>
-								I&apos;m a Full Stack Web Developer 🚀 and a freelancer with over a year
-								of hands-on experience in Next.js, Nest.js, React, Prisma, PostgreSQL,
-								and MongoDB. I excel in crafting dynamic applications and navigating the
-								software development life cycle.
-							</p>
+							<article>
+								<p className='herosection__more--paragraph'>
+									I&apos;m a Full Stack Web Developer 🚀 and a freelancer with over a
+									year of hands-on experience in Next.js, Nest.js, React, Prisma,
+									PostgreSQL, and MongoDB. I excel in crafting dynamic applications and
+									navigating the software development life cycle.
+								</p>
+							</article>
 							<p className='herosection__more--paragraph'>
 								I&apos;m currently building
 								<a
