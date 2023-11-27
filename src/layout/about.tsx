@@ -1,6 +1,7 @@
-import Container from '@/utils/container';
-
 import Image from 'next/image';
+
+import Container from '@/utils/container';
+import { ABOUT_ME } from '@/data/landingpage';
 
 export function About() {
 	return (
@@ -9,10 +10,10 @@ export function About() {
 				<div className='about__wrapper'>
 					<h2 className='about--heading section--heading'>About Me</h2>
 					<main className='about__main'>
-						<article className='about__content'>
+						<article>
 							<div
 								className='about__content__group'
-								dangerouslySetInnerHTML={{ __html: data }}
+								dangerouslySetInnerHTML={{ __html: ABOUT_ME }}
 							/>
 						</article>
 						<div className='about__image'>
@@ -36,6 +37,3 @@ export function About() {
 		</section>
 	);
 }
-
-const data =
-	"<p>Greetings! I'm <strong>Ujjwal</strong>, a passionate CS Student &amp; a full stack web developer. My journey into the dynamic world of web development began in 2020, sparked by my early experiences with WordPress. Since then, I've been immersed in the exciting realm of creating digital wonders that come to life on the internet.</p><p>Beyond my academic pursuits, I am actively engaged as a Secretary at <strong>Code for Change</strong> Butwal, a volunteer organization dedicated to empowering IT enthusiasts by facilitating learning opportunities in cutting-edge technologies.</p><p>Let's build something extraordinary together!</p>";

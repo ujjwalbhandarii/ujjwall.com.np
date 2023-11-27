@@ -14,6 +14,7 @@ export default function HeaderLogo() {
 					priority
 				/>
 			</figure>
+			<h2 hidden>ujjwal bhandari</h2>
 		</Link>
 	);
 }
