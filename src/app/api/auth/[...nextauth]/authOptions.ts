@@ -17,38 +17,38 @@ export const authOptions: NextAuthOptions = {
 	adapter: PrismaAdapter(prisma),
 
 	providers: [
-		// CredientialProvider({
-		// 	name: 'credentials',
-		// 	credentials: {
-		// 		email: { label: 'email', type: 'text' },
-		// 		password: { label: 'Password', type: 'password' },
-		// 	},
-		// 	async authorize(credentials) {
-		// 		if (!credentials?.email || !credentials?.password) {
-		// 			return null;
-		// 		}
-		// 		await connectToDb();
-		// 		const existingUser: User | null = await prisma.user.findFirst({
-		// 			where: { email: credentials.email },
-		// 		});
-		// 		if (!existingUser) {
-		// 			return null;
-		// 		}
-		// 		if (existingUser.password) {
-		// 			const passwordMatch = await bcrypt.compare(
-		// 				credentials?.password,
-		// 				existingUser?.password,
-		// 			);
-		// 			if (!passwordMatch) {
-		// 				return null;
-		// 			}
-		// 			delete existingUser.password;
-		// 			return existingUser;
-		// 		} else {
-		// 			return null;
-		// 		}
-		// 	},
-		// }),
+		CredientialProvider({
+			name: 'credentials',
+			credentials: {
+				email: { label: 'email', type: 'text' },
+				password: { label: 'Password', type: 'password' },
+			},
+			async authorize(credentials) {
+				if (!credentials?.email || !credentials?.password) {
+					return null;
+				}
+				await connectToDb();
+				const existingUser: User | null = await prisma.user.findFirst({
+					where: { email: credentials.email },
+				});
+				if (!existingUser) {
+					return null;
+				}
+				if (existingUser.password) {
+					const passwordMatch = await bcrypt.compare(
+						credentials?.password,
+						existingUser?.password,
+					);
+					if (!passwordMatch) {
+						return null;
+					}
+					delete existingUser.password;
+					return existingUser;
+				} else {
+					return null;
+				}
+			},
+		}),
 	],
 
 	session: {
