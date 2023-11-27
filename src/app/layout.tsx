@@ -1,15 +1,16 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
-import NextTopLoader from 'nextjs-toploader';
+import { Footer } from '@/layout';
+import Cursor from '@/components/cursor';
+import Header from '@/components/header/header';
 
 import '@/styles/main.scss';
 import '@/styles/global.css';
 
-import Cursor from '@/components/cursor';
-import Header from '@/components/header/header';
-import { Footer } from '@/layout';
 import { Toaster } from 'react-hot-toast';
+import NextTopLoader from 'nextjs-toploader';
+import AuthProvider from '@/providers/authProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,7 +19,6 @@ export const metadata: Metadata = {
 	title: 'Ujjwal Bhandari',
 	description:
 		'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. Specializing in Next.js, Nest.js & Node.js.',
-	// robots: 'index, archive',
 	openGraph: {
 		title: 'Ujjwal Bhandari - Full Stack Web Developer',
 		description:
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 		description:
 			'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. Specializing in Next.js, Nest.js, & Node.js.',
 	},
-
+	// robots: 'index, archive',
 	keywords: [
 		'ujjwal bhandari',
 		'ujjwall',
@@ -68,17 +68,19 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={`${inter.className} bg-backgroundColorDark`}>
-				<NextTopLoader
-					easing='ease'
-					color='#01e0c8'
-					crawl={true}
-					showSpinner={true}
-				/>
-				<Toaster />
-				<Header />
-				<Cursor />
-				<main>{children}</main>
-				<Footer />
+				<AuthProvider>
+					<NextTopLoader
+						easing='ease'
+						color='#01e0c8'
+						crawl={true}
+						showSpinner={true}
+					/>
+					<Toaster />
+					<Header />
+					<Cursor />
+					<main>{children}</main>
+					<Footer />
+				</AuthProvider>
 			</body>
 		</html>
 	);

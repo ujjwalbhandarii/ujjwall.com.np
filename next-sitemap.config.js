@@ -13,5 +13,7 @@ module.exports = {
 		'/public/hover-white.png',
 		'/public/navlogo.png',
 		'/public/online.png',
+		'/dashboard',
+		'/signup',
 	],
 };
