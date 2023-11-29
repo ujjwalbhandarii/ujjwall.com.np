@@ -6,6 +6,9 @@ export const HEROSECTION_DATA = {
 	exploring: '{ Exploring the world of 0s & 1s. }',
 };
 
+export const ABOUT_ME =
+	"<p>Greetings! I'm <strong>Ujjwal</strong>, a passionate CS Student &amp; a full stack web developer. My journey into the dynamic world of web development began in 2020, sparked by my early experiences with WordPress. Since then, I've been immersed in the exciting realm of creating digital wonders that come to life on the internet.</p><p>Beyond my academic pursuits, I am actively engaged as a Secretary at <strong>Code for Change</strong> Butwal, a volunteer organization dedicated to empowering IT enthusiasts by facilitating learning opportunities in cutting-edge technologies.</p><p>Let's build something extraordinary together!</p>";
+
 export const WORKS = [
 	{
 		id: 'lumbini-sandesh',

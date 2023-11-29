@@ -24,6 +24,8 @@ export function Herosection() {
 										alt='ujjwal bhandari is online for small to medium sized projects.'
 										width={10}
 										height={10}
+										title='Ujjwal Bhandari, is online for small to medium sized projects.'
+										loading='eager'
 									/>
 								</figure>
 								<span>Available for work & collaboration.</span>

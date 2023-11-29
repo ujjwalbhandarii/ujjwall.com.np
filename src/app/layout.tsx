@@ -1,24 +1,24 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
-import { Footer } from '@/layout';
-import Cursor from '@/components/cursor';
-import Header from '@/components/header/header';
+import { Toaster } from 'react-hot-toast';
+import NextTopLoader from 'nextjs-toploader';
 
 import '@/styles/main.scss';
 import '@/styles/global.css';
 
-import { Toaster } from 'react-hot-toast';
-import NextTopLoader from 'nextjs-toploader';
-import AuthProvider from '@/providers/authProvider';
+import { Footer } from '@/layout';
+import Cursor from '@/components/cursor';
+import Header from '@/components/header/header';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	metadataBase: new URL('http://www.ujjwall.com.np'),
-	title: 'Ujjwal Bhandari',
+	title: 'Ujjwal Bhandari - Full Stack Web Developer',
 	description:
 		'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. Specializing in Next.js, Nest.js & Node.js.',
+	robots: 'index, archive',
 	openGraph: {
 		title: 'Ujjwal Bhandari - Full Stack Web Developer',
 		description:
@@ -31,31 +31,29 @@ export const metadata: Metadata = {
 		description:
 			'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. Specializing in Next.js, Nest.js, & Node.js.',
 	},
-	// robots: 'index, archive',
+
 	keywords: [
-		'ujjwal bhandari',
-		'ujjwall',
-		'ujjwalbhandarii',
-		'bhandari',
-		'ujjwall.com.np',
-		'web developer',
-		'butwal web developer',
-		'butwal startup',
-		'ujjwalbhandari.com.np',
-		'ujjwal freelancer',
-		'ujjwal',
-		'bhandari',
 		'ujwal',
 		'ujju',
-		'ujjwal from nepal',
+		'ujjwal',
+		'ujjwall',
+		'bhandari',
+		'bhandari',
+		'web developer',
+		'butwal startup',
+		'ujjwall.com.np',
+		'ujjwal bhandari',
+		'ujjwalbhandarii',
 		'ujjwal cs student',
+		'ujjwal from nepal',
+		'ujjwal freelancer',
 		'developer in nepal',
+		'butwal web developer',
+		'ujjwalbhandari.com.np',
 	],
 	themeColor: '#0a0b1f',
 	viewport: {
 		width: 'device-width',
-		// initialScale: 1,
-		// maximumScale: 6,
 		userScalable: true,
 	},
 };
@@ -68,19 +66,19 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={`${inter.className} bg-backgroundColorDark`}>
-				<AuthProvider>
-					<NextTopLoader
-						easing='ease'
-						color='#01e0c8'
-						crawl={true}
-						showSpinner={true}
-					/>
-					<Toaster />
+				<div className='page'>
 					<Header />
-					<Cursor />
 					<main>{children}</main>
 					<Footer />
-				</AuthProvider>
+				</div>
+				<Cursor />
+				<Toaster />
+				<NextTopLoader
+					easing='ease'
+					color='#01e0c8'
+					crawl={true}
+					showSpinner={true}
+				/>
 			</body>
 		</html>
 	);

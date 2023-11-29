@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-// import Container from '@/utils/container';
+import Container from '@/utils/container';
 import BottomAside from '@/components/bottomAside';
 import { About, NeedAWebDev, Works } from '@/layout';
 import HeroSocials from '@/components/herosection/heroSocials';
@@ -12,7 +12,7 @@ export default function Home() {
 	return (
 		<>
 			<section className='herosection text-slate-50'>
-				<div className='container'>
+				<Container>
 					<div className='herosection__wrapper'>
 						<div className='herosection__info'>
 							<strong>
@@ -24,8 +24,10 @@ export default function Home() {
 										<Image
 											src='/online.png'
 											alt='ujjwal bhandari is online for small to medium sized projects.'
+											title='Ujjwal Bhandari, is online for small to medium sized projects.'
 											width={10}
 											height={10}
+											loading='eager'
 										/>
 									</figure>
 									<span>Available for work & collaboration.</span>
@@ -61,7 +63,7 @@ export default function Home() {
 					<div className='relative'>
 						<BottomAside />
 					</div>
-				</div>
+				</Container>
 			</section>
 			<About />
 			<Works />
