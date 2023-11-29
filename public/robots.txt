@@ -4,6 +4,3 @@ Allow: /
 
 # Host
 Host: https://www.ujjwall.com.np
-
-# Sitemaps
-Sitemap: https://www.ujjwall.com.np/sitemap.xml

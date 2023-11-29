@@ -6,7 +6,7 @@
 		"dev": "next dev",
 		"build": "next build",
 		"sitemap": "next-sitemap",
-		"postbuild": "npx prisma generate",
+		"prebuild": "npx prisma generate",
 		"start": "next start",
 		"lint": "next lint"
 	},

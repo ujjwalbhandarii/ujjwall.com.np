@@ -7,23 +7,37 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model User {
+  id       String  @id @default(auto()) @map("_id") @db.ObjectId
+  name     String
+  email    String  @unique
+  password String
+  imageUrl String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
 model Project {
   id          String      @id @default(auto()) @map("_id") @db.ObjectId
   imageUrl    String
   altText     String
   projectName String
+  textExpert  String
   description String
   liveLink    String?
-  stackItems  StackItem[]
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  techstack   TechStack[]
 
-  @@map("project")
+  @@map("projects")
 }
 
-model StackItem {
+model TechStack {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  stackItem String
-  Project   Project? @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  techUsed  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Project   Project? @relation(fields: [projectId], references: [id])
   projectId String?  @db.ObjectId
-
-  @@map("stackItem")
 }
