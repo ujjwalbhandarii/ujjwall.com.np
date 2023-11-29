@@ -15,6 +15,7 @@ export default function HeaderLogo() {
 					loading='eager'
 				/>
 			</figure>
+			<h2 hidden>ujjwal bhandari</h2>
 		</Link>
 	);
 }

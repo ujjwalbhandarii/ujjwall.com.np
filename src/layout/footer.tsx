@@ -7,7 +7,7 @@ export function Footer() {
 				<div className='footer__wrapper'>
 					&copy;{' '}
 					<span>
-						Copyright 2023 − <strong> Ujjwal </strong>
+						Copyright 2023 − <strong> Ujjwal Bhandari </strong>
 					</span>
 				</div>
 			</Container>

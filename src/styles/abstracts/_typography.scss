@@ -1,7 +1,4 @@
-$fira-code: 'Fira Code regular', monospace;
 $tomatoBold: 'Tomato Grotesk bold';
-$tomatoSemiBoldSlanted: 'Tomato Grotesk SemiBoldSlanted';
-$tomatolightSlanted: 'Tomato Grotesk lightSlanted';
 
 h1,
 h2,
@@ -12,56 +9,8 @@ h5 {
 }
 
 @font-face {
-	font-family: 'Tomato Grotesk regular';
-	src: url('/Tomato_Grotesk/TomatoGrotesk-Regular.otf');
-	font-style: medium;
-	font-weight: bold;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Tomato Grotesk SemiBoldSlanted';
-	src: url('/Tomato_Grotesk/TomatoGrotesk-SemiBoldSlanted.otf');
-	font-style: medium;
-	font-weight: bold;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Tomato Grotesk lightSlanted';
-	src: url('/Tomato_Grotesk/TomatoGrotesk-LightSlanted.otf');
-	font-style: medium;
-	font-weight: bold;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Tomato Grotesk semibold';
-	src: url('/Tomato_Grotesk/TomatoGrotesk-SemiBold.otf');
-	font-style: medium;
-	font-weight: bold;
-	font-display: swap;
-}
-
-@font-face {
 	font-family: 'Tomato Grotesk bold';
 	src: url('/Tomato_Grotesk/TomatoGrotesk-Bold.otf');
-	font-style: medium;
-	font-weight: bold;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Fira Code bold';
-	src: url('/FiraCode/FiraCode-VariableFont_wght.ttf');
-	font-style: medium;
-	font-weight: bold;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Fira Code regular';
-	src: url('/FiraCode/static/FiraCode-Regular.ttf');
 	font-style: medium;
 	font-weight: bold;
 	font-display: swap;
