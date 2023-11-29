@@ -11,7 +11,8 @@ export default function HeaderLogo() {
 					alt='logo'
 					height={25}
 					width={25}
-					priority
+					title='Ujjwal Bhandari website navbar logo.'
+					loading='eager'
 				/>
 			</figure>
 		</Link>

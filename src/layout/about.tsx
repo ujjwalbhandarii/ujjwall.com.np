@@ -23,8 +23,9 @@ export function About() {
 									quality={100}
 									width={400}
 									height={500}
-									priority
 									className='about--image'
+									title='Ujjwal Bhandari, Self-portrait.'
+									loading='lazy'
 								/>
 								<div className='about__image-outlinefilled hover1'></div>
 								<div className='about__image-outlineshade hover2'></div>

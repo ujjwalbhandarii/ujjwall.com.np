@@ -24,8 +24,10 @@ export default function Home() {
 										<Image
 											src='/online.png'
 											alt='ujjwal bhandari is online for small to medium sized projects.'
+											title='Ujjwal Bhandari, is online for small to medium sized projects.'
 											width={10}
 											height={10}
+											loading='eager'
 										/>
 									</figure>
 									<span>Available for work & collaboration.</span>

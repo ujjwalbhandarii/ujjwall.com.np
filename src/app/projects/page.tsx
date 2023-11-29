@@ -18,13 +18,15 @@ export default function page() {
 				<div className='projects__wrapper'>
 					<div className='projects__heading'>
 						<h2 className='projects--heading section--heading'>All projects</h2>
-						<p>
-							I'm a solo Web developer specializing in Next.js, NestJS, React, SCSS,
-							Framer Motion, and Docker. Explore projects where seamless React
-							interfaces meet robust NestJS servers, styled with SCSS, animated with
-							Framer Motion, and containerized with Docker. Let's connect and turn your
-							ideas into extraordinary online experiences!
-						</p>
+						<article>
+							<p>
+								<strong>Ujjwal</strong> is a solo Web developer specializing in Next.js,
+								NestJS, React, SCSS, Framer Motion, and Docker. Explore projects where
+								seamless React interfaces meet robust NestJS servers, styled with SCSS,
+								animated with Framer Motion, and containerized with Docker. Let's
+								connect and turn your ideas into extraordinary online experiences!
+							</p>
+						</article>
 					</div>
 					<main className='projects__main'>
 						{WORKS.map(

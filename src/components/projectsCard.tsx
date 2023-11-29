@@ -30,6 +30,8 @@ export default function ProjectsCard({
 							width={600}
 							className='workcard--img'
 							quality={100}
+							title={`Ujjwal Bhandari, project ${websiteName}`}
+							loading='lazy'
 						/>
 					</figure>
 				</div>
