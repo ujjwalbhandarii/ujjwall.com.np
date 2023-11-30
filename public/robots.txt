@@ -4,3 +4,6 @@ Allow: /
 
 # Host
 Host: https://www.ujjwalbhandarii.com.np
+
+# Sitemaps
+Sitemap: https://www.ujjwalbhandarii.com.np/sitemap.xml
