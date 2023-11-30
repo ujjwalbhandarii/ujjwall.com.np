@@ -5,7 +5,7 @@ import { WORKS } from '@/data/landingpage';
 import ProjectsCard from '@/components/projectsCard';
 
 export const metadata: Metadata = {
-	metadataBase: new URL('http://www.ujjwall.com.np/projects'),
+	metadataBase: new URL('http://www.ujjwalbhandarii.com.np/projects'),
 	title: 'Ujjwal Bhandari - projects🚀',
 	description:
 		'Ujjwal Bhandari a solo Web developer specializing in Next.js, NestJS, React, SCSS, Framer Motion, and Docker. Explore projects where seamless React interfaces meet robust NestJS servers, styled with SCSS, animated with Framer Motion, and containerized with Docker. Lets connect and turn your ideas into extraordinary online experiences!',

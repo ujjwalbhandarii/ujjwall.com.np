@@ -1,13 +1,17 @@
 import Container from '@/utils/container';
-import React from 'react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+	metadataBase: new URL('http://www.ujjwalbhandarii.com.np/ujjwal-bhandari'),
+	title: 'Ujjwal Bhandari - about me',
+	description:
+		'Get in touch with Ujjwal to discuss your project or any development inquiries.',
+};
 
 export default function UjjwalBhandariPage() {
 	return (
 		<section>
 			<Container>
-				{/* <strong>
-					<h1>Ujjwal Bhandari</h1>
-				</strong> */}
 				<div className='flex items-center justify-center flex-col max-w-2xl m-auto mt-10'>
 					Greetings! Im
 					<strong>

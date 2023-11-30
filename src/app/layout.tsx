@@ -14,12 +14,16 @@ import Header from '@/components/header/header';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	metadataBase: new URL('http://www.ujjwall.com.np'),
+	metadataBase: new URL('http://www.ujjwalbhandarii.com.np'),
 	title: 'Ujjwal Bhandari - Full Stack Web Developer',
 	description:
 		'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. Specializing in Next.js, Nest.js & Node.js.',
 	robots: 'index, archive',
 	openGraph: {
+		url: 'http://www.ujjwalbhandarii.com.np',
+		images: [
+			'https://res.cloudinary.com/ujjwalbhandari/image/upload/v1701354184/ujjwalbhandarii.com.np/opengraph_a6fuqi.jpg',
+		],
 		title: 'Ujjwal Bhandari - Full Stack Web Developer',
 		description:
 			'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. Specializing in Next.js, Nest.js & Node.js.',

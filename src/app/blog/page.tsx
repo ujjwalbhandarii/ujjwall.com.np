@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import React from 'react';
 
 export const metadata: Metadata = {
-	metadataBase: new URL('http://www.ujjwall.com.np/blog'),
+	metadataBase: new URL('http://www.ujjwalbhandarii.com.np/blog'),
 	title: 'Ujjwal Bhandari - blogs',
 	description:
 		'Ujjwal Bhandari blogs, where shares his daily learning and life improvements.',
