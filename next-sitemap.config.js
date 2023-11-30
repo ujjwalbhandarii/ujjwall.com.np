@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-	siteUrl: process.env.WEBSITE_URL || 'https://www.ujjwall.com.np',
+	siteUrl: process.env.WEBSITE_URL || 'https://www.ujjwalbhandarii.com.np',
 
 	generateRobotsTxt: true,
 	generateIndexSitemap: false,
