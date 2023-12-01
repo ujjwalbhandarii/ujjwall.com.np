@@ -3,10 +3,13 @@ import { Metadata } from 'next';
 import React from 'react';
 
 export const metadata: Metadata = {
-	metadataBase: new URL('http://www.ujjwalbhandarii.com.np/blog'),
+	metadataBase: new URL('https://www.ujjwalbhandarii.com.np/blog'),
 	title: 'Ujjwal Bhandari - blogs',
 	description:
 		'Ujjwal Bhandari blogs, where shares his daily learning and life improvements.',
+	alternates: {
+		canonical: 'https://www.ujjwalbhandarii.com.np/blog',
+	},
 };
 
 export default function Blogs() {

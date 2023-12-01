@@ -3,10 +3,13 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-	metadataBase: new URL('http://www.ujjwalbhandarii.com.np/ujjwal-bhandari'),
+	metadataBase: new URL('https://www.ujjwalbhandarii.com.np/ujjwal-bhandari'),
 	title: 'Ujjwal Bhandari - about me',
 	description:
 		'Get in touch with Ujjwal to discuss your project or any development inquiries.',
+	alternates: {
+		canonical: 'https://www.ujjwalbhandarii.com.np/ujjwal-bhandari',
+	},
 };
 
 export default function UjjwalBhandariPage() {

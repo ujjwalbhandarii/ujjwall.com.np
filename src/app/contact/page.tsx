@@ -4,10 +4,13 @@ import FAQs from '@/components/faq';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	metadataBase: new URL('http://www.ujjwalbhandarii.com.np/contact'),
+	metadataBase: new URL('https://www.ujjwalbhandarii.com.np/contact'),
 	title: 'Ujjwal Bhandari - contact',
 	description:
 		'Get in touch with Ujjwal to discuss your project or any development inquiries.',
+	alternates: {
+		canonical: 'https://www.ujjwalbhandarii.com.np/contact',
+	},
 };
 
 export default function ContactFormPage() {
