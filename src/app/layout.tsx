@@ -89,6 +89,12 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
+			<head>
+				<meta
+					name='google-site-verification'
+					content='2ydghVUQrcFLZ3__AjBT7Zf4eNhd0Xh9XUx2ionqVpM'
+				/>
+			</head>
 			<body className={`${inter.className} bg-backgroundColorDark`}>
 				<div className='page'>
 					<Header />
