@@ -14,7 +14,6 @@ import Header from '@/components/header/header';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	metadataBase: new URL('https://www.ujjwalbhandarii.com.np'),
 	title: 'Ujjwal Bhandari - Full Stack Web Developer',
 	description:
 		'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. Specializing in Next.js, Nest.js & Node.js.',
@@ -57,6 +56,24 @@ export const metadata: Metadata = {
 		'developer in nepal',
 		'butwal web developer',
 		'ujjwalbhandari.com.np',
+		'ujjwal tara school',
+		'ujjwal in nepali ',
+		'ujjwal chaurasia',
+		'ujjwal sisu niketan academy',
+		'ujjwal thapa',
+		'ujjwal nigam',
+		'ujjwal gamer',
+		'ujjwal shrestha',
+		'ujjwal tara school photos',
+		'ujjwal bikram thapa',
+		'ujjwal bhattarai',
+		'ujjwal basnet',
+		'ujjwal bank',
+		'ujjwal bhavishya',
+		'ujjwal bhai',
+		'ujjwal bank share price',
+		'ujjwal bhandari singer',
+		'ujjwal singh bhandari',
 	],
 	themeColor: '#0a0b1f',
 	viewport: {

@@ -3,10 +3,9 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-	metadataBase: new URL('https://www.ujjwalbhandarii.com.np/ujjwal-bhandari'),
-	title: 'Ujjwal Bhandari - about me',
+	title: 'Ujjwal Bhandari - Aboutme',
 	description:
-		'Get in touch with Ujjwal to discuss your project or any development inquiries.',
+		'Ujjwal Bhandari is a fullstack web developer hailing from Butwal, Nepal.',
 	alternates: {
 		canonical: 'https://www.ujjwalbhandarii.com.np/ujjwal-bhandari',
 	},
@@ -36,6 +35,15 @@ export default function UjjwalBhandariPage() {
 
 					<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>
 						<Image
+							src='https://res.cloudinary.com/ujjwalbhandari/image/upload/v1701366368/ujjwalbhandarii.com.np/ujjwal%20images/githubfieldday_owjpre.jpg'
+							alt='Ujjwal Bhandari image'
+							width={400}
+							height={400}
+							className='w-full object-cover aspect-square'
+							title='Ujjwal Bhandari, image'
+						/>
+
+						<Image
 							src='https://res.cloudinary.com/ujjwalbhandari/image/upload/v1701365993/ujjwalbhandarii.com.np/ujjwal%20images/linkedin_photo_cfamoh.jpg'
 							alt='Ujjwal Bhandari image'
 							width={400}
@@ -46,15 +54,6 @@ export default function UjjwalBhandariPage() {
 
 						<Image
 							src='https://res.cloudinary.com/ujjwalbhandari/image/upload/v1701366367/ujjwalbhandarii.com.np/ujjwal%20images/meinbike_otmf97.jpg'
-							alt='Ujjwal Bhandari image'
-							width={400}
-							height={400}
-							className='w-full object-cover aspect-square'
-							title='Ujjwal Bhandari, image'
-						/>
-
-						<Image
-							src='https://res.cloudinary.com/ujjwalbhandari/image/upload/v1701366368/ujjwalbhandarii.com.np/ujjwal%20images/githubfieldday_owjpre.jpg'
 							alt='Ujjwal Bhandari image'
 							width={400}
 							height={400}
