@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 	description:
 		'Ujjwal Bhandari blogs, where shares his daily learning and life improvements.',
 	alternates: {
-		canonical: 'https://www.ujjwalbhandarii.com.np/blog',
+		canonical: 'https://www.ujjwall.com.np/blog',
 	},
 };
 

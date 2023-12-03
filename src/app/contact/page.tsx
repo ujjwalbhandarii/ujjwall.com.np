@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 	description:
 		'Get in touch with Ujjwal to discuss your project or any development inquiries.',
 	alternates: {
-		canonical: 'https://www.ujjwalbhandarii.com.np/contact',
+		canonical: 'https://www.ujjwall.com.np/contact',
 	},
 };
 

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 	description:
 		'Ujjwal Bhandari is a fullstack web developer hailing from Butwal, Nepal.',
 	alternates: {
-		canonical: 'https://www.ujjwalbhandarii.com.np/ujjwal-bhandari',
+		canonical: 'https://www.ujjwall.com.np/ujjwal-bhandari',
 	},
 };
 

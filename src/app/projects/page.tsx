@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 	description:
 		'Ujjwal Bhandari a solo Web developer specializing in Next.js, NestJS, React, SCSS, Framer Motion, and Docker. Explore projects where seamless React interfaces meet robust NestJS servers, styled with SCSS, animated with Framer Motion, and containerized with Docker. Lets connect and turn your ideas into extraordinary online experiences!',
 	alternates: {
-		canonical: 'https://www.ujjwalbhandarii.com.np/projects',
+		canonical: 'https://www.ujjwall.com.np/projects',
 	},
 };
 
