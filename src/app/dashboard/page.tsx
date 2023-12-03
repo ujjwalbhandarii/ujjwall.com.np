@@ -1,25 +1,27 @@
-'use client';
-
-import { Button } from '@/shadcn/ui/button';
+import Link from 'next/link';
 import Container from '@/utils/container';
-import { signOut } from 'next-auth/react';
+import SignoutButton from '@/components/signout';
 
 export default function DashboardPage() {
-	const handelSignout = () => {
-		signOut();
-	};
 	return (
 		<>
 			<Container>
-				<div>
-					<h1>DashboardPage</h1>
-					<Button
-						className='bg-purple-600 hover:bg-purple-700'
-						onClick={handelSignout}
-					>
-						signout
-					</Button>
+				<div className='text-center my-10'>
+					<h2 className='text-lg'>DashboardPage</h2>
 				</div>
+
+				<div>
+					<div className='flex justify-between mb-5'>
+						<h1 className='mb-3'>All your projects</h1>
+						<Link
+							href='/dashboard/projects/create'
+							className='underline underline-offset-4 hover:text-lightGreenBlue'
+						>
+							Create a Project-&gt;
+						</Link>
+					</div>
+				</div>
+				<SignoutButton />
 			</Container>
 		</>
 	);

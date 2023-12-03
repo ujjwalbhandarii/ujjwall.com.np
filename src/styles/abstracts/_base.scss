@@ -2,7 +2,7 @@
 
 body {
 	overflow-x: hidden;
-
+	background-color: $bg-color;
 	cursor: url('/bestCursor.png'), auto;
 
 	::selection {

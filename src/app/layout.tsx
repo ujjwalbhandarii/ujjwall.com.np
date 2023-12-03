@@ -10,6 +10,7 @@ import '@/styles/global.css';
 import { Footer } from '@/layout';
 import Cursor from '@/components/cursor';
 import Header from '@/components/header/header';
+import AuthProvider from '@/providers/authProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -74,6 +75,8 @@ export const metadata: Metadata = {
 		'ujjwal bank share price',
 		'ujjwal bhandari singer',
 		'ujjwal singh bhandari',
+		'ujjwalbhandarii.com.np',
+		'ujjwalbhandari.com.np',
 	],
 	themeColor: '#0a0b1f',
 	viewport: {
@@ -89,20 +92,22 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={`${inter.className} bg-backgroundColorDark`}>
-				<div className='page'>
-					<Header />
-					<main>{children}</main>
-					<Footer />
-				</div>
-				<Cursor />
-				<Toaster />
-				<NextTopLoader
-					easing='ease'
-					color='#01e0c8'
-					crawl={true}
-					showSpinner={true}
-				/>
+			<body className={inter.className}>
+				<AuthProvider>
+					<div className='page'>
+						<Header />
+						<main>{children}</main>
+						<Footer />
+					</div>
+					<Cursor />
+					<Toaster />
+					<NextTopLoader
+						easing='ease'
+						color='#01e0c8'
+						crawl={true}
+						showSpinner={true}
+					/>
+				</AuthProvider>
 			</body>
 		</html>
 	);
