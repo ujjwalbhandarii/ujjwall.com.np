@@ -2,7 +2,7 @@
 module.exports = {
 	siteUrl: process.env.WEBSITE_URL || 'https://www.ujjwall.com.np',
 	generateRobotsTxt: true,
-	generateIndexSitemap: false,
+	generateIndexSitemap: true,
 	exclude: [
 		'/public/FiraCode',
 		'/public/Tomato_Grotesk',
@@ -15,5 +15,6 @@ module.exports = {
 		'/icon.png',
 		'/dashboard',
 		'/signup',
+		'/dashboard/projects/create',
 	],
 };
