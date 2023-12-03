@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 	title: 'Ujjwal Bhandari - Full Stack Web Developer',
 	description:
 		'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. Ujjwal Bhandari specialized in Next.js, Nest.js & Node.js. Your can ping ujjwal for any web development work.',
-	manifest: '/manifest/manifest.json',
+	manifest: '/manifest.json',
 	robots: 'index, archive',
 	openGraph: {
 		type: 'website',
