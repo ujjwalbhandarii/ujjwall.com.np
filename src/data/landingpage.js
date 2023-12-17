@@ -22,10 +22,21 @@ export const WORKS = [
 		isFeatured: true,
 	},
 	{
+		id: 'cpn-uml',
+		imageUrl: cpmUml,
+		alt: 'cpnuml website created by ujjwal bhandari',
+		websiteName: 'CPN UML Lumbini Offical Site',
+		liveLink: 'https://cpnumllumbini.org/',
+		stackUsed: ['Next.js', 'scss', 'bootstrap'],
+		description:
+			'The official website of the CPN UML Lumbini Provience. This platform is a testament to the commitment to transparency, communication, and engagement with the people of Lumbini. Explore the UML Party website to stay connected with the heartbeat of Lumbini Province political landscape. Engage with the party, understand our vision, and be a part of the democratic process that shapes the future of the province.',
+		isFeatured: false,
+	},
+	{
 		id: 'nepwonders-personalproject',
 		imageUrl: '/works/nepwonders.png',
 		alt: 'Nepwonders created by ujjwal bhandari',
-		websiteName: 'Nepwonders - A complete ecosystem for tourist',
+		websiteName: 'Nepwonders - A complete ecosystem for tourist {launching soon}',
 		liveLink: 'https://nepwonders.com/',
 		stackUsed: [
 			'Next.js',
@@ -71,17 +82,7 @@ export const WORKS = [
 			'Step into the digital showcase of my skills and creativity. My portfolio website, meticulously crafted with cutting-edge technologies, is a testament to my passion for web development and design',
 		isFeatured: false,
 	},
-	{
-		id: 'cpn-uml',
-		imageUrl: cpmUml,
-		alt: 'cpnuml website created by ujjwal bhandari',
-		websiteName: 'CPN UML Lumbini Offical Site',
-		liveLink: 'https://cpnumllumbini.org/',
-		stackUsed: ['Next.js', 'scss', 'bootstrap'],
-		description:
-			'The official website of the CPN UML Lumbini Provience. This platform is a testament to the commitment to transparency, communication, and engagement with the people of Lumbini. Explore the UML Party website to stay connected with the heartbeat of Lumbini Province political landscape. Engage with the party, understand our vision, and be a part of the democratic process that shapes the future of the province.',
-		isFeatured: false,
-	},
+
 	{
 		id: 'ankit-website',
 		imageUrl: '/works/ankit.png',

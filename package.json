@@ -4,9 +4,10 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build",
-		"sitemap": "next-sitemap",
 		"prebuild": "npx prisma generate",
+		"build": "next build",
+		"postinstall": "next sitemap",
+		"sitemap": "next-sitemap",
 		"start": "next start",
 		"lint": "next lint"
 	},
