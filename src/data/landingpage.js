@@ -33,25 +33,6 @@ export const WORKS = [
 		isFeatured: false,
 	},
 	{
-		id: 'nepwonders-personalproject',
-		imageUrl: '/works/nepwonders.png',
-		alt: 'Nepwonders created by ujjwal bhandari',
-		websiteName: 'Nepwonders - A complete ecosystem for tourist {launching soon}',
-		liveLink: 'https://nepwonders.com/',
-		stackUsed: [
-			'Next.js',
-			'Nestjs',
-			'Auth.js',
-			'mongoDB',
-			'prisma',
-			'shadcn-ui',
-			'scss',
-		],
-		description:
-			'Embark on a tech-infused journey through Nepal with our cutting-edge travel website, a collaborative venture between me and my friends. Harnessing the power of innovative technologies, we have curated an immersive digital experience for tourists seeking an exceptional adventure. Seamlessly navigate through our platform to uncover the technological marvels of Nepals beauty. { project on going }',
-		isFeatured: true,
-	},
-	{
 		id: 'anushka-blog',
 		imageUrl: '/works/anu.png',
 		alt: 'anushka blog website created by ujjwal bhandari',
@@ -71,6 +52,26 @@ export const WORKS = [
 			'I had the pleasure of creating a dynamic and personalized blog website for my CA friend Anushka. The site, was built with Server-Side Rendering (SSR), not only boosting the page load but also ensures a server side security with seamless and secure user experience with Auth.js. Through the thoughtful integration of Next.js, the website achieves optimal performance and interactivity, while SCSS and shadcn-ui adds a touch of elegance to the user interface. The implementation of Auth.js guarantees a secure authentication process, enhancing user privacy.',
 		isFeatured: true,
 	},
+	{
+		id: 'nepwonders-personalproject',
+		imageUrl: '/works/nepwonders.png',
+		alt: 'Nepwonders created by ujjwal bhandari',
+		websiteName: 'Nepwonders - A complete ecosystem for tourist {launching soon}',
+		liveLink: 'https://nepwonders.com/',
+		stackUsed: [
+			'Next.js',
+			'Nestjs',
+			'Auth.js',
+			'mongoDB',
+			'prisma',
+			'shadcn-ui',
+			'scss',
+		],
+		description:
+			'Embark on a tech-infused journey through Nepal with our cutting-edge travel website, a collaborative venture between me and my friends. Harnessing the power of innovative technologies, we have curated an immersive digital experience for tourists seeking an exceptional adventure. Seamlessly navigate through our platform to uncover the technological marvels of Nepals beauty. { project on going }',
+		isFeatured: true,
+	},
+
 	{
 		id: 'ujjwall-protfolio',
 		imageUrl: ujjwall,

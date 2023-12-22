@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
@@ -95,12 +94,6 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<Head>
-				<meta
-					name='description'
-					content='Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. Ujjwal Bhandari specialized in Next.js, Nest.js & Node.js. Your can ping ujjwal for any web development work.'
-				/>
-			</Head>
 			<body className={inter.className}>
 				<AuthProvider>
 					<div className='page'>
