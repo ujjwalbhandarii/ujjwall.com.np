@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 	metadataBase: new URL(process.env.WEBSITE_URL || 'https://www.ujjwall.com.np'),
 	title: 'Ujjwal Bhandari - Full Stack Web Developer',
 	description:
-		'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. Ujjwal Bhandari specialized in Next.js, Nest.js & Node.js. Your can ping ujjwal for any web development work.',
+		'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. He specializes in Next.js, Nest.js & Node.js. Your can ping ujjwal for any web development work.',
 	manifest: '/manifest.json',
 	robots: 'index, archive',
 	openGraph: {
@@ -29,14 +29,14 @@ export const metadata: Metadata = {
 		],
 		title: 'Ujjwal Bhandari - Full Stack Web Developer',
 		description:
-			'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. Ujjwal Bhandari specialized in Next.js, Nest.js & Node.js. Your can ping ujjwal for any web development work.',
+			'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. He specializes in Next.js, Nest.js & Node.js. Your can ping ujjwal for any web development work.',
 	},
 	twitter: {
 		site: '@ujjwalbhandarii',
 		creator: 'ujjwal bhandari',
 		title: 'Ujjwal Bhandari - Full Stack Web Developer',
 		description:
-			'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. Ujjwal Bhandari specialized in Next.js, Nest.js & Node.js. Your can ping ujjwal for any web development work.',
+			'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. He specializes in Next.js, Nest.js & Node.js. Your can ping ujjwal for any web development work.',
 	},
 	alternates: {
 		canonical: 'https://www.ujjwall.com.np',
