@@ -16,7 +16,9 @@ export default function Blogs() {
 		<section className='contactpage'>
 			<Container>
 				<div className='contactpage__wrapper'>
-					<h1 className='text-center mt-10'>Comming soon.🚀</h1>
+					<h1 className='text-center mt-10'>
+						This section is under build process and will be deployed once ready.
+					</h1>
 				</div>
 			</Container>
 		</section>

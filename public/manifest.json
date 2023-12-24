@@ -6,7 +6,6 @@
 	"start_url": "/",
 	"name": "Ujjwal Bhandari",
 	"short_name": "ujjwal",
-	"description": "Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. Ujjwal Bhandari specialized in Next.js, Nest.js & Node.js. Your can ping ujjwal for any web development work.",
 	"icons": [
 		{
 			"src": "/icon-192x192.png",
