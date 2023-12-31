@@ -30,5 +30,5 @@ export const NeedAWebDev = () => {
 const CONTACT = {
 	first: 'NEED A',
 	second: 'WEB DEVELOPER?',
-	third: "LET'S BUILD SOMETHING.",
+	third: "LET'S BUILD SOMETHING!",
 };

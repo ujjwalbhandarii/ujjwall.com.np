@@ -51,8 +51,10 @@
 		gap: 1rem;
 
 		@include devices(tablet) {
-			gap: 3rem;
-			grid-template-columns: 2fr 1.2fr;
+			gap: 5rem;
+			width: 60rem;
+			margin: 0 auto;
+			// grid-template-columns: 2fr 1.2fr;
 		}
 	}
 
