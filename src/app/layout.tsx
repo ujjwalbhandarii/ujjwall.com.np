@@ -80,11 +80,11 @@ export const metadata: Metadata = {
 		'ujjwalbhandarii.com.np',
 		'ujjwalbhandari.com.np',
 	],
-	themeColor: '#0a0b1f',
-	viewport: {
-		width: 'device-width',
-		userScalable: true,
-	},
+	// themeColor: '#0a0b1f',
+	// viewport: {
+	// 	width: 'device-width',
+	// 	userScalable: true,
+	// },
 };
 
 export default function RootLayout({
