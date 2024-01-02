@@ -9,12 +9,12 @@ export function Experience() {
 					<div className='text-center mb-8 md:mb-20'>
 						<h2 className='section--heading'>Experience</h2>
 					</div>
-					<div className='flex flex-col md:flex-row gap-5'>
+					<div className='flex flex-col md:flex-row gap-5 text-sm md:text-base'>
 						<div className='flex flex-col'>
 							{EXPERIENCE.map((company) => (
 								<button
 									key={company.name}
-									className='border-b-2 border-l-2 border border-lightGreenBlue px-10 py-4 w-full md:w-[250px] lg:w-[350px] font-bold'
+									className='border-b-1 border-l-1 border border-lightGreenBlue px-10 py-4 w-full md:w-[250px] lg:w-[350px] font-bold'
 								>
 									{company.name}
 								</button>
