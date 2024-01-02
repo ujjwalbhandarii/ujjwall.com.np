@@ -97,4 +97,14 @@ export const WORKS = [
 	},
 ];
 
+export const EXPERIENCE = [
+	{
+		name: 'Butwal Web pvt. ltd.',
+		year: 'Apr 2022 - Sep 2022',
+		description:
+			'During my enriching 5-6 month internship at Butwal Web Pvt Ltd, I delved into the dynamic world of web development, gaining valuable expertise in cutting-edge technologies. Proficient in Next.js, React, and SCSS, I have crafted seamless and responsive web applications that marry functionality with aesthetics. My understanding of SEO principles ensures that my creations not only look good but also perform exceptionally well in the digital landscape.',
+		techstackUsed: ['Next.js', 'SCSS', 'tailwind'],
+	},
+];
+
 export const WORKS__PAGINATED = WORKS.slice(0, 3);
