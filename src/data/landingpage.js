@@ -102,14 +102,28 @@ export const EXPERIENCE = [
 		name: 'Butwal Web pvt. ltd.',
 		year: 'Apr 2022 - Sep 2022',
 		description:
-			'During my enriching 5-6 month internship at Butwal Web Pvt Ltd, I delved into the dynamic world of web development, gaining valuable expertise in cutting-edge technologies. Proficient in Next.js, React, and SCSS, I have crafted seamless and responsive web applications that marry functionality with aesthetics. My understanding of SEO principles ensures that my creations not only look good but also perform exceptionally well in the digital landscape.',
+			'During my enriching 5-6 month internship at Butwal Web Pvt Ltd, I got a chance to delved into the dynamic world of web development & gained valuable expertise in cutting-edge technologies. By using Next.js, React, and SCSS, I have crafted seamless and responsive web applications that marry functionality with aesthetics. My understanding of SEO principles improved that my creations not only look good but also perform exceptionally well in the digital landscape. Me and @ashish-acharya got chance to work together and build many real world projects. Lumbini Sandesh, Communist Party UML lumbini offical website, along with dashboard are the projects that we done so far during intern time peroid. I like to thank @krishnaneupane dai for all the support & mentoring.',
+		learnings: [
+			'Got to know ins and out of Nextjs 13 version specially app router.',
+			'Improvement in code quality with the use of preetier, eslint and husky.',
+			'Utilized opinionated SCSS 7 to 1 styling pattern along with BEM implementation for maintainable and scalable Sass.',
+			'Knowlege about scalable and dynamic components for webapps.',
+			'Improvement in API and data handling.',
+			'Improved Understanding in SEO along with sitemaps, canonical links, keywords, meta tags.',
+		],
 		techstackUsed: ['Next.js', 'SCSS', 'tailwind'],
 	},
 	{
 		name: 'Semicolon Tec.',
 		year: 'Jan 2021 - Apr 2021',
 		description:
-			'During my enriching 5-6 month internship at Semicolon Tec., I delved into the dynamic world of web development, gaining valuable expertise in cutting-edge technologies. Proficient in Next.js, React, and SCSS, I have crafted seamless and responsive web applications that marry functionality with aesthetics. My understanding of SEO principles ensures that my creations not only look good but also perform exceptionally well in the digital landscape.',
+			'During my enriching 3 month internship at Semicolon Tec., I delved into the dynamic world of web development, gaining valuable expertise in cutting-edge technologies. Proficient in Next.js, React, and SCSS, I have crafted seamless and responsive web applications that marry functionality with aesthetics. My understanding of SEO principles ensures that my creations not only look good but also perform exceptionally well in the digital landscape.',
+
+		learnings: [
+			'React core and basic concepts like hooks & states.',
+			'Improvement in designing with css.',
+			'Improvement in javascript.',
+		],
 		techstackUsed: ['React', 'CSS', 'flask'],
 	},
 ];

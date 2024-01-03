@@ -21,10 +21,8 @@ export function Experience() {
 							{EXPERIENCE.map((company) => (
 								<button
 									key={company.name}
-									className={`border-l-2 border-lightGreenBlue px-10 py-2 md:py-4 w-full md:w-[250px] lg:w-[350px] font-bold ${
-										companyDisplay === company.name
-											? 'bg-lightGreenBlue text-black border'
-											: ''
+									className={`border-l-2 bg-backgroundColorDarker border-lightGreenBlue px-10 py-2 md:py-4 w-full md:w-[250px] lg:w-[350px] font-bold ${
+										companyDisplay === company.name ? 'text-lightGreenBlue border' : ''
 									}`}
 									onClick={() => setCompanyDisplay(company.name)}
 								>
@@ -41,14 +39,27 @@ export function Experience() {
 									}`}
 									key={company.name + Math.random() * 100}
 								>
-									<span className='font-medium mb-2 text-lightGreenBlue'>
+									<span className='font-semibold mb-2 text-lightGreenBlue'>
 										{company.year}
 									</span>
-									<p>{company.description}</p>
+									<p className='mb-2'>{company.description}</p>
 
-									<h3 className='font-medium mt-3'>Tech Used</h3>
+									<span className='font-semibold underline underline-offset-4'>
+										Key Learnings
+									</span>
+									<ul className='px-4 md:px-2 mb-2'>
+										{company?.learnings?.map((learning) => (
+											<li className='list-disc' key={learning}>
+												<p>{learning}</p>
+											</li>
+										))}
+									</ul>
+
+									<h3 className='font-semibold underline underline-offset-4'>
+										Tech Used
+									</h3>
 									<ul className='px-4 md:px-2'>
-										{company.techstackUsed.map((tech) => (
+										{company?.techstackUsed?.map((tech) => (
 											<li className='list-disc' key={tech}>
 												<p>{tech}</p>
 											</li>
