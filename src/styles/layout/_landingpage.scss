@@ -366,13 +366,6 @@
 	}
 }
 
-$open_sans: 'Open Sans', sans-serif;
-$main_background-color: #0a0b1f;
-$secandary_background-color: #07081c;
-$white_text_color: #ffff;
-$dim_white_text_color: #8893b1;
-$secondary_text_color: #01e0c8;
-
 .contact {
 	margin: 0 auto;
 	display: flex;
@@ -394,7 +387,7 @@ $secondary_text_color: #01e0c8;
 			font-weight: 600;
 			font-size: 1.2rem;
 			line-height: 1.8rem;
-			color: $dim_white_text_color;
+			color: $light-gray;
 			margin-bottom: 1rem;
 
 			@include devices(tablet) {
@@ -417,8 +410,8 @@ $secondary_text_color: #01e0c8;
 			margin: 0 auto;
 
 			&:hover {
-				background-color: $secondary_text_color;
-				color: $main_background-color;
+				background-color: $secondary;
+				color: $bg-color;
 			}
 		}
 	}
@@ -426,7 +419,6 @@ $secondary_text_color: #01e0c8;
 
 .works {
 	padding: 6rem 0;
-	background-color: $bg-color-darker;
 
 	&--heading {
 		text-align: center;

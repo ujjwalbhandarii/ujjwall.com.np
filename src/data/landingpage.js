@@ -128,4 +128,23 @@ export const EXPERIENCE = [
 	},
 ];
 
+export const SKILLS = [
+	'HTML',
+	'CSS',
+	'Javascript',
+	'Next.js',
+	'Node js',
+	'NestJs',
+	'React',
+	'Docker',
+	'Prisma',
+	'Sanity.io',
+	'Web Sockets',
+	'WooCommerce',
+	'SCSS',
+	'C++',
+	'C',
+	'python',
+];
+
 export const WORKS__PAGINATED = WORKS.slice(0, 3);
