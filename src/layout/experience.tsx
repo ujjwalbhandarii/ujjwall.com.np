@@ -3,6 +3,7 @@
 import Container from '@/utils/container';
 import { EXPERIENCE } from '@/data/landingpage';
 import { useState } from 'react';
+import { Button } from '@/shadcn/ui/button';
 
 export function Experience() {
 	const [companyDisplay, setCompanyDisplay] = useState<string>(
@@ -69,6 +70,11 @@ export function Experience() {
 							))}
 						</div>
 					</div>
+					{/* <div className='my-6 flex justify-center items-center'>
+						<Button className='px-6 md:px-10 py-4 md:py-6 text-sm md:text-base border border-lightGreenBlue hover:bg-lightGreenBlue hover:text-black transition'>
+							Watch full Resume 🚀
+						</Button>
+					</div> */}
 				</div>
 			</Container>
 		</section>

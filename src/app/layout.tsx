@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import type { Viewport } from 'next';
 
 import { Toaster } from 'react-hot-toast';
 import NextTopLoader from 'nextjs-toploader';
@@ -11,8 +12,16 @@ import { Footer } from '@/layout';
 import Cursor from '@/components/cursor';
 import Header from '@/components/header/header';
 import AuthProvider from '@/providers/authProvider';
+import { WEBSITE_KEYWORDS } from '@/data/metadata';
 
 const inter = Inter({ subsets: ['latin'] });
+
+export const viewport: Viewport = {
+	colorScheme: 'dark',
+	themeColor: '#0a0b1f',
+	width: 'device-width',
+	initialScale: 1,
+};
 
 export const metadata: Metadata = {
 	metadataBase: new URL(process.env.WEBSITE_URL || 'https://www.ujjwall.com.np'),
@@ -41,50 +50,7 @@ export const metadata: Metadata = {
 	alternates: {
 		canonical: 'https://www.ujjwall.com.np',
 	},
-	keywords: [
-		'ujwal',
-		'ujju',
-		'ujjwal',
-		'ujjwall',
-		'bhandari',
-		'bhandari',
-		'web developer',
-		'butwal startup',
-		'ujjwall.com.np',
-		'ujjwal bhandari',
-		'ujjwalbhandarii',
-		'ujjwal cs student',
-		'ujjwal from nepal',
-		'ujjwal freelancer',
-		'developer in nepal',
-		'butwal web developer',
-		'ujjwalbhandari.com.np',
-		'ujjwal tara school',
-		'ujjwal in nepali ',
-		'ujjwal chaurasia',
-		'ujjwal sisu niketan academy',
-		'ujjwal thapa',
-		'ujjwal nigam',
-		'ujjwal gamer',
-		'ujjwal shrestha',
-		'ujjwal tara school photos',
-		'ujjwal bikram thapa',
-		'ujjwal bhattarai',
-		'ujjwal basnet',
-		'ujjwal bank',
-		'ujjwal bhavishya',
-		'ujjwal bhai',
-		'ujjwal bank share price',
-		'ujjwal bhandari singer',
-		'ujjwal singh bhandari',
-		'ujjwalbhandarii.com.np',
-		'ujjwalbhandari.com.np',
-	],
-	// themeColor: '#0a0b1f',
-	// viewport: {
-	// 	width: 'device-width',
-	// 	userScalable: true,
-	// },
+	keywords: WEBSITE_KEYWORDS,
 };
 
 export default function RootLayout({
