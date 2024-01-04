@@ -131,6 +131,8 @@ export const EXPERIENCE = [
 export const SKILLS = [
 	'HTML',
 	'CSS',
+	'SCSS',
+	'Tailwind CSS',
 	'Javascript',
 	'Next.js',
 	'Node js',
@@ -141,10 +143,11 @@ export const SKILLS = [
 	'Sanity.io',
 	'Web Sockets',
 	'WooCommerce',
-	'SCSS',
 	'C++',
 	'C',
-	'python',
+	'Python',
+	'MongoDB',
+	'SEO',
 ];
 
 export const WORKS__PAGINATED = WORKS.slice(0, 3);

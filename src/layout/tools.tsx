@@ -5,7 +5,7 @@ export default function Tools() {
 	return (
 		<section className='bg-backgroundColorDarker'>
 			<Container>
-				<div className='py-16 md:py-30 lg:px-28 min-h-[25rem] flex flex-col items-center justify-center'>
+				<div className='py-16 md:py-30 lg:px-32 md:min-h-[25rem] flex flex-col items-center justify-center'>
 					<div className='text-center mb-8'>
 						<h2 className='section--heading'>Tools and Expertise</h2>
 					</div>
@@ -13,7 +13,7 @@ export default function Tools() {
 						{SKILLS.map((skill) => (
 							<span
 								key={skill}
-								className='px-8 py-3 text-sm md:text-base rounded bg-backgroundColorDarker border border-lightGreenBlue'
+								className='px-3 md:px-8 py-2 text-sm md:text-base rounded bg-backgroundColorDark hover:bg-backgroundColorDarker border border-teal-300'
 							>
 								{skill}
 							</span>
