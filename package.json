@@ -27,6 +27,7 @@
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.0.0",
 		"csstype": "^3.0.10",
+		"embla-carousel-react": "^8.0.0-rc18",
 		"framer-motion": "^10.16.5",
 		"gsap": "^3.12.2",
 		"jsonwebtoken": "^9.0.2",

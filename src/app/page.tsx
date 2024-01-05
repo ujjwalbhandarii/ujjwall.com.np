@@ -1,4 +1,5 @@
 import { About, Experience, Herosection, NeedAWebDev, Works } from '@/layout';
+import Testimonials from '@/layout/testimonials';
 import Tools from '@/layout/tools';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
 			<Experience />
 			<Tools />
 			<Works />
+			<Testimonials />
 			<NeedAWebDev />
 		</>
 	);
