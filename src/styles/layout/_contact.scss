@@ -3,9 +3,11 @@
 .contactpage {
 	&__wrapper {
 		padding: 2rem 0;
+		font-size: 0.9rem;
 
 		@include devices(tablet) {
 			padding: 3rem 0;
+			font-size: 1rem;
 		}
 	}
 

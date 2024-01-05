@@ -102,7 +102,7 @@ export const EXPERIENCE = [
 		name: 'Butwal Web pvt. ltd.',
 		year: 'Apr 2022 - Sep 2022',
 		description:
-			'During my enriching 5-6 month internship at Butwal Web Pvt Ltd, I got a chance to delved into the dynamic world of web development & gained valuable expertise in cutting-edge technologies. By using Next.js, React, and SCSS, I have crafted seamless and responsive web applications that marry functionality with aesthetics. My understanding of SEO principles improved that my creations not only look good but also perform exceptionally well in the digital landscape. Me and @ashish-acharya got chance to work together and build many real world projects. Lumbini Sandesh, Communist Party UML lumbini offical website, along with dashboard are the projects that we done so far during intern time peroid. I like to thank @krishnaneupane dai for all the support & mentoring.',
+			'During my enriching 5-6 month internship at Butwal Web Pvt Ltd, I got a chance to delved into the dynamic world of web development & gained valuable expertise in cutting-edge technologies. By using Next.js, React, and SCSS, I have crafted seamless and responsive web applications that marry functionality with aesthetics. My understanding of SEO principles improved. Me and @ashish-acharya got chance to work together and build many real world projects. Lumbini Sandesh, Communist Party UML lumbini offical website, along with dashboard are the projects that we done so far during intern time peroid. We are sharpened and blossomed by @krishna-neupane dai, who provides us with guidance and assistance.',
 		learnings: [
 			'Got to know ins and out of Nextjs 13 version specially app router.',
 			'Improvement in code quality with the use of preetier, eslint and husky.',
