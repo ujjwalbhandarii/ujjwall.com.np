@@ -7,7 +7,9 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from '@/shadcn/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
 import Container from '@/utils/container';
+import { TESTIMONIALS } from '@/data/landingpage';
 
 export default function Testimonials() {
 	return (
@@ -20,28 +22,24 @@ export default function Testimonials() {
 						</h2>
 					</div>
 					<div className='border border-lightGreenBlue p-10 md:py-20 md:p-20 text-sm md:text-base'>
-						<Carousel>
+						<Carousel
+							plugins={[
+								Autoplay({
+									delay: 5000,
+								}),
+							]}
+						>
 							<CarouselContent>
-								<CarouselItem>
-									<p className='text-slate-300'>
-										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
-										quas assumenda tenetur beatae a minus, perspiciatis ipsa sapiente
-										praesentium unde amet neque eius sequi corrupti odio esse cumque
-										nesciunt debitis minima fugit modi magnam ea! Maxime sunt id vero
-										natus, fuga voluptate ipsum recusandae! Tempora quam molestias
-										inventore voluptatum est!
-									</p>
-								</CarouselItem>
-								<CarouselItem>
-									<p className='text-slate-300'>
-										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
-										quas assumenda tenetur beatae a minus, perspiciatis ipsa sapiente
-										praesentium unde amet neque eius sequi corrupti odio esse cumque
-										nesciunt debitis minima fugit modi magnam ea! Maxime sunt id vero
-										natus, fuga voluptate ipsum recusandae! Tempora quam molestias
-										inventore voluptatum est!
-									</p>
-								</CarouselItem>
+								{TESTIMONIALS.map((testimonial) => (
+									<CarouselItem key={testimonial.author}>
+										<div className='text-center'>
+											<p className='text-slate-300'>{testimonial.testimonial}</p>
+											<span className='mt-3 text-lightGreenBlue font-semibold'>
+												{testimonial.author}
+											</span>
+										</div>
+									</CarouselItem>
+								))}
 							</CarouselContent>
 							<CarouselPrevious />
 							<CarouselNext />

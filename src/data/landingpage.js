@@ -150,4 +150,19 @@ export const SKILLS = [
 	'SEO',
 ];
 
+export const TESTIMONIALS = [
+	{
+		testimonial:
+			'Working with Ujjwal was a game-changer! A full-stack wizard who turned our ideas into a sleek and powerful website. Timely, talented, and terrific!',
+		author: 'Sarah L.',
+		company: '',
+	},
+	{
+		testimonial:
+			'Ujjwal made our web project a breeze. A true full-stack maestro, delivering a seamless blend of functionality and style. Highly recommended!',
+		author: 'Alex M.',
+		company: '',
+	},
+];
+
 export const WORKS__PAGINATED = WORKS.slice(0, 3);
