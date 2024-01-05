@@ -6,7 +6,6 @@
 		"dev": "next dev",
 		"prebuild": "npx prisma generate",
 		"build": "next build",
-		"postbuild": "yarn sitemap",
 		"sitemap": "next-sitemap",
 		"start": "next start",
 		"lint": "next lint"

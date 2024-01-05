@@ -3,7 +3,7 @@
 import Container from '@/utils/container';
 import { EXPERIENCE } from '@/data/landingpage';
 import { useState } from 'react';
-import { Button } from '@/shadcn/ui/button';
+// import { Button } from '@/shadcn/ui/button';
 
 export function Experience() {
 	const [companyDisplay, setCompanyDisplay] = useState<string>(
@@ -13,16 +13,16 @@ export function Experience() {
 	return (
 		<section>
 			<Container>
-				<div className='py-20 md:py-40 lg:px-28'>
+				<div className='py-20 md:py-40 xl:px-16 2xl:px-28'>
 					<div className='text-center mb-8 md:mb-20'>
 						<h2 className='section--heading'>Experience</h2>
 					</div>
-					<div className='flex flex-col md:flex-row gap-5 text-sm md:text-base'>
+					<div className='flex flex-col md:flex-row gap-5 text-sm lg:text-base'>
 						<div className='flex flex-col'>
 							{EXPERIENCE.map((company) => (
 								<button
 									key={company.name}
-									className={`border-l-2 bg-backgroundColorDarker border-lightGreenBlue px-10 py-2 md:py-4 w-full md:w-[250px] lg:w-[300px] font-bold ${
+									className={`border-l-2 bg-backgroundColorDarker border-lightGreenBlue px-5 py-3 lg:py-4 w-full md:w-[200px] lg:w-[250px] xl:w-[300px] font-bold ${
 										companyDisplay === company.name ? 'text-lightGreenBlue border' : ''
 									}`}
 									onClick={() => setCompanyDisplay(company.name)}
@@ -35,7 +35,7 @@ export function Experience() {
 						<div className='w-full'>
 							{EXPERIENCE.map((company) => (
 								<div
-									className={`flex-2 md:ml-10 flex-col gap-1 text-darkGray flex ${
+									className={`flex-2 lg:ml-4 xl:ml-10 flex-col gap-1 text-darkGray flex ${
 										companyDisplay !== company.name ? 'hidden' : ''
 									}`}
 									key={company.name + Math.random() * 100}
