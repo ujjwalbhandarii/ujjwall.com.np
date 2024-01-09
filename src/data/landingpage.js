@@ -22,14 +22,14 @@ export const WORKS = [
 		isFeatured: true,
 	},
 	{
-		id: 'cpn-uml',
-		imageUrl: cpmUml,
-		alt: 'cpnuml website created by ujjwal bhandari',
-		websiteName: 'CPN UML Lumbini Offical Site',
-		liveLink: 'https://cpnumllumbini.org/',
-		stackUsed: ['Next.js', 'scss', 'bootstrap'],
+		id: 'online-store',
+		imageUrl: '/works/onlinestore.png',
+		alt: 'OnlineStore website created by ujjwal bhandari',
+		websiteName: 'OnlineStore Ecommerce',
+		liveLink: 'https://onlinestore-rouge.vercel.app/',
+		stackUsed: ['Next.js', 'tailwind', 'shadcn ui', 'RTK query', 'fakestore API'],
 		description:
-			'The official website of the CPN UML Lumbini Provience. This platform is a testament to the commitment to transparency, communication, and engagement with the people of Lumbini. Explore the UML Party website to stay connected with the heartbeat of Lumbini Province political landscape. Engage with the party, understand our vision, and be a part of the democratic process that shapes the future of the province.',
+			'A dynamic e-commerce platform I meticulously crafted to elevate the online shopping experience crafted with Next.js, RTK Query, Shadcn UI, and Tailwind CSS. Experience seamless navigation, sleek design, and efficient data fetching for a modern and visually captivating online shopping experience.',
 		isFeatured: false,
 	},
 	{
@@ -51,6 +51,17 @@ export const WORKS = [
 		description:
 			'I had the pleasure of creating a dynamic and personalized blog website for my CA friend Anushka. The site, was built with Server-Side Rendering (SSR), not only boosting the page load but also ensures a server side security with seamless and secure user experience with Auth.js. Through the thoughtful integration of Next.js, the website achieves optimal performance and interactivity, while SCSS and shadcn-ui adds a touch of elegance to the user interface. The implementation of Auth.js guarantees a secure authentication process, enhancing user privacy.',
 		isFeatured: true,
+	},
+	{
+		id: 'cpn-uml',
+		imageUrl: cpmUml,
+		alt: 'cpnuml website created by ujjwal bhandari',
+		websiteName: 'CPN UML Lumbini Offical Site',
+		liveLink: 'https://cpnumllumbini.org/',
+		stackUsed: ['Next.js', 'scss', 'bootstrap'],
+		description:
+			'The official website of the CPN UML Lumbini Provience. This platform is a testament to the commitment to transparency, communication, and engagement with the people of Lumbini. Explore the UML Party website to stay connected with the heartbeat of Lumbini Province political landscape. Engage with the party, understand our vision, and be a part of the democratic process that shapes the future of the province.',
+		isFeatured: false,
 	},
 	{
 		id: 'nepwonders-personalproject',
