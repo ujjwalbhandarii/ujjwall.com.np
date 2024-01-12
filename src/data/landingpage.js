@@ -23,10 +23,10 @@ export const WORKS = [
 	},
 	{
 		id: 'online-store',
-		imageUrl: '/works/onlinestore.png',
+		imageUrl: '/works/woodmart-clone.png',
 		alt: 'OnlineStore website created by ujjwal bhandari',
-		websiteName: 'OnlineStore Ecommerce',
-		liveLink: 'https://onlinestore-rouge.vercel.app/',
+		websiteName: 'Woodmart Ecommerce Webapp',
+		liveLink: 'https://woodmart-clone.vercel.app/',
 		stackUsed: ['Next.js', 'tailwind', 'shadcn ui', 'RTK query', 'fakestore API'],
 		description:
 			'A dynamic e-commerce platform I meticulously crafted to elevate the online shopping experience crafted with Next.js, RTK Query, Shadcn UI, and Tailwind CSS. Experience seamless navigation, sleek design, and efficient data fetching for a modern and visually captivating online shopping experience.',
