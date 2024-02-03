@@ -29,7 +29,18 @@ export const WORKS = [
 		liveLink: 'https://woodmart-clone.vercel.app/',
 		stackUsed: ['Next.js', 'tailwind', 'shadcn ui', 'RTK query', 'fakestore API'],
 		description:
-			'A dynamic e-commerce platform I meticulously crafted to elevate the online shopping experience crafted with Next.js, RTK Query, Shadcn UI, and Tailwind CSS. Experience seamless navigation, sleek design, and efficient data fetching for a modern and visually captivating online shopping experience.',
+			'A dynamic e-commerce platform I meticulously crafted to elevate the online shopping experience crafted with Next.js, RTK Query, Shadcn UI, and Tailwind CSS. Experience seamless navigation, sleek design, and efficient data fetching for a modern and visually captivating online shopping experience. {incomplete}',
+		isFeatured: false,
+	},
+	{
+		id: 'travlog',
+		imageUrl: '/works/travlog.png',
+		alt: 'Travlog travelling website created by ujjwal bhandari',
+		websiteName: 'Travlog Travelling Website',
+		liveLink: 'https://travlog-seven.vercel.app/',
+		stackUsed: ['Next.js', 'tailwind', 'shadcn ui', 'scss'],
+		description:
+			'A dynamic travel website designed to inspire wanderlust and simplify trip planning. Leveraging the power of Next.js 14, Shadcn UI, Tailwind CSS, and SCSS, I have created a visually stunning platform that seamlessly blends functionality with aesthetics. {incomplete}',
 		isFeatured: false,
 	},
 	{
@@ -176,4 +187,4 @@ export const TESTIMONIALS = [
 	},
 ];
 
-export const WORKS__PAGINATED = WORKS.slice(0, 3);
+export const WORKS__PAGINATED = WORKS.slice(0, 4);
