@@ -129,9 +129,9 @@ export const WORKS = [
 export const EXPERIENCE = [
   {
     name: "Intuji Pvt. Ltd.",
-    year: "Jul 2024 - Oct 2024",
+    year: "Jul 2024 - now",
     description:
-      "I successfully completed a 3-month internship at Intuji Pvt. Ltd., where I had the opportunity to work on diverse and challenging projects. My responsibilities involved building dynamic, responsive web applications using cutting-edge technologies such as Angular, NestJS, React, and Node.js. I gained a deeper understanding of full-stack development, while collaborating closely with a talented team to deliver robust, scalable solutions. Additionally, I leveraged Storybook for component-driven development and UI consistency across projects.",
+      "I had the opportunity to work on diverse and challenging projects. My responsibilities involved building dynamic, responsive web applications using cutting-edge technologies such as Angular, NestJS, React, and Node.js. I gained a deeper understanding of full-stack development, while collaborating closely with a talented team to deliver robust, scalable solutions. Additionally, I leveraged Storybook for component-driven development and UI consistency across projects.",
     learnings: [
       "Enhanced understanding of Angular framework, including component architecture, services, and state management.",
       "Developed RESTful APIs using NestJS and implemented secure, scalable backend systems.",
