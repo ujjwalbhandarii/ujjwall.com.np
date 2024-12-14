@@ -1,4 +1,4 @@
 type HeaderPropsT = {
-	show: Boolean;
-	setShow: any;
+  show: Boolean;
+  setShow: any;
 };

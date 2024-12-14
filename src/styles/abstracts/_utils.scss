@@ -3,53 +3,53 @@
 @use './mixins' as *;
 
 .container {
-	width: 90% !important;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0 !important;
+  width: 90% !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 !important;
 }
 
 @media (min-width: 512px) {
-	.container {
-		max-width: 512px !important;
-	}
+  .container {
+    max-width: 512px !important;
+  }
 }
 
 @media (min-width: 756px) {
-	.container {
-		max-width: 756px !important;
-	}
+  .container {
+    max-width: 756px !important;
+  }
 }
 
 @media (min-width: 1024px) {
-	.container {
-		max-width: 1024px !important;
-	}
+  .container {
+    max-width: 1024px !important;
+  }
 }
 
 @media (min-width: 1280px) {
-	.container {
-		max-width: 1280px !important;
-	}
+  .container {
+    max-width: 1280px !important;
+  }
 }
 
 @media (min-width: 1400px) {
-	.container {
-		max-width: 1400px !important;
-	}
+  .container {
+    max-width: 1400px !important;
+  }
 }
 
 .section--heading {
-	font-size: 1.5rem;
-	font-weight: 600;
-	font-family: $tomatoBold;
-	margin-bottom: 1rem;
-	text-decoration: underline;
-	text-underline-offset: 7px;
-	text-decoration-color: $secondary;
-	color: $white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: $tomatoBold;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  text-decoration-color: $secondary;
+  color: $white;
 
-	@include devices(tablet) {
-		font-size: 1.7rem;
-	}
+  @include devices(tablet) {
+    font-size: 1.7rem;
+  }
 }

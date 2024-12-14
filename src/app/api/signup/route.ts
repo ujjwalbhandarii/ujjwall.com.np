@@ -5,46 +5,46 @@ import prisma from '../../../../prisma';
 import { connectToDb } from '@/lib/dbConnect';
 
 export const POST = async (req: Request) => {
-	try {
-		const body = await req.json();
-		const { name, email, password } = body.data;
+  try {
+    const body = await req.json();
+    const { name, email, password } = body.data;
 
-		if (!name || !email || !password) {
-			return NextResponse.json(
-				{ error: 'missing name, email or password' },
-				{ status: 422 },
-			);
-		}
+    if (!name || !email || !password) {
+      return NextResponse.json(
+        { error: 'missing name, email or password' },
+        { status: 422 },
+      );
+    }
 
-		await connectToDb();
+    await connectToDb();
 
-		const existingUser = await prisma.user.findFirst({
-			where: { email },
-		});
+    const existingUser = await prisma.user.findFirst({
+      where: { email },
+    });
 
-		if (existingUser != null) {
-			return NextResponse.json(
-				{
-					message: 'This email has already registered.',
-				},
-				{ status: 403 },
-			);
-		}
+    if (existingUser != null) {
+      return NextResponse.json(
+        {
+          message: 'This email has already registered.',
+        },
+        { status: 403 },
+      );
+    }
 
-		const hashedPassword = await becrypt.hash(password, 10);
+    const hashedPassword = await becrypt.hash(password, 10);
 
-		const user = await prisma.user.create({
-			data: {
-				name,
-				email,
-				password: hashedPassword,
-			},
-		});
+    const user = await prisma.user.create({
+      data: {
+        name,
+        email,
+        password: hashedPassword,
+      },
+    });
 
-		return NextResponse.json({ user }, { status: 201 });
-	} catch (error: any) {
-		return NextResponse.json({ error: error.message }, { status: 500 });
-	} finally {
-		await prisma.$disconnect();
-	}
+    return NextResponse.json({ user }, { status: 201 });
+  } catch (error: any) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  } finally {
+    await prisma.$disconnect();
+  }
 };

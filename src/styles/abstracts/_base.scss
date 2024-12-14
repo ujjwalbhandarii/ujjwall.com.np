@@ -1,63 +1,63 @@
 @use './colors' as *;
 
 body {
-	overflow-x: hidden;
-	background-color: $bg-color;
-	cursor: url('/bestCursor.png'), auto;
+  overflow-x: hidden;
+  background-color: $bg-color;
+  cursor: url('/bestCursor.png'), auto;
 
-	::selection {
-		color: #ffffff;
-		background-color: #760276;
-	}
+  ::selection {
+    color: #ffffff;
+    background-color: #760276;
+  }
 }
 
 a:hover,
 button:hover {
-	cursor: url('/hover-white.png'), auto;
+  cursor: url('/hover-white.png'), auto;
 }
 
 html {
-	scroll-behavior: smooth;
-	scrollbar-width: thin;
-	scrollbar-color: $secondary #c5c2c2;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: $secondary #c5c2c2;
 }
 
 html::-webkit-scrollbar {
-	width: 0.5vw;
+  width: 0.5vw;
 }
 
 html::-webkit-scrollbar-thumb {
-	background-color: rgba($color: $secondary, $alpha: 1);
-	border-radius: 3rem;
+  background-color: rgba($color: $secondary, $alpha: 1);
+  border-radius: 3rem;
 }
 
 html::-webkit-scrollbar-thumb:hover {
-	background-color: rgba($color: $secondary, $alpha: 1);
+  background-color: rgba($color: $secondary, $alpha: 1);
 }
 
 html::-webkit-scrollbar-track {
-	background-color: #d8d7d7;
+  background-color: #d8d7d7;
 }
 
 *,
 *::after,
 *::before {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	color: $white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: $white;
 }
 
 ul {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-	list-style: none;
-	text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 }
 
 a {
-	text-decoration: none;
-	display: block;
+  text-decoration: none;
+  display: block;
 }

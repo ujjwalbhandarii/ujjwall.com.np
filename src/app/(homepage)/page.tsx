@@ -1,17 +1,23 @@
-import { About, Experience, Herosection, NeedAWebDev, Works } from '@/layout';
-import Testimonials from '@/layout/testimonials';
-import Tools from '@/layout/tools';
+import {
+  About,
+  Experience,
+  Herosection,
+  NeedAWebDev,
+  Works,
+} from '@/components/section';
+import Testimonials from '@/components/section/testimonials';
+import Tools from '@/components/section/tools';
 
 export default function Home() {
-	return (
-		<>
-			<Herosection />
-			<About />
-			<Experience />
-			<Tools />
-			<Works />
-			<Testimonials />
-			<NeedAWebDev />
-		</>
-	);
+  return (
+    <>
+      <Herosection />
+      <About />
+      <Experience />
+      <Tools />
+      <Works />
+      <Testimonials />
+      <NeedAWebDev />
+    </>
+  );
 }

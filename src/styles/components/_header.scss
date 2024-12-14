@@ -1,164 +1,164 @@
 @use '../abstracts' as *;
 
 .header {
-	width: 100%;
-	padding: 0.8rem 0;
+  width: 100%;
+  padding: 0.8rem 0;
 
-	@include devices(tablet) {
-		padding: 2rem 0;
-	}
+  @include devices(tablet) {
+    padding: 2rem 0;
+  }
 
-	&__wrapper {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-	&--heading {
-		font-size: 1.3rem;
-		font-weight: 600;
-	}
+  &--heading {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
 
-	&__image {
-		&--img {
-			height: 25px;
-			width: 25px;
-			border-radius: 50%;
-		}
-	}
+  &__image {
+    &--img {
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+    }
+  }
 
-	&__group,
-	&__links {
-		gap: 2rem;
-	}
+  &__group,
+  &__links {
+    gap: 2rem;
+  }
 
-	&__group {
-		display: flex;
-		align-items: center;
-		transition: 0.3s ease-out;
+  &__group {
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease-out;
 
-		@include devices(uptotablet) {
-			top: 0;
-			right: 0;
-			z-index: 1;
-			width: 100vw;
-			padding: 2rem;
-			display: flex;
-			height: 100lvh;
-			position: fixed;
-			align-items: center;
-			flex-direction: column;
-			justify-content: center;
-			background-color: rgb(24, 1, 46);
-		}
+    @include devices(uptotablet) {
+      top: 0;
+      right: 0;
+      z-index: 1;
+      width: 100vw;
+      padding: 2rem;
+      display: flex;
+      height: 100lvh;
+      position: fixed;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background-color: rgb(24, 1, 46);
+    }
 
-		@include devices(tablet) {
-			transition: 0s;
-		}
-	}
+    @include devices(tablet) {
+      transition: 0s;
+    }
+  }
 
-	&__links {
-		display: flex;
-		align-items: center;
+  &__links {
+    display: flex;
+    align-items: center;
 
-		@include devices(uptotablet) {
-			flex-direction: column;
-		}
+    @include devices(uptotablet) {
+      flex-direction: column;
+    }
 
-		// li {
-		// 	&:last-child {
-		// 		//targetting blog
-		// 	}
-		// }
-	}
+    // li {
+    // 	&:last-child {
+    // 		//targetting blog
+    // 	}
+    // }
+  }
 
-	&--svg-img {
-		@include devices(uptotablet) {
-			-webkit-filter: invert(100%);
-			filter: invert(100%);
-		}
-	}
+  &--svg-img {
+    @include devices(uptotablet) {
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
+    }
+  }
 
-	&--link {
-		font-weight: 500;
-		font-size: 0.9rem;
-		transition: 0.3s ease;
-		color: $white;
+  &--link {
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+    color: $white;
 
-		&:hover {
-			color: $secondary;
-		}
-	}
+    &:hover {
+      color: $secondary;
+    }
+  }
 
-	&__group {
-		&__togglers {
-			position: fixed;
-			top: 1rem;
-			right: 0.7rem;
-		}
-	}
+  &__group {
+    &__togglers {
+      position: fixed;
+      top: 1rem;
+      right: 0.7rem;
+    }
+  }
 
-	&--svg {
-		font-size: 2rem;
-		cursor: pointer;
-		user-select: none;
-	}
+  &--svg {
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+  }
 
-	&__togglers {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 1rem;
+  &__togglers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 
-		@include devices(tablet) {
-			display: none;
-		}
-	}
+    @include devices(tablet) {
+      display: none;
+    }
+  }
 
-	&__themetogglerMobile {
-		display: flex;
-		font-size: 2rem;
+  &__themetogglerMobile {
+    display: flex;
+    font-size: 2rem;
 
-		@include devices(tablet) {
-			display: none;
-		}
-	}
+    @include devices(tablet) {
+      display: none;
+    }
+  }
 
-	&__themetogglerDesktop {
-		display: none;
+  &__themetogglerDesktop {
+    display: none;
 
-		@include devices(tablet) {
-			display: flex;
-			font-size: 2rem;
-		}
-	}
+    @include devices(tablet) {
+      display: flex;
+      font-size: 2rem;
+    }
+  }
 
-	&--theme {
-		&:hover {
-			scale: 1.05;
-		}
-	}
+  &--theme {
+    &:hover {
+      scale: 1.05;
+    }
+  }
 }
 
 .show {
-	right: 0;
-	overflow: hidden;
+  right: 0;
+  overflow: hidden;
 }
 
 .dontshow {
-	right: -100vw;
+  right: -100vw;
 }
 
 .white {
-	color: white;
+  color: white;
 }
 
 .svgshow {
-	display: fixed;
-	top: 1rem;
-	right: 1rem;
+  display: fixed;
+  top: 1rem;
+  right: 1rem;
 }
 
 .svghidden {
-	display: none;
+  display: none;
 }
