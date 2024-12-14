@@ -1,4 +1,4 @@
-import Container from '@/utils/container';
+import Container from '@/components/utils/container';
 import { Metadata } from 'next';
 import Image from 'next/image';
 

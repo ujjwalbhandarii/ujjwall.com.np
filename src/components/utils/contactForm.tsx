@@ -4,9 +4,9 @@ import { useForm } from 'react-hook-form';
 import { useRouter } from 'next/navigation';
 import { toast } from 'react-hot-toast';
 
-import { Input } from '@/shadcn/ui/input';
-import { Textarea } from '@/shadcn/ui/textarea';
-import { Label } from '@/shadcn/ui/label';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Label } from '@/components/ui/label';
 
 export type FormType = {
 	name: string;

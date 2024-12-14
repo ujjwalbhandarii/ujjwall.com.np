@@ -1,5 +1,5 @@
 'use client';
-import { Button } from '@/shadcn/ui/button';
+import { Button } from '@/components/ui/button';
 import { signOut } from 'next-auth/react';
 
 export default function SignoutButton() {

@@ -9,8 +9,8 @@ import '@/styles/main.scss';
 import '@/styles/global.css';
 
 import { Footer } from '@/layout';
-import Cursor from '@/components/cursor';
-import Header from '@/components/header/header';
+import Cursor from '@/components/utils/cursor';
+import Header from '@/components/section/header/header';
 import AuthProvider from '@/providers/authProvider';
 import { WEBSITE_KEYWORDS } from '@/data/metadata';
 

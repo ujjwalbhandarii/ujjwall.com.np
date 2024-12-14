@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Container from '@/utils/container';
+import Container from '@/components/utils/container';
 
 export function Footer() {
 	return (

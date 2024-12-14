@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Container from '@/utils/container';
+import Container from '@/components/utils/container';
 
 export const NeedAWebDev = () => {
 	return (

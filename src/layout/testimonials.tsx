@@ -6,9 +6,9 @@ import {
 	CarouselItem,
 	CarouselNext,
 	CarouselPrevious,
-} from '@/shadcn/ui/carousel';
+} from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
-import Container from '@/utils/container';
+import Container from '@/components/utils/container';
 import { TESTIMONIALS } from '@/data/landingpage';
 
 export default function Testimonials() {

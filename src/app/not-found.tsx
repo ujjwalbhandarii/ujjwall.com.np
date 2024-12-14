@@ -1,4 +1,4 @@
-import Container from '@/utils/container';
+import Container from '@/components/utils/container';
 import Link from 'next/link';
 
 export default function NotFound() {

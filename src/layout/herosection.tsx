@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Container from '@/utils/container';
-import BottomAside from '@/components/bottomAside';
+import Container from '@/components/utils/container';
+import BottomAside from '@/components/utils/bottomAside';
 
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
-import HeroSocials from '@/components/herosection/heroSocials';
+import HeroSocials from '@/components/section/herosection/heroSocials';
 
 export function Herosection() {
 	return (

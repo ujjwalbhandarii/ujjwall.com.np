@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import Container from '@/utils/container';
+import Container from '@/components/utils/container';
 import { WORKS__PAGINATED } from '@/data/landingpage';
-import ProjectsCard from '@/components/projectsCard';
+import ProjectsCard from '@/components/utils/projectsCard';
 
 export async function Works() {
 	return (

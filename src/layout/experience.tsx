@@ -1,6 +1,6 @@
 'use client';
 
-import Container from '@/utils/container';
+import Container from '@/components/utils/container';
 import { EXPERIENCE } from '@/data/landingpage';
 import { useState } from 'react';
 // import { Button } from '@/shadcn/ui/button';

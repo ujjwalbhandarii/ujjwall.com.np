@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
-import Container from '@/utils/container';
+import Container from '@/components/utils/container';
 import { WORKS } from '@/data/landingpage';
-import ProjectsCard from '@/components/projectsCard';
+import ProjectsCard from '@/components/utils/projectsCard';
 
 export const metadata: Metadata = {
 	title: 'Ujjwal Bhandari - Projects🚀',

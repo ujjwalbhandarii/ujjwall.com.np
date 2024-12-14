@@ -3,7 +3,7 @@ import {
 	AccordionContent,
 	AccordionItem,
 	AccordionTrigger,
-} from '@/shadcn/ui/accordion';
+} from '@/components/ui/accordion';
 
 import { FAQ_QUESTIONS } from '@/data/faqs';
 

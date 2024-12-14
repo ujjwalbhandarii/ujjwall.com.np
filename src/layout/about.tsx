@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import Container from '@/utils/container';
+import Container from '@/components/utils/container';
 import { ABOUT_ME } from '@/data/landingpage';
 
 export function About() {

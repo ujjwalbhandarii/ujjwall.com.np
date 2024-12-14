@@ -7,8 +7,8 @@ import { useRouter } from 'next/navigation';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { toast } from 'react-hot-toast';
 
-import { Input } from '@/shadcn/ui/input';
-import { Button } from '@/shadcn/ui/button';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
 import { TSignUpSchema, signUpSchema } from '@/schema/signupSchema';
 
 export default function Signup() {

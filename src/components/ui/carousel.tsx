@@ -7,8 +7,8 @@ import {
 import useEmblaCarousel from 'embla-carousel-react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
-import { cn } from '@/shadcn/lib';
-import { Button } from '@/shadcn//ui/button';
+import { cn } from '@/utils/cn';
+import { Button } from '@/components/ui/button';
 
 type CarouselProps = {
 	opts?: CarouselOptions;

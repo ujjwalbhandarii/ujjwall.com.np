@@ -1,5 +1,5 @@
 import { SKILLS } from '@/data/landingpage';
-import Container from '@/utils/container';
+import Container from '@/components/utils/container';
 
 export default function Tools() {
 	return (

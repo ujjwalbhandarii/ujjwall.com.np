@@ -1,4 +1,4 @@
-import Container from '@/utils/container';
+import Container from '@/components/utils/container';
 
 export default function CreateProject() {
 	return (

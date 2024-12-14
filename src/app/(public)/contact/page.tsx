@@ -1,6 +1,6 @@
-import Container from '@/utils/container';
-import ContactForm from '@/components/contactForm';
-import FAQs from '@/components/faq';
+import Container from '@/components/utils/container';
+import ContactForm from '@/components/utils/contactForm';
+import FAQs from '@/components/utils/faq';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
