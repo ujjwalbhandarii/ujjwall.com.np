@@ -4,30 +4,16 @@ Welcome to my portfolio website showcasing my projects, skills, and experience.
 
 ## 🚀 Tech Stack
 
-- **Framework:** Next.js
-- **Styling:** Tailwind CSS, Sass
-- **Animations:** Framer Motion
-- **UI Components:** Radix UI
-- **Authentication:** Auth.js
-- **Validation:** Zod
+![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![Radix UI](https://img.shields.io/badge/Radix%20UI-333333?style=for-the-badge&logo=radix-ui&logoColor=white)
+![Auth.js](https://img.shields.io/badge/Auth.js-EA4C89?style=for-the-badge&logo=auth0&logoColor=white)
+![Zod](https://img.shields.io/badge/Zod-4A90E2?style=for-the-badge&logo=zod&logoColor=white)
 
-## 📂 Project Structure
+## 📸 Screenshots
 
-```
-/portfolio-website
-  ├── public       # Static assets
-  ├── src
-  │   ├── components  # Reusable UI components
-  │   ├── app         # Application pages
-  │   ├── styles      # Global styles
-  │   ├── hooks       # Custom hooks
-  │   ├── lib         # Utilities and helpers
-  │   └── types       # Type definitions
-  │   └── utils       # Atomic helper functions
-  │   └── constants   # Application Constants
-  │   └── schema      # Zod schema definitions
-  └── README.md
-```
+![Home Page](./assets/website-showcase.png)
 
 ## 🛠️ Features
 
@@ -85,7 +71,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 🤝 Contact
 
-- **Email:** ujjwalbhandari14@gmail.com
+- **Email:** infoujjwalbhandari@gmail.com
 - **LinkedIn:** [linkedin.com/in/ujjwalbhandarii](https://www.linkedin.com/in/ujjwalbhandarii/)
 - **Portfolio:** [ujjwall.com.np](https://www.ujjwall.com.np/)
 
