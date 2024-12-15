@@ -1,8 +1,6 @@
+import prisma from '@/lib/prisma';
 import becrypt from 'bcrypt';
 import { NextResponse } from 'next/server';
-
-import prisma from '../../../../prisma';
-import { connectToDb } from '@/lib/dbConnect';
 
 export const POST = async (req: Request) => {
   try {
@@ -15,8 +13,6 @@ export const POST = async (req: Request) => {
         { status: 422 },
       );
     }
-
-    await connectToDb();
 
     const existingUser = await prisma.user.findFirst({
       where: { email },

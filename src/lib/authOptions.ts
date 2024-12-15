@@ -1,10 +1,10 @@
 import bcrypt from 'bcrypt';
-import { getServerSession, type NextAuthOptions } from 'next-auth';
-import { PrismaAdapter } from '@auth/prisma-adapter';
 import CredientialProvider from 'next-auth/providers/credentials';
+import { getServerSession, type NextAuthOptions } from 'next-auth';
 
-import prisma from '../../../../../prisma';
-import { connectToDb } from '@/lib/dbConnect';
+import { PrismaAdapter } from '@auth/prisma-adapter';
+
+import prisma from '@/lib/prisma';
 
 type User = {
   id: string;
@@ -27,7 +27,7 @@ export const authOptions: NextAuthOptions = {
         if (!credentials?.email || !credentials?.password) {
           return null;
         }
-        await connectToDb();
+
         const existingUser: User | null = await prisma.user.findFirst({
           where: { email: credentials.email },
         });
