@@ -15,9 +15,7 @@ import AuthProvider from '@/components/lib/AuthProvider';
 import { METADATA, VIEWPORT } from '@/constants/meta.constants';
 
 const inter = Inter({ subsets: ['latin'] });
-
 export const viewport: Viewport = VIEWPORT;
-
 export const metadata: Metadata = METADATA;
 
 export default function RootLayout({
