@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import type { Viewport } from 'next';
+import { Inter } from 'next/font/google';
 
 import { Toaster } from 'react-hot-toast';
 import NextTopLoader from 'nextjs-toploader';
@@ -12,48 +12,13 @@ import { Footer } from '@/components/section';
 import Cursor from '@/components/utils/cursor';
 import Header from '@/components/section/header/header';
 import AuthProvider from '@/components/lib/AuthProvider';
-import { WEBSITE_KEYWORDS } from '@/constants/metadata';
+import { METADATA, VIEWPORT } from '@/constants/meta.constants';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const viewport: Viewport = {
-  colorScheme: 'dark',
-  themeColor: '#0a0b1f',
-  width: 'device-width',
-  initialScale: 1,
-};
+export const viewport: Viewport = VIEWPORT;
 
-export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.WEBSITE_URL || 'https://www.ujjwall.com.np',
-  ),
-  title: 'Ujjwal Bhandari - Full Stack Web Developer',
-  description:
-    'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. He specializes in Next.js, Nest.js & Node.js. Your can ping ujjwal for any web development work.',
-  manifest: '/manifest.json',
-  robots: 'index, archive',
-  openGraph: {
-    type: 'website',
-    url: 'https://www.ujjwall.com.np',
-    images: [
-      'https://res.cloudinary.com/ujjwalbhandari/image/upload/v1701354184/ujjwalbhandarii.com.np/opengraph_a6fuqi.jpg',
-    ],
-    title: 'Ujjwal Bhandari - Full Stack Web Developer',
-    description:
-      'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. He specializes in Next.js, Nest.js & Node.js. Your can ping ujjwal for any web development work.',
-  },
-  twitter: {
-    site: '@ujjwalbhandarii',
-    creator: 'ujjwal bhandari',
-    title: 'Ujjwal Bhandari - Full Stack Web Developer',
-    description:
-      'Ujjwal Bhandari is a passionate Full Stack Web Developer hailing from Butwal, Nepal. He specializes in Next.js, Nest.js & Node.js. Your can ping ujjwal for any web development work.',
-  },
-  alternates: {
-    canonical: 'https://www.ujjwall.com.np',
-  },
-  keywords: WEBSITE_KEYWORDS,
-};
+export const metadata: Metadata = METADATA;
 
 export default function RootLayout({
   children,
@@ -64,11 +29,9 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <AuthProvider>
-          <div className='page'>
-            <Header />
-            <main>{children}</main>
-            <Footer />
-          </div>
+          <Header />
+          <main>{children}</main>
+          <Footer />
           <Cursor />
           <Toaster />
           <NextTopLoader
