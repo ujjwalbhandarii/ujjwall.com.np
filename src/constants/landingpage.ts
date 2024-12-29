@@ -1,7 +1,3 @@
-import lumbiniSandesh from '/public/works/lumbinisandesh.png';
-import ujjwall from '/public/works/ujjwall.png';
-import cpmUml from '/public/works/cpnuml.png';
-
 export const HEROSECTION_DATA = {
   exploring: '{ Exploring the world of 0s & 1s. }',
 };
@@ -12,7 +8,7 @@ export const ABOUT_ME =
 export const WORKS = [
   {
     id: 'lumbini-sandesh',
-    imageUrl: lumbiniSandesh,
+    imageUrl: '/assets/works/lumbinisandesh.png',
     alt: 'lumbinisandesh website created by ujjwal bhandari',
     websiteName: 'Lumbini Sandesh News Portal',
     liveLink: 'https://lumbinisandesh.com/',
@@ -23,7 +19,7 @@ export const WORKS = [
   },
   {
     id: 'online-store',
-    imageUrl: '/works/woodmart-clone.png',
+    imageUrl: '/assets/works/woodmart-clone.png',
     alt: 'OnlineStore website created by ujjwal bhandari',
     websiteName: 'Woodmart Ecommerce Webapp',
     liveLink: 'https://woodmart-clone.vercel.app/',
@@ -40,7 +36,7 @@ export const WORKS = [
   },
   {
     id: 'travlog',
-    imageUrl: '/works/travlog.png',
+    imageUrl: '/assets/works/travlog.png',
     alt: 'Travlog travelling website created by ujjwal bhandari',
     websiteName: 'Travlog Travelling Website',
     liveLink: 'https://travlog-seven.vercel.app/',
@@ -51,7 +47,7 @@ export const WORKS = [
   },
   {
     id: 'anushka-blog',
-    imageUrl: '/works/anu.png',
+    imageUrl: '/assets/works/anu.png',
     alt: 'anushka blog website created by ujjwal bhandari',
     websiteName: 'FullStack blog website',
     liveLink: 'https://anushkaa.vercel.app/',
@@ -71,7 +67,7 @@ export const WORKS = [
   },
   {
     id: 'cpn-uml',
-    imageUrl: cpmUml,
+    imageUrl: '/assets/works/cpnuml.png',
     alt: 'cpnuml website created by ujjwal bhandari',
     websiteName: 'CPN UML Lumbini Offical Site',
     liveLink: 'https://cpnumllumbini.org/',
@@ -82,7 +78,7 @@ export const WORKS = [
   },
   {
     id: 'nepwonders-personalproject',
-    imageUrl: '/works/nepwonders.png',
+    imageUrl: '/assets/works/nepwonders.png',
     alt: 'Nepwonders created by ujjwal bhandari',
     websiteName:
       'Nepwonders - A complete ecosystem for tourist {launching soon}',
@@ -103,7 +99,7 @@ export const WORKS = [
 
   {
     id: 'ujjwall-protfolio',
-    imageUrl: ujjwall,
+    imageUrl: '/assets/works/ujjwall.png',
     alt: 'ujjwal bhandari protfolio website',
     liveLink: 'https://ujjwall.com.np',
     websiteName: 'My Protfolio Website',
@@ -115,7 +111,7 @@ export const WORKS = [
 
   {
     id: 'ankit-website',
-    imageUrl: '/works/ankit.png',
+    imageUrl: '/assets/works/ankit.png',
     alt: 'Ankit website created by ujjwal bhandari',
     websiteName: 'Personal portfolio for a friend',
     liveLink: 'https://ankitbhattarai.vercel.app/',

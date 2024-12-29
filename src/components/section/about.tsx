@@ -22,7 +22,7 @@ export function About() {
             <div className='about__image'>
               <figure className='about--figure'>
                 <Image
-                  src='/dp.jpg'
+                  src='/assets/dp.jpg'
                   alt='ujjwal bhandari photo'
                   quality={100}
                   width={400}

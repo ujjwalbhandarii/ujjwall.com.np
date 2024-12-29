@@ -20,7 +20,7 @@ export function Herosection() {
               <div className='herosection__more__inside'>
                 <figure>
                   <Image
-                    src='/online.png'
+                    src='/assets/online.png'
                     alt='ujjwal bhandari is online for small to medium sized projects.'
                     width={10}
                     height={10}

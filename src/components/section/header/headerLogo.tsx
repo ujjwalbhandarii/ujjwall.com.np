@@ -7,7 +7,7 @@ export default function HeaderLogo() {
       <figure className='header__image'>
         <Image
           className='header__image--img'
-          src='/navlogo.png'
+          src='/assets/navlogo.png'
           alt='logo'
           height={25}
           width={25}
