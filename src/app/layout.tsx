@@ -8,11 +8,11 @@ import NextTopLoader from 'nextjs-toploader';
 import '@/styles/main.scss';
 import '@/styles/global.css';
 
-import { Footer } from '@/components/section';
 import Cursor from '@/components/utils/cursor';
 import Header from '@/components/section/header/header';
 import AuthProvider from '@/components/lib/AuthProvider';
 import { METADATA, VIEWPORT } from '@/constants/meta.constants';
+import { Footer } from '@/components/section/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 export const viewport: Viewport = VIEWPORT;

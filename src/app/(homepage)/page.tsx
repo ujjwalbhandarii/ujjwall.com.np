@@ -4,13 +4,13 @@ import Image from 'next/image';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 
 import { SKILLS } from '@/constants/landingpage';
-import { Experience } from '@/components/section';
 import { ABOUT_ME } from '@/constants/landingpage';
 import Container from '@/components/utils/container';
 import BottomAside from '@/components/utils/bottomAside';
 import { WORKS__PAGINATED } from '@/constants/landingpage';
 import ProjectsCard from '@/components/utils/projectsCard';
 import Testimonials from '@/components/section/testimonials';
+import { Experience } from '@/components/section/experience';
 import HeroSocials from '@/components/section/herosection/heroSocials';
 
 export default function Home() {
