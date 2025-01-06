@@ -1,4 +1,4 @@
-export default function BottomAside() {
+export function BottomAside() {
   return (
     <a
       href='mailto::infoujjwalbhandari@gmail.com'

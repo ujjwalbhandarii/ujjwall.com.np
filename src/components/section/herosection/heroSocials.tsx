@@ -6,49 +6,48 @@ import { BsLinkedin } from 'react-icons/bs';
 import { BsFacebook } from 'react-icons/bs';
 import { GrInstagram } from 'react-icons/gr';
 
-export default function HeroSocials() {
+const SOCIAL_LINKS = [
+  {
+    icon: <BsGithub />,
+    title: 'Ujjwal Bhandari Github',
+    url: 'https://github.com/ujjwalbhandarii',
+  },
+  {
+    icon: <GrInstagram />,
+    title: 'Ujjwal Bhandari Instagram',
+    url: 'https://www.instagram.com/ujjwalbhandarii/',
+  },
+  {
+    icon: <BsTwitch />,
+    title: 'Ujjwal Bhandari Twitch',
+    url: 'https://www.twitch.tv/ujjwalbhandari',
+  },
+  {
+    icon: <BsLinkedin />,
+    title: 'Ujjwal Bhandari Linkedin',
+    url: 'https://www.linkedin.com/in/ujjwalbhandarii/',
+  },
+  {
+    icon: <BsFacebook />,
+    title: 'Ujjwal Bhandari Facebook',
+    url: 'https://www.facebook.com/ujjwalbhandariiii',
+  },
+];
+
+export function SoialLinks() {
   return (
     <div className='herosection__social'>
       <div className='herosection__sociallinks'>
-        <Link
-          aria-label='ujjwalbhandari github account'
-          href='https://github.com/ujjwalbhandarii'
-          target='_blank'
-        >
-          <BsGithub />
-        </Link>
-
-        <Link
-          aria-label='ujjwalbhandari twitch account'
-          href='https://www.twitch.tv/ujjwalbhandari'
-          target='_blank'
-        >
-          <BsTwitch />
-        </Link>
-
-        <Link
-          aria-label='ujjwalbhandari linkedin'
-          href='https://www.linkedin.com/in/ujjwalbhandarii/'
-          target='_blank'
-        >
-          <BsLinkedin />
-        </Link>
-
-        <Link
-          aria-label='ujjwal facebook account'
-          href='https://www.facebook.com/ujjwalbhandariiii'
-          target='_blank'
-        >
-          <BsFacebook />
-        </Link>
-
-        <Link
-          aria-label='ujjwal bhandari instagram account'
-          href='https://www.instagram.com/ujjwalbhandarri/'
-          target='_blank'
-        >
-          <GrInstagram />
-        </Link>
+        {SOCIAL_LINKS.map((link, index) => (
+          <Link
+            key={index}
+            href={link.url}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            {link.icon}
+          </Link>
+        ))}
       </div>
     </div>
   );

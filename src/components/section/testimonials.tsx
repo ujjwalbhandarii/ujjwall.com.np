@@ -8,10 +8,10 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
-import Container from '@/components/utils/container';
+import { Container } from '@/components/utils/container';
 import { TESTIMONIALS } from '@/constants/landingpage';
 
-export default function Testimonials() {
+export function Testimonials() {
   return (
     <section className='bg-backgroundColorDarker'>
       <Container>

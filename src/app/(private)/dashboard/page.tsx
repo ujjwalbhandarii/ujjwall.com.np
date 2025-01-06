@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Container from '@/components/utils/container';
+import { Container } from '@/components/utils/container';
 import SignoutButton from '@/components/utils/signout';
 
 export default function DashboardPage() {

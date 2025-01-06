@@ -5,13 +5,13 @@ import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 
 import { SKILLS } from '@/constants/landingpage';
 import { ABOUT_ME } from '@/constants/landingpage';
-import Container from '@/components/utils/container';
-import BottomAside from '@/components/utils/bottomAside';
+import { Container } from '@/components/utils/container';
 import { WORKS__PAGINATED } from '@/constants/landingpage';
-import ProjectsCard from '@/components/utils/projectsCard';
-import Testimonials from '@/components/section/testimonials';
+import { BottomAside } from '@/components/utils/bottomAside';
 import { Experience } from '@/components/section/experience';
-import HeroSocials from '@/components/section/herosection/heroSocials';
+import { ProjectsCard } from '@/components/utils/projectsCard';
+import { Testimonials } from '@/components/section/testimonials';
+import { SoialLinks } from '@/components/section/herosection/heroSocials';
 
 export default function Home() {
   return (
@@ -74,7 +74,7 @@ function Herosection() {
               Say Hello!
             </Link>
           </div>
-          <HeroSocials />
+          <SoialLinks />
           <div className='herosection__arrow text-lightGray dark:text-lightGray'>
             <MdKeyboardDoubleArrowDown />
           </div>

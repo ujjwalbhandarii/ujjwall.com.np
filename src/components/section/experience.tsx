@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import Container from '@/components/utils/container';
+import { Container } from '@/components/utils/container';
 import { EXPERIENCE } from '@/constants/landingpage';
 
 export function Experience() {

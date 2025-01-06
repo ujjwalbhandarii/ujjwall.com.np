@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import Container from '@/components/utils/container';
+import { Container } from '@/components/utils/container';
 import { WORKS } from '@/constants/landingpage';
 import ProjectsCard from '@/components/utils/projectsCard';
 

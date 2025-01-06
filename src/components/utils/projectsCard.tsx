@@ -10,7 +10,7 @@ type Props = {
   liveLink: string;
 };
 
-export default function ProjectsCard({
+export function ProjectsCard({
   imageUrl,
   alt,
   description,
