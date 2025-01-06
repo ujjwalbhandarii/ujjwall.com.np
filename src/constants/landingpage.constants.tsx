@@ -1,5 +1,6 @@
 import { GrInstagram } from 'react-icons/gr';
 import { BsFacebook, BsGithub, BsLinkedin, BsTwitch } from 'react-icons/bs';
+import { ROUTES } from './routes.constants';
 
 export const ABOUT_ME =
   "<p>Greetings! I'm <strong>Ujjwal</strong>, a passionate CS Student &amp; a full stack web developer. My journey into the dynamic world of web development began in 2020, sparked by my early experiences with WordPress. Since then, I've been immersed in the exciting realm of creating digital wonders that come to life on the internet.</p><p>Beyond my academic pursuits, I am actively engaged as a Secretary at <strong>Code for Change</strong> Butwal, a volunteer organization dedicated to empowering IT enthusiasts by facilitating learning opportunities in cutting-edge technologies.</p><p>Let's build something extraordinary together!</p>";
@@ -277,16 +278,16 @@ export const HEADER_LINKS = [
   {
     id: 'home-page',
     name: 'Home',
-    href: '/',
+    href: ROUTES.HOME,
   },
   {
     id: 'contact-page',
     name: 'Contact',
-    href: '/contact',
+    href: ROUTES.PUBLIC.CONTACT,
   },
   {
     id: 'blog-page',
     name: 'Blog',
-    href: '/blog',
+    href: ROUTES.PUBLIC.BLOG,
   },
 ];
