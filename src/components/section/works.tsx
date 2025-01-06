@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Container } from '@/components/utils/container';
-import { WORKS__PAGINATED } from '@/constants/landingpage.constants';
+import { WORKS__PAGINATED } from '@/constants/landing-page.constants';
 import { ProjectsCard } from '@/components/utils/projectsCard';
 
 export async function Works() {

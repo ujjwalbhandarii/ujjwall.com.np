@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 
-import { FAQ_QUESTIONS } from '@/constants/landingpage.constants';
+import { FAQ_QUESTIONS } from '@/constants/landing-page.constants';
 
 export default function FAQs() {
   return (

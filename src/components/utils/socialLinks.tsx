@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { SOCIAL_LINKS } from '@/constants/landingpage.constants';
+import { SOCIAL_LINKS } from '@/constants/landing-page.constants';
 
 export function SoialLinks() {
   return (

@@ -9,10 +9,11 @@ import '@/styles/main.scss';
 import '@/styles/global.css';
 
 import Cursor from '@/components/utils/cursor';
+import { Footer } from '@/components/section/footer';
 import Header from '@/components/section/header/header';
 import AuthProvider from '@/components/lib/AuthProvider';
 import { METADATA, VIEWPORT } from '@/constants/meta.constants';
-import { Footer } from '@/components/section/footer';
+import { NEXTTOPLOADER_CONFIG } from '@/constants/package-config.constants';
 
 const inter = Inter({ subsets: ['latin'] });
 export const viewport: Viewport = VIEWPORT;
@@ -28,16 +29,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <AuthProvider>
           <Header />
-          <main>{children}</main>
+          {children}
           <Footer />
           <Cursor />
           <Toaster />
-          <NextTopLoader
-            easing='ease'
-            color='#01e0c8'
-            crawl={true}
-            showSpinner={true}
-          />
+          <NextTopLoader {...NEXTTOPLOADER_CONFIG} />
         </AuthProvider>
       </body>
     </html>

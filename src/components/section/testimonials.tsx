@@ -9,7 +9,7 @@ import {
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { Container } from '@/components/utils/container';
-import { TESTIMONIALS } from '@/constants/landingpage.constants';
+import { TESTIMONIALS } from '@/constants/landing-page.constants';
 
 export function Testimonials() {
   return (

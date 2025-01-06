@@ -4,14 +4,14 @@ import Image from 'next/image';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 
 import { Container } from '@/components/utils/container';
-import { SKILLS } from '@/constants/landingpage.constants';
+import { SKILLS } from '@/constants/landing-page.constants';
 import { SoialLinks } from '@/components/utils/socialLinks';
 import { BottomAside } from '@/components/utils/bottomAside';
-import { ABOUT_ME } from '@/constants/landingpage.constants';
+import { ABOUT_ME } from '@/constants/landing-page.constants';
 import { Experience } from '@/components/section/experience';
 import { ProjectsCard } from '@/components/utils/projectsCard';
 import { Testimonials } from '@/components/section/testimonials';
-import { WORKS__PAGINATED } from '@/constants/landingpage.constants';
+import { WORKS__PAGINATED } from '@/constants/landing-page.constants';
 
 export default function Home() {
   return (
