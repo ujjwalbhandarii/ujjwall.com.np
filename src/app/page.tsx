@@ -88,6 +88,13 @@ function Herosection() {
 }
 
 function About() {
+  const RenderAboutme = () => (
+    <div
+      className='about__content__group'
+      dangerouslySetInnerHTML={{ __html: ABOUT_ME }}
+    />
+  );
+
   return (
     <section
       className='about'
@@ -97,12 +104,7 @@ function About() {
         <div className='about__wrapper'>
           <h2 className='about--heading section--heading'>About Me</h2>
           <main className='about__main'>
-            <article>
-              <div
-                className='about__content__group'
-                dangerouslySetInnerHTML={{ __html: ABOUT_ME }}
-              />
-            </article>
+            <RenderAboutme />
             <div className='about__image'>
               <figure className='about--figure'>
                 <Image
