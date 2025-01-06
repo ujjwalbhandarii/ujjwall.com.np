@@ -27,7 +27,7 @@ export default function Home() {
   );
 }
 
-export function Herosection() {
+function Herosection() {
   return (
     <section className='herosection text-slate-50'>
       <Container>
@@ -87,7 +87,7 @@ export function Herosection() {
   );
 }
 
-export function About() {
+function About() {
   return (
     <section
       className='about'
@@ -126,7 +126,7 @@ export function About() {
   );
 }
 
-export function Tools() {
+function Tools() {
   return (
     <section className='bg-backgroundColorDarker'>
       <Container>
@@ -150,7 +150,7 @@ export function Tools() {
   );
 }
 
-export async function Works() {
+function Works() {
   return (
     <section
       id='works'
@@ -184,7 +184,7 @@ export async function Works() {
   );
 }
 
-export const NeedAWebDev = () => {
+const NeedAWebDev = () => {
   return (
     <section
       className='contact'
