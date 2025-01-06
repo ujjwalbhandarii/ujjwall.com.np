@@ -3,15 +3,15 @@ import Image from 'next/image';
 
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 
-import { SKILLS } from '@/constants/landingpage';
-import { ABOUT_ME } from '@/constants/landingpage';
 import { Container } from '@/components/utils/container';
-import { WORKS__PAGINATED } from '@/constants/landingpage';
+import { SKILLS } from '@/constants/landingpage.constants';
+import { SoialLinks } from '@/components/utils/socialLinks';
 import { BottomAside } from '@/components/utils/bottomAside';
+import { ABOUT_ME } from '@/constants/landingpage.constants';
 import { Experience } from '@/components/section/experience';
 import { ProjectsCard } from '@/components/utils/projectsCard';
 import { Testimonials } from '@/components/section/testimonials';
-import { SoialLinks } from '@/components/section/herosection/heroSocials';
+import { WORKS__PAGINATED } from '@/constants/landingpage.constants';
 
 export default function Home() {
   return (
@@ -40,12 +40,12 @@ function Herosection() {
               <div className='herosection__more__inside'>
                 <figure>
                   <Image
-                    src='/assets/online.png'
-                    alt='ujjwal bhandari is online for small to medium sized projects.'
                     width={10}
                     height={10}
-                    title='Ujjwal Bhandari, is online for small to medium sized projects.'
                     loading='eager'
+                    src='/assets/online.png'
+                    alt='ujjwal bhandari is online for small to medium sized projects.'
+                    title='Ujjwal Bhandari, is online for small to medium sized projects.'
                   />
                 </figure>
                 <span>Available for work & collaboration.</span>

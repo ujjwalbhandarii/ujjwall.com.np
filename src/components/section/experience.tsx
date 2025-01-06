@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 import { Container } from '@/components/utils/container';
-import { EXPERIENCE } from '@/constants/landingpage';
+import { EXPERIENCE } from '@/constants/landingpage.constants';
 
 export function Experience() {
   const [companyDisplay, setCompanyDisplay] = useState<string>(

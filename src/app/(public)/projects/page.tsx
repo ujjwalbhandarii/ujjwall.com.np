@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 import { Container } from '@/components/utils/container';
-import { WORKS } from '@/constants/landingpage';
+import { WORKS } from '@/constants/landingpage.constants';
 import ProjectsCard from '@/components/utils/projectsCard';
 
 export const metadata: Metadata = {

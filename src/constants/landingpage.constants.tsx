@@ -1,6 +1,5 @@
-export const HEROSECTION_DATA = {
-  exploring: '{ Exploring the world of 0s & 1s. }',
-};
+import { GrInstagram } from 'react-icons/gr';
+import { BsFacebook, BsGithub, BsLinkedin, BsTwitch } from 'react-icons/bs';
 
 export const ABOUT_ME =
   "<p>Greetings! I'm <strong>Ujjwal</strong>, a passionate CS Student &amp; a full stack web developer. My journey into the dynamic world of web development began in 2020, sparked by my early experiences with WordPress. Since then, I've been immersed in the exciting realm of creating digital wonders that come to life on the internet.</p><p>Beyond my academic pursuits, I am actively engaged as a Secretary at <strong>Code for Change</strong> Butwal, a volunteer organization dedicated to empowering IT enthusiasts by facilitating learning opportunities in cutting-edge technologies.</p><p>Let's build something extraordinary together!</p>";
@@ -219,3 +218,75 @@ export const TESTIMONIALS = [
 ];
 
 export const WORKS__PAGINATED = WORKS.slice(0, 4);
+
+export const SOCIAL_LINKS = [
+  {
+    icon: <BsGithub />,
+    title: 'Ujjwal Bhandari Github',
+    url: 'https://github.com/ujjwalbhandarii',
+  },
+  {
+    icon: <GrInstagram />,
+    title: 'Ujjwal Bhandari Instagram',
+    url: 'https://www.instagram.com/ujjwalbhandarii/',
+  },
+  {
+    icon: <BsTwitch />,
+    title: 'Ujjwal Bhandari Twitch',
+    url: 'https://www.twitch.tv/ujjwalbhandari',
+  },
+  {
+    icon: <BsLinkedin />,
+    title: 'Ujjwal Bhandari Linkedin',
+    url: 'https://www.linkedin.com/in/ujjwalbhandarii/',
+  },
+  {
+    icon: <BsFacebook />,
+    title: 'Ujjwal Bhandari Facebook',
+    url: 'https://www.facebook.com/ujjwalbhandariiii',
+  },
+];
+
+export const FAQ_QUESTIONS = [
+  {
+    id: 'open-for-work',
+    question: 'Is <strong>ujjwal</strong> open for work or colloboration?',
+    answer:
+      "Yes, I'm open. Please fill the above form for further discussion. 🙌😀",
+  },
+  {
+    id: 'tech-i-use',
+    question: 'Technology I use',
+    answer:
+      'Next.js, Nodejs, NestJs, Prisma, MongoDB, SCSS, Tailwind, Shadcn-ui',
+  },
+  {
+    id: 'current-edu-level',
+    question: 'Current education level?',
+    answer:
+      'Bachlor in Computer Science and Information Technology. (6th sem running)',
+  },
+  {
+    id: 'prefered-working-hours',
+    question: 'Perfered working hour?',
+    answer: '9am - 3pm or 5pm - 11pm',
+  },
+];
+
+export const HEADER_LINKS = [
+  {
+    id: 'home-page',
+    name: 'Home',
+    href: '/',
+  },
+  {
+    id: 'contact-page',
+    name: 'Contact',
+    href: '/contact',
+  },
+  {
+    id: 'blog-page',
+    name: 'Blog',
+    href: '/blog',
+  },
+];
