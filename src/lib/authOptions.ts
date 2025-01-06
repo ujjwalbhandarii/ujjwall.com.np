@@ -23,25 +23,24 @@ export const authOptions: NextAuthOptions = {
         email: { label: 'email', type: 'text' },
         password: { label: 'Password', type: 'password' },
       },
+
       async authorize(credentials) {
-        if (!credentials?.email || !credentials?.password) {
-          return null;
-        }
+        if (!credentials?.email || !credentials?.password) return null;
 
         const existingUser: User | null = await prisma.user.findFirst({
           where: { email: credentials.email },
         });
-        if (!existingUser) {
-          return null;
-        }
+
+        if (!existingUser) return null;
+
         if (existingUser.password) {
           const passwordMatch = await bcrypt.compare(
             credentials?.password,
             existingUser?.password,
           );
-          if (!passwordMatch) {
-            return null;
-          }
+
+          if (!passwordMatch) return null;
+
           delete existingUser.password;
           return existingUser;
         } else {
@@ -60,7 +59,7 @@ export const authOptions: NextAuthOptions = {
       return { ...user, ...token };
     },
 
-    async session({ session, token, user }) {
+    async session({ session, token }) {
       session.user = token;
       return session;
     },
