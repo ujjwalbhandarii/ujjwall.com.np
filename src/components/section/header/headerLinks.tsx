@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { RxCross2 } from 'react-icons/rx';
 
-import { HEADER_LINKS } from '@/constants/header';
 import ProtectedLinks from './protectedLinks';
+import { HEADER_LINKS } from '@/constants/landingpage.constants';
 
 type TheaderLink = (typeof HEADER_LINKS)[0];
 

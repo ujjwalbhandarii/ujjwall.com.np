@@ -1,7 +1,8 @@
+import { Metadata } from 'next';
+
+import FAQs from '@/components/utils/faq';
 import { Container } from '@/components/utils/container';
 import ContactForm from '@/components/utils/contactForm';
-import FAQs from '@/components/utils/faq';
-import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Ujjwal Bhandari - Contactme',
