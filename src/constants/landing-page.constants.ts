@@ -123,6 +123,7 @@ export const WORKS = [
 
 export const EXPERIENCE = [
   {
+    id: 'intuji-pvt-ltd',
     name: 'Intuji Pvt. Ltd.',
     year: 'Jul 2024 - now',
     description:
@@ -139,6 +140,7 @@ export const EXPERIENCE = [
     techstackUsed: ['Angular', 'NestJS', 'React', 'Storybook', 'Node.js'],
   },
   {
+    id: 'butwal-web-pvt-ltd',
     name: 'Butwal Web pvt. ltd.',
     year: 'Apr 2023 - Oct 2023',
     description:
@@ -154,6 +156,7 @@ export const EXPERIENCE = [
     techstackUsed: ['Next.js', 'SCSS', 'tailwind'],
   },
   {
+    id: 'semicolon-tec',
     name: 'Semicolon Tec.',
     year: 'Jun 2021 - Apr 2021',
     description:
