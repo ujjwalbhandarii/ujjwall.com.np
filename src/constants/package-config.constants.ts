@@ -1,3 +1,4 @@
+import sanitizeHTML from 'sanitize-html';
 import { NextTopLoaderProps } from 'nextjs-toploader';
 
 export const NEXTTOPLOADER_CONFIG = {
@@ -55,4 +56,4 @@ export const DEFAULT_SANITIZE_OPTION = {
     ],
     div: ['class'],
   },
-};
+} satisfies sanitizeHTML.IOptions;
