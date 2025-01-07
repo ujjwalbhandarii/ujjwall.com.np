@@ -1,5 +1,4 @@
-import { GrInstagram } from 'react-icons/gr';
-import { BsFacebook, BsGithub, BsLinkedin, BsTwitch } from 'react-icons/bs';
+import { ICONS } from './icons.constants';
 import { ROUTES } from './routes.constants';
 
 export const ABOUT_ME =
@@ -222,27 +221,27 @@ export const WORKS__PAGINATED = WORKS.slice(0, 4);
 
 export const SOCIAL_LINKS = [
   {
-    icon: <BsGithub />,
+    icon: ICONS.SOCIAL.github,
     title: 'Ujjwal Bhandari Github',
     url: 'https://github.com/ujjwalbhandarii',
   },
   {
-    icon: <GrInstagram />,
+    icon: ICONS.SOCIAL.instagram,
     title: 'Ujjwal Bhandari Instagram',
     url: 'https://www.instagram.com/ujjwalbhandarii/',
   },
   {
-    icon: <BsTwitch />,
+    icon: ICONS.SOCIAL.twitch,
     title: 'Ujjwal Bhandari Twitch',
     url: 'https://www.twitch.tv/ujjwalbhandari',
   },
   {
-    icon: <BsLinkedin />,
+    icon: ICONS.SOCIAL.linkedin,
     title: 'Ujjwal Bhandari Linkedin',
     url: 'https://www.linkedin.com/in/ujjwalbhandarii/',
   },
   {
-    icon: <BsFacebook />,
+    icon: ICONS.SOCIAL.facebook,
     title: 'Ujjwal Bhandari Facebook',
     url: 'https://www.facebook.com/ujjwalbhandariiii',
   },
