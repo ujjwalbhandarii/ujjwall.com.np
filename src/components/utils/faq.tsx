@@ -1,10 +1,11 @@
 import {
   Accordion,
-  AccordionContent,
   AccordionItem,
   AccordionTrigger,
+  AccordionContent,
 } from '@/components/ui/accordion';
 
+import { sanitizeHtml } from '@/utils/sanitize-html';
 import { FAQ_QUESTIONS } from '@/constants/landing-page.constants';
 
 export default function FAQs() {
@@ -37,7 +38,7 @@ const FAQAccordion = ({
   >
     <AccordionItem value='item-1'>
       <AccordionTrigger>
-        <div dangerouslySetInnerHTML={{ __html: question }} />
+        <div dangerouslySetInnerHTML={{ __html: sanitizeHtml(question) }} />
       </AccordionTrigger>
       <AccordionContent>{answer}</AccordionContent>
     </AccordionItem>

@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 
+import { sanitizeHtml } from '@/utils/sanitize-html';
 import { Container } from '@/components/utils/container';
 import { SKILLS } from '@/constants/landing-page.constants';
 import { SoialLinks } from '@/components/utils/socialLinks';
@@ -33,9 +34,7 @@ function Herosection() {
       <Container>
         <div className='herosection__wrapper'>
           <div className='herosection__info'>
-            <strong>
-              <h1 className='herosection--h1'>Ujjwal Bhandari.</h1>
-            </strong>
+            <h1 className='herosection--h1'>Ujjwal Bhandari.</h1>
             <div className='herosection__more'>
               <div className='herosection__more__inside'>
                 <figure>
@@ -91,7 +90,7 @@ function About() {
   const RenderAboutme = () => (
     <div
       className='about__content__group'
-      dangerouslySetInnerHTML={{ __html: ABOUT_ME }}
+      dangerouslySetInnerHTML={{ __html: sanitizeHtml(ABOUT_ME) }}
     />
   );
 
