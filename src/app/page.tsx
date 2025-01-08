@@ -12,7 +12,7 @@ import { ABOUT_ME } from '@/constants/landing-page.constants';
 import { Experience } from '@/components/section/experience';
 import { ProjectsCard } from '@/components/utils/projectsCard';
 import { Testimonials } from '@/components/section/testimonials';
-import { WORKS__PAGINATED } from '@/constants/landing-page.constants';
+import { WORKS_PAGINATED } from '@/constants/landing-page.constants';
 
 export default function Home() {
   return (
@@ -161,7 +161,7 @@ function Works() {
         <div className='works__wrapper'>
           <h2 className='works--heading section--heading'>Featured Works</h2>
           <div className='works__main'>
-            {WORKS__PAGINATED.map((work) => (
+            {WORKS_PAGINATED.map((work) => (
               <ProjectsCard
                 key={work.id}
                 alt={work.alt}

@@ -121,6 +121,8 @@ export const WORKS = [
   },
 ];
 
+export const WORKS_PAGINATED = WORKS.slice(0, 4);
+
 export const EXPERIENCE = [
   {
     id: 'intuji-pvt-ltd',
@@ -219,8 +221,6 @@ export const TESTIMONIALS = [
     company: '',
   },
 ];
-
-export const WORKS__PAGINATED = WORKS.slice(0, 4);
 
 export const SOCIAL_LINKS = [
   {
