@@ -287,9 +287,4 @@ export const HEADER_LINKS = [
     name: 'Contact',
     href: ROUTES.PUBLIC.CONTACT,
   },
-  {
-    id: 'blog-page',
-    name: 'Blog',
-    href: ROUTES.PUBLIC.BLOG,
-  },
 ];
