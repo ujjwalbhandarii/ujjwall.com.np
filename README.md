@@ -14,11 +14,11 @@ Welcome to my portfolio website showcasing my projects, skills, and experience.
 ![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 ![Radix UI](https://img.shields.io/badge/Radix%20UI-333333?style=for-the-badge&logo=radix-ui&logoColor=white)
 
-### Backend
+<!-- ### Backend
 
 ![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=prisma&logoColor=white)
 ![Auth.js](https://img.shields.io/badge/Auth.js-EA4C89?style=for-the-badge&logo=auth0&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens) -->
 
 ### State Management & Validation
 
@@ -45,7 +45,7 @@ Welcome to my portfolio website showcasing my projects, skills, and experience.
 ## 🛠️ Features
 
 - **Responsive Design:** Optimized for all devices—desktop, tablet, and mobile.
-- **Authentication:** Secure user login and management with `next-auth`.
+<!-- - **Authentication:** Secure user login and management with `next-auth`. -->
 - **Animations:** Smooth and interactive transitions using Framer Motion.
 - **Reusable Components:** Built with Radix UI for modular and customizable components.
 - **Type Safety:** Enforced with Zod for validation and TypeScript.
@@ -98,7 +98,7 @@ bun run start
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](./assets/LICENSE).
 
 ## 🤝 Contact
 
