@@ -1,16 +1,12 @@
-type EmailTemplateProps = {
-  name: string;
-  email: string;
-  message: string;
-  subject: string;
-};
+import { ContactFormT } from '@/schema/contact-form.schema';
 
+// TODO - Preetify the Email Template
 export const EmailTemplate = ({
   email,
-  message,
   name,
+  message,
   subject,
-}: EmailTemplateProps) => (
+}: ContactFormT) => (
   <div>
     <h1>Message from {name}</h1>
     <h2>email account: {email}</h2>

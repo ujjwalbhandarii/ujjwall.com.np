@@ -39,7 +39,7 @@ export function ContactForm() {
       const response = await fetch(ROUTES.API.SEND_EMAIL, config);
       if (response.ok) {
         reset();
-        toast.success('The message has been submitted!');
+        toast.success('Message sent sucessfully!');
         router.push('/');
       }
     } catch (error) {

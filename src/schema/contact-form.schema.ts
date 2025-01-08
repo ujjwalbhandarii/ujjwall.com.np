@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { FORM_ERROR } from '@/constants/error-messages';
 
 const contactFormSchema = z.object({
-  name: z.string().length(20, { message: FORM_ERROR.NAME.REQUIRED }),
+  name: z.string().min(1, { message: FORM_ERROR.NAME.REQUIRED }),
   email: z.string().email({ message: FORM_ERROR.EMAIL.REQUIRED }),
   subject: z
     .string()
