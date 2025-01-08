@@ -3,7 +3,7 @@
 import { Dispatch, SetStateAction, useState } from 'react';
 
 import { cn } from '@/utils/cn';
-import { Container } from '@/components/utils/container';
+import { Container } from '@/components/utility';
 import { EXPERIENCE } from '@/constants/landing-page.constants';
 
 export function Experience() {

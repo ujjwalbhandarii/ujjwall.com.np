@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 
 import { sanitizeHtml } from '@/utils/sanitize-html';
-import { Container } from '@/components/utils/container';
+import { Container } from '@/components/utility';
 import { SKILLS } from '@/constants/landing-page.constants';
 import { SoialLinks } from '@/components/utils/socialLinks';
 import { BottomAside } from '@/components/utils/bottomAside';

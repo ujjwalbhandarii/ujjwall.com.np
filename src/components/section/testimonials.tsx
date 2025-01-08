@@ -8,7 +8,7 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
-import { Container } from '@/components/utils/container';
+import { Container } from '@/components/utility';
 import { TESTIMONIALS } from '@/constants/landing-page.constants';
 
 export function Testimonials() {

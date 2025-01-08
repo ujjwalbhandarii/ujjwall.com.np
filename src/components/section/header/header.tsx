@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Toggler from './toggler';
 import HeaderLogo from './headerLogo';
 import HeaderLinks from './headerLinks';
-import { Container } from '@/components/utils/container';
+import { Container } from '@/components/utility';
 
 export default function Header() {
   const [show, setShow] = useState<Boolean>(false);

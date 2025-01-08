@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Container } from '@/components/utils/container';
+import { Container } from '@/components/utility';
 import { WORKS__PAGINATED } from '@/constants/landing-page.constants';
 import { ProjectsCard } from '@/components/utils/projectsCard';
 

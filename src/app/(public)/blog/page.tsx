@@ -1,4 +1,4 @@
-import { Container } from '@/components/utils/container';
+import { Container } from '@/components/utility';
 import { Metadata } from 'next';
 import React from 'react';
 
