@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { RxCross2 } from 'react-icons/rx';
 
-import ProtectedLinks from './protectedLinks';
 import { HEADER_LINKS } from '@/constants/landing-page.constants';
 
 type TheaderLink = (typeof HEADER_LINKS)[0];
@@ -29,7 +28,6 @@ export default function HeaderLinks({ show, setShow }: HeaderPropsT) {
             </li>
           );
         })}
-        <ProtectedLinks />
       </ul>
     </div>
   );
