@@ -32,13 +32,8 @@ export default function page() {
           <main className='projects__main'>
             {WORKS.map((work) => (
               <ProjectsCard
+                {...work}
                 key={work.id}
-                alt={work.alt}
-                imageUrl={work.imageUrl}
-                liveLink={work.liveLink}
-                stackUsed={work.stackUsed}
-                description={work.description}
-                websiteName={work.websiteName}
               />
             ))}
           </main>

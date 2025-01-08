@@ -1,23 +1,25 @@
 import Image from 'next/image';
 import { TbArrowUpRight } from 'react-icons/tb';
 
-type Props = {
-  imageUrl: any;
+type ProjectCardProps = {
+  id: string;
+  imageUrl: string;
   alt: string;
-  description: string;
-  stackUsed: string[];
   websiteName: string;
   liveLink: string;
+  stackUsed: string[];
+  description: string;
+  isFeatured: boolean;
 };
 
 export function ProjectsCard({
-  imageUrl,
   alt,
-  description,
+  imageUrl,
   stackUsed,
-  websiteName,
   liveLink,
-}: Props) {
+  description,
+  websiteName,
+}: ProjectCardProps) {
   return (
     <div className='workcard'>
       <div className='workcard__wrapper'>
@@ -26,12 +28,12 @@ export function ProjectsCard({
             <Image
               src={imageUrl}
               alt={alt}
-              height={600}
               width={600}
-              className='workcard--img'
-              quality={100}
-              title={`Ujjwal Bhandari, project ${websiteName}`}
+              height={600}
               loading='lazy'
+              quality={100}
+              className='workcard--img'
+              title={`Ujjwal Bhandari, project ${websiteName}`}
             />
           </figure>
         </div>
@@ -40,9 +42,9 @@ export function ProjectsCard({
           <div className='workcard__infos'>
             <span>Tech Stack</span>
             <div className='workcard__stackgroup'>
-              {stackUsed.map((item: any) => {
-                return <p key={item}>{item}</p>;
-              })}
+              {stackUsed.map((tool) => (
+                <p key={tool}>{tool}</p>
+              ))}
             </div>
           </div>
           <p className='workcard--description'>{description}</p>

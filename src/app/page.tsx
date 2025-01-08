@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 
-import { sanitizeHtml } from '@/utils/sanitize-html';
 import { Container } from '@/components/utility';
+import { sanitizeHtml } from '@/utils/sanitize-html';
 import { SKILLS } from '@/constants/landing-page.constants';
 import { SoialLinks } from '@/components/utils/socialLinks';
 import { BottomAside } from '@/components/utils/bottomAside';
@@ -163,13 +163,8 @@ function Works() {
           <div className='works__main'>
             {WORKS_PAGINATED.map((work) => (
               <ProjectsCard
+                {...work}
                 key={work.id}
-                alt={work.alt}
-                imageUrl={work.imageUrl}
-                liveLink={work.liveLink}
-                stackUsed={work.stackUsed}
-                description={work.description}
-                websiteName={work.websiteName}
               />
             ))}
           </div>
