@@ -1,15 +1,18 @@
-FROM node:18.18.2
+FROM node:20.18.1
+
+RUN curl -fsSL https://bun.sh/install | bash -s "bun-v1.1.43"
+ENV PATH="/root/.bun/bin:$PATH"
 
 WORKDIR /app
 
 COPY package.json ./
 
-RUN npm install
+RUN bun install
 
 COPY . .
 
-RUN npm run build
+RUN bun run build
 
 COPY .next ./.next
 
-CMD [ "npm", "run", "start" ]
+CMD [ "bun", "run", "start" ]
