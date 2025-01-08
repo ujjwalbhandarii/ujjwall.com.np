@@ -15,3 +15,7 @@ export function Container({
     </div>
   );
 }
+
+export const ErrorMessage = ({ message }: { message: string }) => (
+  <span className='text-sm font-medium text-red-500'>{message}</span>
+);

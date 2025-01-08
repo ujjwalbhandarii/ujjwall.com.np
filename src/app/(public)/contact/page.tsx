@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 import FAQs from '@/components/utils/faq';
-import { Container } from '@/components/utils/container';
-import ContactForm from '@/components/utils/contactForm';
+import { Container } from '@/components/utility';
+import { ContactForm } from '@/components/forms/contactForm';
 
 export const metadata: Metadata = {
   title: 'Ujjwal Bhandari - Contactme',
@@ -28,7 +28,6 @@ export default function ContactFormPage() {
               to connect!
             </p>
           </div>
-
           <div className='contactpage__main'>
             <ContactForm />
             <div className='contactpage__info'>
