@@ -11,7 +11,6 @@ import '@/styles/global.css';
 import Cursor from '@/components/utils/cursor';
 import { Footer } from '@/components/section/footer';
 import Header from '@/components/section/header/header';
-import AuthProvider from '@/components/lib/AuthProvider';
 import { METADATA, VIEWPORT } from '@/constants/meta.constants';
 import { NEXTTOPLOADER_CONFIG } from '@/constants/package-config.constants';
 
@@ -27,14 +26,12 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <AuthProvider>
-          <Header />
-          {children}
-          <Footer />
-          <Cursor />
-          <Toaster />
-          <NextTopLoader {...NEXTTOPLOADER_CONFIG} />
-        </AuthProvider>
+        <Header />
+        {children}
+        <Footer />
+        <Cursor />
+        <Toaster />
+        <NextTopLoader {...NEXTTOPLOADER_CONFIG} />
       </body>
     </html>
   );
