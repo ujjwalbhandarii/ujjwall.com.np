@@ -1,11 +1,16 @@
 'use client';
 
-import { useState } from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
 
 import Toggler from './toggler';
 import HeaderLogo from './headerLogo';
 import HeaderLinks from './headerLinks';
 import { Container } from '@/components/utility';
+
+export type HeaderTogglerT = {
+  show: Boolean;
+  setShow: Dispatch<SetStateAction<Boolean>>;
+};
 
 export default function Header() {
   const [show, setShow] = useState<Boolean>(false);
