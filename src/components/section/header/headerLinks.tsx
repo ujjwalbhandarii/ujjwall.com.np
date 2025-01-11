@@ -5,6 +5,11 @@ import { HEADER_LINKS } from '@/constants/landing-page.constants';
 
 type TheaderLink = (typeof HEADER_LINKS)[0];
 
+type HeaderPropsT = {
+  show: Boolean;
+  setShow: any;
+};
+
 export default function HeaderLinks({ show, setShow }: HeaderPropsT) {
   return (
     <div className={`header__group ${show ? 'show' : 'dontshow'}`}>
