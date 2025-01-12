@@ -6,6 +6,17 @@ export const ABOUT_ME =
 
 export const WORKS = [
   {
+    id: 'airbnb-clone',
+    imageUrl: '/assets/works/airbnb-clone.png',
+    alt: 'Airbnb clone website created by ujjwal bhandari',
+    websiteName: 'Airbnb Clone',
+    liveLink: 'https://airbnb-clone-demo-fe.vercel.app/',
+    stackUsed: ['Angular', 'NestJs', 'tailwind', 'prisma', 'mysql'],
+    description:
+      'A feature-rich replication of Airbnb, developed to experiment with and implement multiple backend services while striving for precision in recreating the user interface. Built using Angular, NestJS, Tailwind CSS, Prisma, and MySQL, this project showcases advanced full-stack development techniques. Although still in progress, the hosted version currently demonstrates the user interface.',
+    isFeatured: true,
+  },
+  {
     id: 'lumbini-sandesh',
     imageUrl: '/assets/works/lumbinisandesh.png',
     alt: 'lumbinisandesh website created by ujjwal bhandari',
@@ -121,7 +132,7 @@ export const WORKS = [
   },
 ];
 
-export const WORKS_PAGINATED = WORKS.slice(0, 4);
+export const WORKS_PAGINATED = WORKS.slice(0, 5);
 
 export const EXPERIENCE = [
   {
