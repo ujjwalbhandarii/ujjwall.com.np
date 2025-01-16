@@ -8,20 +8,6 @@ import {
 import { MDX_EXTENSION } from '@/constants/regex.constants';
 import { COMPILE_MDX_DEFAULTS } from '@/constants/package-config.constants';
 
-type Filetree = {
-  tree: [
-    {
-      path: string;
-    },
-  ];
-};
-
-type MDX = {
-  date: string;
-  title: string;
-  tags: string[];
-};
-
 export async function getPostByName(
   fileName: string,
 ): Promise<BlogPost | undefined> {
@@ -44,13 +30,15 @@ export async function getPostByName(
 
   const id = fileName.replace(MDX_EXTENSION.REPLACE, '');
 
+  const meta = {
+    id,
+    date: frontmatter.date,
+    tags: frontmatter.tags,
+    title: frontmatter.title,
+  } as BlogMeta;
+
   return {
-    meta: {
-      id,
-      date: frontmatter.date,
-      tags: frontmatter.tags,
-      title: frontmatter.title,
-    },
+    meta,
     content,
   } as BlogPost;
 }
