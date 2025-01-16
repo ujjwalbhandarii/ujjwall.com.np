@@ -1,16 +1,16 @@
-type BlogMeta = {
+type BlogMetaT = {
   id: string;
   date: string;
   title: string;
   tags: string[];
 };
 
-type BlogPost = {
+type BlogPostT = {
   meta: BlogMeta;
   content: ReactElement<any, string | JSXElementConstructor<any>>;
 };
 
-type Filetree = {
+type GithubFiletreeT = {
   tree: [
     {
       path: string;
@@ -18,7 +18,7 @@ type Filetree = {
   ];
 };
 
-type MDX = {
+type MDXT = {
   date: string;
   title: string;
   tags: string[];

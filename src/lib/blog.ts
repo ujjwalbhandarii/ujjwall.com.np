@@ -5,12 +5,19 @@ import {
   MDX_NOTFOUND,
   BLOG_REQUEST_HEADERS,
 } from '@/constants/api.constants';
+import { SORT } from '@/constants/utils.constants';
 import { MDX_EXTENSION } from '@/constants/regex.constants';
 import { COMPILE_MDX_DEFAULTS } from '@/constants/package-config.constants';
 
+/**
+ *Fetches the post by filename
+ *
+ * @param {string} fileName - The name of the post file (without extension)
+ * @returns {Promise<BlogPostT | undefined>} - A promise that resolves to the blog post (BlogPostT)
+ */
 export async function getPostByName(
   fileName: string,
-): Promise<BlogPost | undefined> {
+): Promise<BlogPostT | undefined> {
   const getPostByNameAPIRoute = API.BLOG.GET_POST_BY_NAME(fileName);
 
   const res = await fetch(getPostByNameAPIRoute, {
@@ -23,7 +30,7 @@ export async function getPostByName(
 
   if (rawMDX === MDX_NOTFOUND) return undefined;
 
-  const { frontmatter, content } = await compileMDX<MDX>({
+  const { frontmatter, content } = await compileMDX<MDXT>({
     ...COMPILE_MDX_DEFAULTS,
     source: rawMDX,
   });
@@ -35,15 +42,20 @@ export async function getPostByName(
     date: frontmatter.date,
     tags: frontmatter.tags,
     title: frontmatter.title,
-  } as BlogMeta;
+  } as BlogMetaT;
 
   return {
     meta,
     content,
-  } as BlogPost;
+  } as BlogPostT;
 }
 
-export async function getPostsMeta(): Promise<BlogMeta[] | undefined> {
+/**
+ * Fetches all post metadata
+ *
+ * @returns {Promise<BlogMetaT[] | undefined>} - A Promise that resolves Blog posts metadata
+ */
+export async function getPostsMeta(): Promise<BlogMetaT[] | undefined> {
   const getPostsMetaAPIRoute = API.BLOG.GET_POST_METADATA;
 
   const res = await fetch(getPostsMetaAPIRoute, {
@@ -52,15 +64,15 @@ export async function getPostsMeta(): Promise<BlogMeta[] | undefined> {
 
   if (!res.ok) return undefined;
 
-  const repoFiletree: Filetree = await res.json();
+  const repoFiles: GithubFiletreeT = await res.json();
 
-  const filesArray = repoFiletree.tree
+  const files = repoFiles.tree
     .map((obj) => obj.path)
     .filter((path) => path.endsWith('.mdx'));
 
-  const posts: BlogMeta[] = [];
+  const posts: BlogMetaT[] = [];
 
-  for (const file of filesArray) {
+  for (const file of files) {
     const post = await getPostByName(file);
 
     if (post) {
@@ -69,5 +81,9 @@ export async function getPostsMeta(): Promise<BlogMeta[] | undefined> {
     }
   }
 
-  return posts.sort((a, b) => (a.date < b.date ? 1 : -1));
+  const sortedPosts = posts.sort((a, b) =>
+    a.date < b.date ? SORT.DESC : SORT.ASC,
+  );
+
+  return sortedPosts;
 }
