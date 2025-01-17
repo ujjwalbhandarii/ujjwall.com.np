@@ -1,24 +1,23 @@
-import { Container } from '@/components/utility';
 import { Metadata } from 'next';
-import React from 'react';
+import { Suspense } from 'react';
 
-export const metadata: Metadata = {
-  title: 'Ujjwal Bhandari - Blogs',
-  description:
-    'Ujjwal Bhandari blogs, where shares his daily learning and life improvements.',
-  alternates: {
-    canonical: 'https://www.ujjwall.com.np/blog',
-  },
-};
+import { Blogs } from './_blogs';
+import { getPosts } from '@/lib/blog';
+import { Container } from '@/components/utility';
+import { HEADERS_META } from '@/constants/meta.constants';
 
-export default function Blogs() {
+export const metadata: Metadata = HEADERS_META.BLOG;
+
+export default async function BlogsPage() {
+  const blogs = await getPosts();
+
   return (
     <section className='contactpage'>
       <Container>
         <div className='contactpage__wrapper'>
-          <h1 className='mt-10 text-center'>
-            This section is under build process and will be deployed once ready.
-          </h1>
+          <Suspense fallback={<>loading...</>}>
+            <Blogs blogs={blogs} />
+          </Suspense>
         </div>
       </Container>
     </section>
