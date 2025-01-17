@@ -1,3 +1,10 @@
+const FILE = {
+  MDX: {
+    NAME: 'mdx',
+    EXTENSION: '.mdx',
+  },
+} as const;
+
 /*
 1, -1, 0 determine the relative order of two elements during the comparison in the sort() method
 
@@ -36,4 +43,4 @@ const SORT = {
   DESC: 1,
 } as const;
 
-export { SORT };
+export { SORT, FILE };

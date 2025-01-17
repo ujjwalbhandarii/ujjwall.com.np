@@ -5,7 +5,7 @@ import {
   MDX_NOTFOUND,
   BLOG_REQUEST_HEADERS,
 } from '@/constants/api.constants';
-import { SORT } from '@/constants/utils.constants';
+import { FILE, SORT } from '@/constants/utils.constants';
 import { MDX_EXTENSION } from '@/constants/regex.constants';
 import { COMPILE_MDX_DEFAULTS } from '@/constants/package-config.constants';
 
@@ -55,7 +55,7 @@ export async function getPostByName(
  *
  * @returns {Promise<BlogMetaT[] | undefined>} - A Promise that resolves Blog posts metadata
  */
-export async function getPostsMeta(): Promise<BlogMetaT[] | undefined> {
+export async function getPosts(): Promise<BlogMetaT[] | undefined> {
   const getPostsMetaAPIRoute = API.BLOG.GET_POST_METADATA;
 
   const res = await fetch(getPostsMetaAPIRoute, {
@@ -68,7 +68,7 @@ export async function getPostsMeta(): Promise<BlogMetaT[] | undefined> {
 
   const files = repoFiles.tree
     .map((obj) => obj.path)
-    .filter((path) => path.endsWith('.mdx'));
+    .filter((path) => path.endsWith(FILE.MDX.EXTENSION));
 
   const posts: BlogMetaT[] = [];
 

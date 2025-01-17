@@ -2,16 +2,10 @@ import { Metadata } from 'next';
 
 import FAQs from '@/components/utils/faq';
 import { Container } from '@/components/utility';
+import { HEADERS_META } from '@/constants/meta.constants';
 import { ContactForm } from '@/components/forms/contactForm';
 
-export const metadata: Metadata = {
-  title: 'Ujjwal Bhandari - Contactme',
-  description:
-    'Get in touch with Ujjwal to discuss your project or any development inquiries.',
-  alternates: {
-    canonical: 'https://www.ujjwall.com.np/contact',
-  },
-};
+export const metadata: Metadata = HEADERS_META.CONTACT;
 
 export default function ContactFormPage() {
   return (
