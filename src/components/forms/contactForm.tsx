@@ -11,8 +11,8 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { ErrorMessage } from '@/components/utility';
 import { ROUTES } from '@/constants/routes.constants';
+import { contactFormSchema, ContactFormT } from '@/schema';
 import { CONTENT_TYPE, METHOD } from '@/constants/api.constants';
-import { contactFormSchema, ContactFormT } from '@/schema/contact-form.schema';
 
 export function ContactForm() {
   const {

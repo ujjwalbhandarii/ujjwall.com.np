@@ -1,4 +1,4 @@
-import { ContactFormT } from '@/schema/contact-form.schema';
+import { ContactFormT } from '@/schema';
 
 // TODO - Preetify the Email Template
 export const EmailTemplate = ({

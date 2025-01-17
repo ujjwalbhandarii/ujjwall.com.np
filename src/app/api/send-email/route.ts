@@ -2,7 +2,7 @@ import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
 import { EmailTemplate } from '@/components/utils/emailTemplate';
-import { contactFormSchema } from '@/schema/contact-form.schema';
+import { contactFormSchema } from '@/schema';
 
 const userEmail = process.env.USER_EMAIL as string;
 const resend = new Resend(process.env.RESEND_API_KEY);
