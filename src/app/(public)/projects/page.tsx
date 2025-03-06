@@ -1,17 +1,11 @@
 import { Metadata } from 'next';
 
 import { Container } from '@/components/utility';
+import { HEADERS_META } from '@/constants/meta.constants';
 import { WORKS } from '@/constants/landing-page.constants';
 import { ProjectsCard } from '@/components/utils/projectsCard';
 
-export const metadata: Metadata = {
-  title: 'Ujjwal Bhandari - Projects🚀',
-  description:
-    'Ujjwal Bhandari a solo Web developer specializing in Next.js, NestJS, React, SCSS, Framer Motion, and Docker. Explore projects where seamless React interfaces meet robust NestJS servers, styled with SCSS, animated with Framer Motion, and containerized with Docker. Lets connect and turn your ideas into extraordinary online experiences!',
-  alternates: {
-    canonical: 'https://www.ujjwall.com.np/projects',
-  },
-};
+export const metadata: Metadata = HEADERS_META.PEOJECTS;
 
 export default function page() {
   return (
