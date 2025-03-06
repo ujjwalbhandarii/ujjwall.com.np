@@ -1,11 +1,11 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-import { EmailTemplate } from '@/components/utils/emailTemplate';
+import { config } from '@/utils/config';
 import { contactFormSchema } from '@/schema';
+import { EmailTemplate } from '@/components/utils/emailTemplate';
 
-const userEmail = process.env.USER_EMAIL as string;
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(config.resendKey);
 
 export async function POST(request: Request) {
   const { name, email, subject, message } = await request.json();
@@ -28,7 +28,7 @@ export async function POST(request: Request) {
   // Payload type is not being exported by Resend libary. 🤮🤮🤮
 
   const EMAIL_CONFIG = {
-    to: userEmail,
+    to: config.userEmail,
     subject: `New message from ${name}`,
     from: `${name} sends a message! <onboarding@resend.dev>`,
     react: EmailTemplate({ name, email, subject, message }),

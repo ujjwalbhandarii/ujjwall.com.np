@@ -1,3 +1,5 @@
+import { config } from '@/utils/config';
+
 const METHOD = {
   GET: 'GET',
   PUT: 'PUT',
@@ -14,12 +16,11 @@ const MDX_NOTFOUND = '404: Not Found';
 
 const GITHUB_REPO = 'mdx';
 const GITHUB_USERNAME = 'ujjwalbhandarii';
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
 const BLOG_REQUEST_HEADERS = {
   'X-GitHub-Api-Version': '2022-11-28',
   'Accept': CONTENT_TYPE.GITHUB_JSON,
-  'Authorization': `Bearer ${GITHUB_TOKEN}`,
+  'Authorization': `Bearer ${config.githubToken}`,
   'User-Agent': 'Awesome-Octocat-App',
 } as const;
 
@@ -36,7 +37,6 @@ export {
   METHOD,
   CONTENT_TYPE,
   MDX_NOTFOUND,
-  GITHUB_TOKEN,
   GITHUB_REPO,
   GITHUB_USERNAME,
   BLOG_REQUEST_HEADERS,
