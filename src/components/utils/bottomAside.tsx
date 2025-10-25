@@ -1,13 +1,13 @@
 export function BottomAside() {
   return (
     <a
-      href='mailto::infoujjwalbhandari@gmail.com'
+      href='mailto::hello@ujjwall.com.np'
       target='_blank'
       aria-label='link for mail to ujjwal bhandari'
       className='bottomaside'
     >
       <span className='text-lightGray hover:text-lightGreenBlue'>
-        --&gt; infoujjwalbhandari@gmail.com
+        --&gt; hello@ujjwall.com.np
       </span>
     </a>
   );

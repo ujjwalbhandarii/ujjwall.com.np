@@ -29,7 +29,7 @@
 
   &__group,
   &__links {
-    gap: 2rem;
+    gap: 1rem;
   }
 
   &__group {
@@ -84,10 +84,7 @@
     font-size: 0.9rem;
     transition: 0.3s ease;
     color: $white;
-
-    &:hover {
-      color: $secondary;
-    }
+    border-radius: 0.3rem;
   }
 
   &__group {
