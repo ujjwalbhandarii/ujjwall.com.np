@@ -6,6 +6,50 @@ export const ABOUT_ME =
 
 export const WORKS = [
   {
+    id: 'crackitnepal',
+    imageUrl: '/assets/works/crackitnepal.png',
+    alt: 'CrackItNepal – Entrance exam prep platform by Ujjwal Bhandari',
+    websiteName: 'crackitnepal.com',
+    liveLink: 'https://crackitnepal.app/',
+    stackUsed: [
+      'Next.js',
+      'TypeScript',
+      'Zustand',
+      'Tailwind CSS',
+      'ShadCN UI',
+      'NestJS',
+      'PostgreSQL',
+      'Redis',
+      'AWS',
+      'OpenAI API',
+    ],
+    description:
+      'A full-stack entrance exam preparation platform I founded and built solo for Nepali students targeting IOE, Medical, and NEB exams. Features include timed quizzes, real-time leaderboards, and a ChatGPT-powered explanation engine for instant feedback. Serves 1,000+ active users with Redis-backed performance and AWS-hosted infrastructure.',
+    isFeatured: true,
+  },
+  {
+    id: 'excel-education',
+    imageUrl: '/assets/works/excel-education.png',
+    alt: 'Excel Education – Study abroad consultancy website by Ujjwal Bhandari',
+    websiteName: 'Excel Education - Consultancy',
+    liveLink: 'https://excel-education.vercel.app/',
+    stackUsed: ['Next.js', 'Tailwind CSS', 'TypeScript'],
+    description:
+      'A responsive, content-driven website for Excel Education, a Nepal-based study-abroad consultancy. Built with Next.js and Tailwind CSS, it highlights global study destinations, student testimonials, and counseling services—optimized for clarity, accessibility, and mobile-first engagement.',
+    isFeatured: true,
+  },
+  {
+    id: 'antlrbyte',
+    imageUrl: '/assets/works/antlrbyte.png',
+    alt: 'Antlrbyte Technologies – Coming soon landing page by Ujjwal Bhandari',
+    websiteName: 'Antlrbyte Technologies',
+    liveLink: 'https://antlrbyte.com/',
+    stackUsed: ['Next.js', 'Tailwind CSS', 'TypeScript'],
+    description:
+      'A minimal yet polished "Coming Soon" landing page for ANTLRBYTE Technologies Pvt. Ltd., conveying anticipation for an upcoming strategic venture. Built with Next.js and Tailwind CSS for fast load times and clean aesthetics.',
+    isFeatured: true,
+  },
+  {
     id: 'airbnb-clone',
     imageUrl: '/assets/works/airbnb-clone.png',
     alt: 'Airbnb clone website created by ujjwal bhandari',
@@ -132,55 +176,72 @@ export const WORKS = [
   },
 ];
 
-export const WORKS_PAGINATED = WORKS.slice(0, 5);
+export const WORKS_PAGINATED = WORKS.slice(0, 8);
 
 export const EXPERIENCE = [
   {
     id: 'intuji-pvt-ltd',
     name: 'Intuji Pvt. Ltd.',
-    year: 'Jul 2024 - now',
+    year: 'Aug 2024 – May 2025',
     description:
-      'My responsibilities involved building dynamic, responsive web applications using cutting-edge technologies such as Angular, NestJS, React, and Node.js. I gained a deeper understanding of full-stack development, while collaborating closely with a talented team to deliver robust, scalable solutions. Additionally, I leveraged Storybook for component-driven development and UI consistency across projects.',
+      'As a Trainee Software Engineer, I developed scalable frontend components and optimized performance for e-commerce platforms serving 10K+ monthly users. Focused on clean architecture, developer experience, and user-centric engineering.',
     learnings: [
-      'Enhanced understanding of Angular framework, including component architecture, services, and state management.',
-      'Developed RESTful APIs using NestJS and implemented secure, scalable backend systems.',
-      'Improved frontend UI design and consistency using Storybook for reusable component documentation.',
-      'Gained hands-on experience in full-stack development, integrating frontend and backend efficiently.',
-      'Refined skills in React for building dynamic and responsive interfaces.',
-      'Improved Node.js proficiency for building server-side applications.',
-      'Gained practical knowledge of testing strategies for both frontend and backend applications.',
+      'Refactored 2+ codebases, improving maintainability by 60% and boosting DX metrics by 35%.',
+      'Reduced average page load time by 35% and increased Lighthouse performance score from 60 to 92 via code-splitting, lazy loading, and caching.',
+      'Decreased API latency by 75% through strategic caching and optimized data fetching.',
+      'Mentored an intern in TypeScript and modern frontend tooling, improving their delivery speed by 40%.',
     ],
-    techstackUsed: ['Angular', 'NestJS', 'React', 'Storybook', 'Node.js'],
+    techstackUsed: [
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Tailwind CSS',
+      'ShadCN UI',
+      'Zustand',
+      'Storybook',
+    ],
+  },
+  {
+    id: 'hyperce-io',
+    name: 'Hyperce.io',
+    year: 'Mar 2024 – Apr 2024',
+    description:
+      'As a Junior Full Stack Engineer, I built and maintained high-performance web applications with a focus on API efficiency, type safety, and developer onboarding.',
+    learnings: [
+      'Reduced server load by 40% by implementing React Query caching across 10+ components.',
+      'Created 100+ well-documented REST API endpoints using NestJS, accelerating team onboarding by 25%.',
+      'Migrated legacy JavaScript codebase to TypeScript, reducing runtime bugs by 30%.',
+    ],
+    techstackUsed: [
+      'React',
+      'TypeScript',
+      'NestJS',
+      'Node.js',
+      'React Query',
+      'Swagger',
+      'PostgreSQL',
+    ],
   },
   {
     id: 'butwal-web-pvt-ltd',
-    name: 'Butwal Web pvt. ltd.',
-    year: 'Apr 2023 - Oct 2023',
+    name: 'Butwal Web Pvt. Ltd.',
+    year: 'Apr 2023 – Oct 2023',
     description:
-      'During my enriching 5-6 month internship at Butwal Web Pvt Ltd, I got a chance to delved into the dynamic world of web development & gained valuable expertise in cutting-edge technologies. By using Next.js, React, and SCSS, I have crafted seamless and responsive web applications that marry functionality with aesthetics. My understanding of SEO principles improved. Me and @ashish-acharya got chance to work together and build many real world projects. Lumbini Sandesh, Communist Party UML lumbini offical website, along with dashboard are the projects that we done so far during intern time peroid. We are sharpened and blossomed by @krishna-neupane dai, who provides us with guidance and assistance.',
+      'As a React Developer Intern, I built SEO-optimized, high-performance web applications using Next.js, focusing on user experience, accessibility, and organic growth.',
     learnings: [
-      'Got to know ins and out of Nextjs 13 version specially app router.',
-      'Improvement in code quality with the use of preetier, eslint and husky.',
-      'Utilized opinionated SCSS 7 to 1 styling pattern along with BEM implementation for maintainable and scalable Sass.',
-      'Knowlege about scalable and dynamic components for webapps.',
-      'Improvement in API and data handling.',
-      'Improved Understanding in SEO along with sitemaps, canonical links, keywords, meta tags.',
+      'Developed an SSR/ISR-powered news portal that increased organic traffic by 60% and handled 5K+ monthly visitors.',
+      'Achieved 95+ Lighthouse performance scores through strategic use of Next.js optimizations.',
+      'Built a reusable component library adopted across 2+ internal projects, cutting UI dev time by 40%.',
+      'Automated image optimization pipeline, reducing average page size by 45%.',
     ],
-    techstackUsed: ['Next.js', 'SCSS', 'tailwind'],
-  },
-  {
-    id: 'semicolon-tec',
-    name: 'Semicolon Tec.',
-    year: 'Jun 2021 - Apr 2021',
-    description:
-      'During my enriching 3 month internship at Semicolon Tec., I delved into the dynamic world of web development, gaining valuable expertise in cutting-edge technologies. Proficient in Next.js, React, and SCSS, I have crafted seamless and responsive web applications that marry functionality with aesthetics. My understanding of SEO principles ensures that my creations not only look good but also perform exceptionally well in the digital landscape.',
-
-    learnings: [
-      'React core and basic concepts like hooks & states.',
-      'Improvement in designing with css.',
-      'Improvement in javascript.',
+    techstackUsed: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'SCSS',
+      'ISR/SSR',
     ],
-    techstackUsed: ['React', 'CSS', 'flask'],
   },
 ];
 
