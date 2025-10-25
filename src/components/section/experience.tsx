@@ -59,18 +59,15 @@ const CompanyDescription = ({ displayCompany }: { displayCompany: string }) =>
     <div
       key={company.id + company.name}
       className={cn(
-        `flex-2 flex flex-col gap-1 text-darkGray lg:ml-4 xl:ml-10`,
+        `flex-2 flex flex-col gap-1 leading-8 text-darkGray lg:ml-4 xl:ml-10`,
         displayCompany !== company.name && 'hidden',
       )}
     >
       <span className='mb-2 font-semibold text-lightGreenBlue'>
         {company.year}
       </span>
-      <p className='mb-2'>{company.description}</p>
-      <span className='font-semibold underline underline-offset-4'>
-        Key Learnings
-      </span>
-      <ul className='mb-2 px-4 md:px-2'>
+      <p className='mb-5'>{company.description}</p>
+      <ul className='mb-5 px-4 md:px-2'>
         {company?.learnings?.map((learning) => (
           <li
             key={learning}

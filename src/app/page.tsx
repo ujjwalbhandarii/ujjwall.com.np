@@ -58,11 +58,11 @@ function Herosection() {
               <p className='herosection__more--paragraph'>
                 I&apos;m currently building
                 <a
-                  href='https://nepwonders.com/'
+                  href='https://crackitnepal.com/'
                   target='_blank'
                   aria-label='my current on going project redirect'
                 >
-                  Nepwonders.
+                  crackitnepal.
                 </a>
               </p>
             </div>
