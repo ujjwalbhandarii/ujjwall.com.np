@@ -10,7 +10,7 @@ export const WORKS = [
     imageUrl: '/assets/works/crackitnepal.png',
     alt: 'CrackItNepal – Entrance exam prep platform by Ujjwal Bhandari',
     websiteName: 'crackitnepal.com',
-    liveLink: 'https://crackitnepal.app/',
+    liveLink: 'https://crackitnepal.com/',
     stackUsed: [
       'Next.js',
       'TypeScript',
@@ -43,7 +43,7 @@ export const WORKS = [
     imageUrl: '/assets/works/antlrbyte.png',
     alt: 'Antlrbyte Technologies – Coming soon landing page by Ujjwal Bhandari',
     websiteName: 'Antlrbyte Technologies',
-    liveLink: 'https://antlrbyte.com/',
+    liveLink: 'https://antlrbyte.vercel.app/',
     stackUsed: ['Next.js', 'Tailwind CSS', 'TypeScript'],
     description:
       'A minimal yet polished "Coming Soon" landing page for ANTLRBYTE Technologies Pvt. Ltd., conveying anticipation for an upcoming strategic venture. Built with Next.js and Tailwind CSS for fast load times and clean aesthetics.',
