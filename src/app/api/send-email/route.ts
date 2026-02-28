@@ -5,9 +5,15 @@ import { config } from '@/utils/config';
 import { contactFormSchema } from '@/schema';
 import { EmailTemplate } from '@/components/utils/emailTemplate';
 
-const resend = new Resend(config.resendKey);
-
 export async function POST(request: Request) {
+  if (!config.resendKey) {
+    return NextResponse.json(
+      { message: 'Email service not configured' },
+      { status: 503 },
+    );
+  }
+
+  const resend = new Resend(config.resendKey);
   const { name, email, subject, message } = await request.json();
 
   const result = await contactFormSchema.safeParseAsync({
