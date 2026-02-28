@@ -4,6 +4,7 @@ import type { PWAConfig } from 'next-pwa';
 
 const config = {
   reactStrictMode: true,
+  turbopack: {},
 } satisfies NextConfig;
 
 const pwaConfig = {
